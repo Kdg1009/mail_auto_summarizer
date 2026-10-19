@@ -1,0 +1,51 @@
+{
+  "company": "Intel",
+  "roles": [
+    {
+      "job_title": "Software Enabling and Optimization Engineer",
+      "responsibilities": [
+        "Intel Open Edge Platform 소프트웨어 구성 요소 배포, 디버깅 및 최적화",
+        "로보틱스 AI, 생성형 AI, 비주얼 분석 애플리케이션 개발 및 최적화",
+        "샘플 코드, 기술 문서, 설치 가이드 및 데모 제공",
+        "Linux 환경의 소프트웨어 설치 문제 해결",
+        "CPU, GPU, NPU에서 AI 파이프라인 실행 최적화 지원",
+        "아시아·태평양 지역 고객 기술 지원",
+        "AI 벤치마크 보고서 분석 및 성능 비교",
+        "로보틱스 및 Physical AI 애플리케이션의 실시간 처리 요구사항 대응"
+      ],
+      "degree_requirements": [
+        "컴퓨터과학 또는 관련 분야 학사 학위와 관련 경력 3년 이상",
+        "컴퓨터과학 또는 관련 분야 석사 학위와 관련 경력 2년 이상",
+        "컴퓨터과학 또는 관련 분야 박사 학위"
+      ],
+      "experience_requirements": [
+        "학사 학위 소지자는 관련 경력 3년 이상",
+        "석사 학위 소지자는 관련 경력 2년 이상",
+        "박사 학위 소지자는 사전 직무 경력 불필요"
+      ],
+      "required_skills": [
+        "Python",
+        "Node.js",
+        "JavaScript",
+        "Shell scripting",
+        "Linux 환경의 문제 해결 및 디버깅",
+        "OpenCV",
+        "GStreamer",
+        "ROS 프로그래밍",
+        "Physical AI",
+        "Git 및 GitHub",
+        "AI 벤치마킹 및 성능 보고서 해석",
+        "로보틱스용 실시간 프로토콜 RTSP, TCC, TSN에 대한 이해"
+      ]
+    }
+  ],
+  "soft_skills": [
+    "문제 해결 능력",
+    "세부 사항에 대한 주의력",
+    "적극적인 의사소통",
+    "협업 능력"
+  ],
+  "employment_type": [
+    "Experienced Hire"
+  ]
+}

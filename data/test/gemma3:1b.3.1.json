@@ -1,0 +1,56 @@
+{
+    "company": "Hyundai AutoEver",
+    "job_title": "[SDx] IT PM - Robot MES 개발 총괄 PM in Seoul",
+    "responsibilities": [
+        "MES 시스템 개발 및 유지보수: 로봇 자동화 라인 최적화를 위한 Robot MES 플랫폼 개발",
+        "로봇 통신 모듈 개발: PLC, 로봇 제어기와의 실시간 통신 인터페이스 구축",
+        "실시간 데이터 처리: 센서 및 로봇 데이터의 실시간 수집 및 분석",
+        "프로덕션 스케줄링 알고리즘: 로봇 라인의 최적 작업 배분 로직 개발",
+        "시스템 통합 및 테스트: 하드웨어와의 연동 및 성능 테스트 주도",
+        "완성차MES #완성차MES #로봇MES #하이테크MES #스마트팩토리기술"
+    ],
+    "required_skills": [
+        "Java",
+        "C#",
+        "Python"
+    ],
+    "preferred_skills": [
+        "MES 개발 경력",
+        "하이테크 MES 개발 경력",
+        "제조 자동화 시스템 설계·개발·유지보수 경험",
+        "SQL 기반 데이터베이스 설계 및 운영 경험",
+        "PLC, 로봇 제어기, 설비 등 제조 현장 시스템과의 연동 및 통신에 대한 이해"
+    ],
+    "experience_requirements": [
+        "Bachelor degree.CS",
+        "Field experience.3Y+"
+    ],
+    "soft_skills": [
+        "협업",
+        "커뮤니케이션",
+        "문제 해결 능력",
+        "리더십",
+        "의사소통"
+    ],
+    "employment_type": "fulltime",
+    "time_log": [
+        {
+            "Total time": "101.41sec",
+            "Load model": "2.00sec",
+            "Prompt handle": "58.88sec",
+            "Generate response": "40.40sec"
+        },
+        {
+            "Total time": "93.85sec",
+            "Load model": "1.99sec",
+            "Prompt handle": "63.24sec",
+            "Generate response": "28.55sec"
+        },
+        {
+            "Total time": "78.83sec",
+            "Load model": "2.00sec",
+            "Prompt handle": "60.43sec",
+            "Generate response": "16.32sec"
+        }
+    ]
+}

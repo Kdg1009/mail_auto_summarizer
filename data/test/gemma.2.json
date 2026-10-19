@@ -1,0 +1,61 @@
+{
+    "company": "Hyundai AutoEver",
+    "job_title": "[SDx] IT PM - Robot MES 개발 총괄 PM in Seoul",
+    "responsibilities": [
+        "MES 시스템 개발 및 유지보수",
+        "로봇 자동화 라인 최적화를 위한 Robot MES 플랫폼 개발",
+        "로봇 통신 모듈 개발",
+        "실시간 데이터 처리",
+        "프로덕션 스케줄링 알고리즘 개발",
+        "시스템 통합 및 테스트",
+        "개발 경력 확보"
+    ],
+    "required_skills": [
+        "Java",
+        "C#",
+        "C++",
+        "SQL",
+        "PLC",
+        "Robotics",
+        "MES Development",
+        "Python"
+    ],
+    "preferred_skills": [
+        "Experience.3Y+",
+        "Bachelor Degree",
+        "Field Experience",
+        "Manufacturing Execution System (MES) development experience",
+        "Project Management",
+        "Data Analysis",
+        "Software Engineering",
+        "Testing & QA"
+    ],
+    "experience_requirements": [
+        "Bachelor degree.CS",
+        "Field experience.3Y+"
+    ],
+    "soft_skills": [
+        "Non-technical skills"
+    ],
+    "employment_type": "fulltime",
+    "time_log": [
+        {
+            "Total time": "156.44sec",
+            "Load model": "2.23sec",
+            "Prompt handle": "132.16sec",
+            "Generate response": "21.82sec"
+        },
+        {
+            "Total time": "144.95sec",
+            "Load model": "2.03sec",
+            "Prompt handle": "114.13sec",
+            "Generate response": "28.72sec"
+        },
+        {
+            "Total time": "118.95sec",
+            "Load model": "2.03sec",
+            "Prompt handle": "110.66sec",
+            "Generate response": "6.19sec"
+        }
+    ]
+}

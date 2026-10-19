@@ -1,0 +1,60 @@
+{
+    "company": "Intel",
+    "job_title": "Software Enabling and Optimization Engineer in Seoul",
+    "responsibilities": [
+        "Deploy and debug issues with OEP software components to ensure seamless functionality on Intel architecture systems.",
+        "Design, develop, and optimize AI applications such as robotics AI, generative AI, and visual analytics to showcase Intel Edge Platform capabilities.",
+        "Enable edge customers by providing sample codes, technical documentation, installation guidance, and demos for OEP components.",
+        "Troubleshoot and resolve software installation issues, primarily within Linux environments.",
+        "Provide technical guidance to optimize AI pipelines for efficient execution across Intel platforms including CPUs, GPUs, and NPUs.",
+        "Support customers across the Asia-Pacific region, delivering high-quality service and solutions."
+    ],
+    "required_skills": [
+        "Python",
+        "Node.js",
+        "JavaScript",
+        "Shell Scripting",
+        "Linux",
+        "OpenVINO",
+        "DL Streamer",
+        "Git",
+        "GitHub",
+        "RTSP",
+        "TCC",
+        " TSN"
+    ],
+    "preferred_skills": [
+        "AI Benchmarking",
+        "Competitive Analysis",
+        "Physical AI Applications"
+    ],
+    "experience_requirements": [
+        "Bachelor's Degree in Computer Science or Related Field",
+        "3+ Years of Relevant Experience OR Master’s Degree with 2+ Years of Relevant Experience OR PhD with No Prior Professional Experience"
+    ],
+    "soft_skills": [
+        "Non-technical skills",
+        "Collaboration"
+    ],
+    "employment_type": "fulltime",
+    "time_log":[
+        {
+            "요청 소요 시간": "106.72초",
+            "모델 로딩 시간": "2.09초",
+            "프롬프트 처리 시간": "66.15초",
+            "응답 생성 시간": "38.24초"
+        },
+        {
+            "요청 소요 시간": "118.77초",
+            "모델 로딩 시간": "2.03초",
+            "프롬프트 처리 시간": "68.90초",
+            "응답 생성 시간": "47.74초"
+        },
+        {
+            "요청 소요 시간": "74.92초",
+            "모델 로딩 시간": "2.08초",
+            "프롬프트 처리 시간": "65.66초",
+            "응답 생성 시간": "7.06초"
+        }
+    ]
+}

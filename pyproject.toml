@@ -1,0 +1,22 @@
+[project]
+name = "mail-auto-summrizor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "google-api-python-client>=2.201.0",
+    "google-auth-httplib2>=0.4.4",
+    "google-auth-oauthlib>=1.5.0",
+    "httpx>=0.28.1",
+    "huggingface-hub>=2.2.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+mail-auto-summrizor = "mail_auto_summrizor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
