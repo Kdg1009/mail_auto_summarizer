@@ -1,4 +1,5 @@
 '''This file stores payloads for request.'''
+import psutil
 
 def create_payload(
         description:str,
@@ -6,6 +7,10 @@ def create_payload(
         schema:dict,
         system_content:str
     ) -> dict:
+
+    memory_info = psutil.virtual_memory()
+    flush_model = memory_info.percent > 95.0
+
     return {
         "model": model,
         "messages":[
@@ -21,7 +26,7 @@ def create_payload(
         "format":schema,
         "stream":False,
         "think":False,
-        "keep_alive":"10m",
+        "keep_alive":0 if flush_model else '10m',
         "options":{
             "temperature": 0.1,
             "num_predict": 512

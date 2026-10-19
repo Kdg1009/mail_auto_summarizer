@@ -57,7 +57,7 @@ def remove_company_name(description:str, **kwargs) -> str:
     '''
     company_name = kwargs.get("company","")
     
-    if not company_name.strip():
+    if company_name is None or not company_name.strip():
         return description
 
     pattern = re.compile(re.escape(company_name.strip()), re.IGNORECASE)

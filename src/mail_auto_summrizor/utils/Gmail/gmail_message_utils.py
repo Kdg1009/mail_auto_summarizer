@@ -57,33 +57,6 @@ def apply_label_to_messages(service, label_id:str, query, iter_page_num=3):
                 .execute()
         )
 
-def GmailDataHelper(service, max_page_count=15) -> dict[str,dict]:
-    '''
-    This method integrates all needed process for getting job ids from Gmail.
-
-    Process:
-        1. get messages ids from gmail that has JOB_ALERT and not AUTO_SUMMARIZE_COMPLETE
-        2. from retrieved messages ids, get message and parse its body to get 'job id':url
-        3. return 2.
-    '''
-
-    unprocessed_job_alert_message_id_list = get_messages_ids(
-        service,
-        "Label_1",
-        q="-label:AUTO_SUMMARIZE_COMPLETE",
-        max_page_count=max_page_count
-    )
-
-    result = {}
-
-    for job_alert_messeage_id_thread_mapping in unprocessed_job_alert_message_id_list:
-        job_id_url_mappings = parse_message(service, job_alert_messeage_id_thread_mapping['id'], get_linkedin_url_from_body)
-
-        result.update(job_id_url_mappings)
-
-    return result
-
-
 def get_messages_ids(
         service,
         labelIds:str | None=None, 

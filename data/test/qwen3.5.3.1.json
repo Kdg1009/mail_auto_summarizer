@@ -1,0 +1,68 @@
+{
+    "company": "Hyundai AutoEver",
+    "job_title": "[SDx] IT PM - Robot MES 개발 총괄 PM in Seoul",
+    "responsibilities": [
+        "MES 시스템 개발 및 유지보수",
+        "로봇 자동화 라인 최적화를 위한 Robot MES 플랫폼 개발",
+        "PLC, 로봇 제어기와의 실시간 통신 인터페이스 구축 (로봇 통신 모듈 개발)",
+        "센서 및 로봇 데이터의 실시간 수집 및 분석 (실시간 데이터 처리)",
+        "로봇 라인의 최적 작업 배분 로직 개발 (프로덕션 스케줄링 알고리즘)",
+        "하드웨어와의 연동 및 성능 테스트 주도 (시스템 통합 및 테스트)"
+    ],
+    "required_skills": [
+        "Java",
+        "C#",
+        "C++",
+        "Python",
+        "SQL",
+        "PLC",
+        "Robot Controller"
+    ],
+    "preferred_skills": [
+        "Vue.js",
+        "JSP",
+        "Spring Boot",
+        "Oracle",
+        "Tibero",
+        "PostgreSQL",
+        "AI Technology"
+    ],
+    "experience_requirements": [
+        "Manufacturing Execution System (MES) development and operation experience in the automotive, high-tech, or manufacturing sector",
+        "Experience developing systems using at least one programming language from Java, C#, C++, or Python",
+        "Experience in designing, developing, and maintaining MES, ERP, production management systems, or manufacturing automation systems",
+        "Experience in database design and operation based on SQL"
+    ],
+    "soft_skills": [
+        "열린 자세",
+        "적극적으로 배우려는 의지",
+        "긴밀한 협업",
+        "서로를 지원하는 문화",
+        "협력",
+        "문제 해결을 위한 고민",
+        "전문성 쌓기",
+        "성장",
+        "의미 있는 경험 만들기"
+    ],
+    "employment_type": "상시 채용 (채용 시 마감되는 상시 채용 공고)",
+    "time_log": [
+        {
+            "Total time": "6.05sec",
+            "Load model": "0.02sec",
+            "Prompt handle": "0.90sec",
+            "Generate response": "2.64sec"
+        },
+        {
+            "Total time": "7.64sec",
+            "Load model": "0.07sec",
+            "Prompt handle": "0.81sec",
+            "Generate response": "4.49sec"
+        },
+        {
+            "Total time": "5.20sec",
+            "Load model": "0.03sec",
+            "Prompt handle": "0.74sec",
+            "Generate response": "2.17sec"
+        }
+    ]
+}

@@ -27,7 +27,7 @@
 ``` uv run python -m mail_auto_summrizor.main ```
 <br>
 
-# DB 저장 테이블 형식
+# DB 저장 테이블 형식(sqlite3)
 
 table을 따로 둬서 관리하게 하기
 
