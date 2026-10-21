@@ -7,45 +7,35 @@
 > 하지만 매번 이 메일의 내용을 확인하는 것도 번거롭고 이 데이터들을 DB에 저장하면 field의 경향을 파악하는 데 도움이 될 것이다.
 >
 > 본 프로젝트는 로컬 LLM을 사용하여 가져온 채용 정보들을 정량화하고 축적하여 구직 시장의 동향을 파악하는 데 도움을 주기 위함이다.
-<br>
 
-### 필요한 직무 정보
-- 회사
-- 직무 내용
-- 요구 기술 스택
-- 채용 형태(정규/비정규/인턴)
-- 학위 조건, 경력 조건
-- 인재상
+
+### 프로젝트 내용
+> 본 프로젝트는 링크드인에 등록해 둔 관심분야의 채용 시장의 흐름을 파악하는 데 도움을 주기 위한 프로젝트이다.
+>
+> 따라서 다음과 같은 정보를 시각화하여 사용자에게 제공하는 것을 목표로 한다.
+>
+> 1\. 언제 어떤 메일이 왔는지 확인 <br>
+> 2\. 월 별 채용 형태 랭킹 (직무, 정규/파트 타임/신입/인턴 등, 요구되는 경력)<br>
+> 3\. 월 별 요구 기술 랭킹 (최소 요구 기술, 권장 기술)<br>
+> 4\. 직무 종류에 따른 분포와 그에 요구되는 책임 (soft-skill 포함) 
+
 <br><br>
 
-# 프로젝트 구성도
+# 프로젝트 구조
 
+### 프로젝트 workflow 
 ![image](./data/images/auto_mail_summarize_구조.jpg)
 
-### 실행 방법
+### UI 구상
+![image](/data/images/ui_blueprint.png)
+<br><br>
+
+# 실행 방법
+
+**server side**
 
 ``` uv run python -m mail_auto_summrizor.main ```
-<br>
 
-# DB 저장 테이블 형식(sqlite3)
+**client side**
 
-table을 따로 둬서 관리하게 하기
-
-```
-metadata
-├── id
-├── job id
-└── processed date
-
-job data
-├── job id
-├── url
-├── company (회사명)
-├── job title (직책)
-├── responsibilities (담당 업무)
-├── experience requirements (학위/경력 조건)
-├── required skiils (최소 기술 역량)
-├── preferred skiils (가산점 기술 역량)
-├── soft skills (협업, 문제 해결 역량)
-└── employment type (고용 형태)
-```
+<br><br>

@@ -10,19 +10,16 @@
             "Develop generative AI applications",
             "Develop visual analytics applications",
             "Showcase company Edge Platform capabilities",
-            "Enable edge customers",
-            "Provide sample codes",
+            "Enable edge customers by providing sample codes",
             "Provide technical documentation",
             "Provide installation guidance",
-            "Provide demos for OEP components",
-            "Troubleshoot software installation issues",
-            "Resolve software installation issues in Linux environments",
+            "Conduct demos for OEP components",
+            "Troubleshoot software installation issues in Linux environments",
             "Provide technical guidance to optimize AI pipelines",
             "Optimize AI pipeline execution on CPUs",
             "Optimize AI pipeline execution on GPUs",
             "Optimize AI pipeline execution on NPUs",
             "Support customers across the Asia-Pacific region",
-            "Deliver high-quality service and solutions",
             "Analyze AI application benchmark reports",
             "Provide comparative insights from benchmark reports",
             "Highlight company's competitive advantages",
@@ -49,9 +46,9 @@
             "TSN"
         ],
         "experience_requirements": [
-            "Bachelor's degree in computer science or a related field with 3+ years of relevant experience",
-            "Master's degree in computer science or a related field with 2+ years of relevant experience",
-            "PhD in computer science or a related field with no prior professional experience"
+            "Bachelor degree.CS.3Y+",
+            "Master degree.CS.2Y+",
+            "PhD.CS."
         ],
         "soft_skills": [
             "problem-solving",
@@ -67,10 +64,10 @@
         "responsibilities": [
             "MES 시스템 개발 및 유지보수",
             "로봇 자동화 라인 최적화를 위한 Robot MES 플랫폼 개발",
-            "PLC, 로봇 제어기와의 실시간 통신 인터페이스 구축",
-            "센서 및 로봇 데이터의 실시간 수집 및 분석",
-            "로봇 라인의 최적 작업 배분 로직 개발 (프로덕션 스케줄링)",
-            "하드웨어와의 연동 및 성능 테스트 주도"
+            "PLC, 로봇 제어기와의 실시간 통신 인터페이스 구축 (로봇 통신 모듈 개발)",
+            "센서 및 로봇 데이터의 실시간 수집 및 분석 (실시간 데이터 처리)",
+            "로봇 라인의 최적 작업 배분 로직 개발 (프로덕션 스케줄링 알고리즘)",
+            "하드웨어와의 연동 및 성능 테스트 주도 (시스템 통합 및 테스트)"
         ],
         "required_skills": [
             "Java",
@@ -88,12 +85,13 @@
             "Oracle",
             "Tibero",
             "PostgreSQL",
-            "AI"
+            "AI Technology"
         ],
         "experience_requirements": [
             "Manufacturing Execution System (MES) development and operation experience in the automotive, high-tech, or manufacturing sector",
-            "Experience developing systems using at least one of Java, C#, C++, or Python",
-            "Experience in designing, developing, and maintaining MES, ERP, production management systems, or manufacturing automation systems"
+            "Experience developing systems using at least one programming language from Java, C#, C++, or Python",
+            "Experience in designing, developing, and maintaining MES, ERP, production management systems, or manufacturing automation systems",
+            "Experience in database design and operation based on SQL"
         ],
         "soft_skills": [
             "열린 자세",
@@ -118,25 +116,25 @@
             "与结构工程师沟通配合提供所需的硬件支持"
         ],
         "required_skills": [
-            "Hardware Circuit Design",
-            "Electronic Circuit Analysis",
-            "Digital Circuit Design",
-            "Analog Circuit Design",
-            "Hardware Interface Protocols",
-            "Communication Protocols"
+            "hardware_design",
+            "circuit_analysis",
+            "digital_circuits",
+            "analog_circuits",
+            "hardware_interfaces",
+            "communication_protocols"
         ],
         "preferred_skills": [],
         "experience_requirements": [
-            "Bachelor degree or above in Electronics, Communication, Automation or related majors"
+            "Bachelor degree. Electronics/Communication/Automation related major"
         ],
         "soft_skills": [
             "热爱发明创造",
             "对 3D 视觉及人工智能产品有高度热情",
             "渴望做出行业中全世界最好的产品",
-            "以结果为导向",
-            "喜欢科研"
+            "喜欢科研",
+            "年轻活跃"
         ],
-        "employment_type": ""
+        "employment_type": "fulltime"
     },
     "4475939737": {
         "company": "Applied Intuition",
@@ -169,10 +167,7 @@
             "Robotics middleware",
             "Complex software systems",
             "Infrastructure engineering",
-            "Hardware integration",
-            "Defense industry experience",
-            "Automotive industry experience",
-            "Robotics industry experience"
+            "Hardware integration"
         ],
         "experience_requirements": [
             "BS/MS degree in Computer Science, Computer Engineering, Electrical Engineering, or related field (completed or in progress)",
@@ -180,24 +175,25 @@
         ],
         "soft_skills": [
             "self-starter",
-            "communication skills",
-            "interest in working directly with customers",
-            "taking initiative",
-            "collaboration"
+            "communication skills"
         ],
-        "employment_type": "full-time"
+        "employment_type": "fulltime"
     },
     "4457999958": {
         "company": "NVIDIA",
         "job_title": "Senior Perception Engineer, Obstacle Foundation Models - Autonomous Vehicles in Seoul",
         "responsibilities": [
             "Design and productize the company's next-generation autonomous driving perception stack",
+            "Work on the core 3D obstacle perception pipeline",
+            "Contribute to architecture and algorithm design",
+            "Remain hands-on with implementation using modern transformer-based, multi-modal, and vision-language techniques",
             "Develop and improve the technical build, architecture, and roadmap for 3D obstacle perception to support end-to-end autonomous driving",
             "Use innovative CNN and transformer-based architectures when appropriate",
             "Design and implement advanced 3D perception models using multi-camera inputs and/or multi-sensor fusion (camera, radar, lidar) for obstacle detection and tracking",
             "Explore BEV and transformer-based 3D perception",
             "Build efficient, production-grade deep learning models by defining objectives with the team",
-            "Select and prototype architectures, run experiments, and follow training and evaluation guidelines",
+            "Select and prototype architectures",
+            "Run experiments and follow training and evaluation guidelines",
             "Use techniques like large-scale pretraining, distillation, and parameter-efficient fine-tuning (e.g., LoRA)",
             "Help define and maintain KPI frameworks to quantify perception performance",
             "Analyze large-scale real and synthetic datasets to identify failure modes and systematically improve accuracy, robustness, and efficiency",
@@ -219,16 +215,13 @@
         ],
         "preferred_skills": [
             "LoRA",
-            "Vision-Language Models (VLMs)",
+            "VLMs",
             "BEV perception",
-            "Self-supervised learning",
-            "Active learning",
-            "Auto-labeling",
-            "Multi-modal AI systems"
+            "Vision-language models"
         ],
         "experience_requirements": [
-            "PhD, MS or BS in Computer Science, Computer Engineering, or related field",
-            "5+ years hands-on experience developing deep learning-based perception systems"
+            "PhD, MS or BS (or equivalent experience) in Computer Science, Computer Engineering, or a related technical field",
+            "5+ years hands-on experience developing deep learning–based perception or closely related systems for complex real-world problems"
         ],
         "soft_skills": [
             "Excellent communication",
@@ -244,7 +237,8 @@
             "Independently complete on-site robot implementation tasks",
             "Configure firmware for hardware equipment such as robots and conveyor lines",
             "Provide support to customers during and after deployment to ensure the smooth operation of HAI products",
-            "Implement complex large-scale warehouse automation projects, including the installation of AGVs, ACRs, AMRs, conveyor lines, and related equipment",
+            "Implement complex large-scale warehouse automation projects",
+            "Install AGVs, ACRs, AMRs, conveyor lines, and related equipment",
             "Develop testing and acceptance standards",
             "Conduct on-site inspections and evaluations for project management",
             "Perform automated system integration tests",
@@ -282,11 +276,12 @@
             "Derive root causes of problems",
             "Collaborate with the development team to improve identified issues",
             "Design and build automation scripts for repetitive system testing and regression testing",
-            "Verify compliance with requirements and conduct reliability evaluation before robot product launch",
+            "Verify that robot products meet requirements before launch",
+            "Conduct reliability evaluation",
             "Verify external (customer) API functionality and integration",
             "Write operation manuals, test reports, and technical support guidelines",
-            "Support on-site deployment in real environments",
-            "Debug and provide technical responses to real-time issues occurring at the field"
+            "Support field deployment in customer environments",
+            "Debug real-time issues and provide technical responses at the site"
         ],
         "required_skills": [
             "C++",
@@ -325,41 +320,41 @@
         "company": "General Motors",
         "job_title": "[GM테크니컬센터코리아] 생산기술연구소 경력직 엔지니어 모집 in Seoul",
         "responsibilities": [
-            "Responsible for production technology across all processes ranging from pressing to chassis, painting, assembly, and engine operation",
-            "Lead the transition to a smart factory through equipment automation and MFG AI solutions",
-            "Implement process optimization based on industrial engineering",
-            "Achieve the 3Zero vision (Zero Crashes, Zero Emission & Zero Congestion) in actual production sites"
+            "Responsible for production technology across all processes ranging from pressing to chassis, painting, assembly, and engine operation.",
+            "Leading the transition to a smart factory through equipment automation and MFG AI solutions.",
+            "Implementing process optimization based on industrial engineering.",
+            "Achieving the 3Zero vision (Zero Crashes, Zero Emission & Zero Congestion) in actual production sites."
         ],
         "required_skills": [
-            "Production Technology",
-            "Press Equipment & Mold Process",
-            "Body-in-White Production Technology",
-            "Paint Shop Production Technology",
-            "Assembly Production Technology",
-            "Engine Assembly Equipment & Process",
-            "Manufacturing Automation",
+            "Production Engineering",
+            "Press Equipment",
+            "Die Casting",
+            "Painting Process",
+            "Assembly Process",
+            "Engine Assembly",
             "MFG AI Solutions",
             "Industrial Engineering",
             "Process Optimization",
-            "Smart Factory Implementation"
+            "Automation Systems"
         ],
         "preferred_skills": [],
         "experience_requirements": [
             "Bachelor's degree in related field",
-            "3+ years of practical experience in similar industry field"
+            "3+ years of work experience in similar industry"
         ],
         "soft_skills": [
-            "업무 커뮤니케이션 (English)",
-            "신중한 검토",
-            "책임감 (합격 취소 방지)"
+            "Communication (in English)",
+            "Teamwork",
+            "Inclusion",
+            "Belonging"
         ],
-        "employment_type": "경력직"
+        "employment_type": ""
     },
     "4475763655": {
         "company": "CarbonSix",
         "job_title": "Software Engineer, Solutions in Seoul",
         "responsibilities": [
-            "Develop applications that combine AI Motion and robot Rule Motion using SigmaKit.",
+            "Develop an application that combines AI Motion and robot Rule Motion using SigmaKit.",
             "Design and develop software and applications for robotics and automation systems.",
             "Implement software that interfaces with robots, motors, sensors, vision systems, and various external equipment.",
             "Control the operation of robotics and automation systems and verify functionality and performance in actual equipment environments.",
@@ -408,15 +403,34 @@
         "company": "Ludo Robotics",
         "job_title": "[Ludo Robotics] Robotics Engineer (3~5 years) in Seoul",
         "responsibilities": [
-            "로봇 소프트웨어 개발 및 설계·개발·배포 (내비게이션, 모션 플래닝 및 제어, SLAM, 인식, 조작, 상위 수준 행동 제어 포함)",
-            "프로덕션 레벨의 C++ 및 Python 코드 작성 및 유지보수",
-            "센서, 액추에이터, 컴퓨팅 모듈 통합 및 하드웨어 브링업·캘리브레이션·검증 주도",
-            "프로덕션 환경 및 현장 (Field Site) 로보틱스 솔루션 배포·통합·모니터링",
-            "하드웨어, 소프트웨어, 모델 레이어를 관통하는 장애 추적 및 테스트·트러블슈팅·디버깅",
-            "ML 및 코어 로보틱스 엔지니어와 협업하여 최신 (SOTA) 모델을 실제 로봇에 배포하고 현장 학습을 시스템 개선으로 환원",
-            "로봇 알고리즘 및 시스템 성능의 지속적 분석·개선·최적화",
-            "기술 문서, 런북, 툴링 구축과 유지보수",
-            "하드웨어, 운영, R&D 조직과의 협업"
+            "introduce team/project",
+            "build social robot brain",
+            "develop software that gives life to robots",
+            "directly handle hardware integration",
+            "connect the gap between foundation models and reliable real-world deployment",
+            "implement robust and deployable robotics solutions for complex real-world requirements",
+            "bring up and verify on actual hardware",
+            "collaborate closely with relevant organizations for continuous improvement",
+            "expand responsibilities based on strengths to include navigation, motion planning and control, SLAM, perception, manipulation, and high-level behavior control",
+            "integrate sensors",
+            "perform calibration",
+            "handle hardware bring-up",
+            "write production-level code",
+            "deploy latest models developed by the research team",
+            "track and resolve obstacles across hardware, software, and model layers",
+            "convert research achievements into functioning robot systems in real environments",
+            "design, develop, and deploy robotics system software covering navigation, motion planning and control, SLAM, perception, manipulation, and high-level behavior control (including programming, configuration, and verification)",
+            "write and maintain production-level C++ and Python code for the robot platform",
+            "integrate sensors, actuators, and computing modules",
+            "lead hardware bring-up, calibration, and verification on actual robots",
+            "deploy, integrate, and monitor robotics solutions in production environments and field sites to ensure robust performance and reliability",
+            "track and debug obstacles across hardware, software, and model layers",
+            "reproduce edge cases for testing and troubleshooting",
+            "collaborate closely with ML and core robotics engineers to deploy latest (SOTA) models on actual robots",
+            "translate learning from the field into system improvements",
+            "analyze, improve, and optimize robot algorithms and system performance to ensure reliability and scalability",
+            "build and maintain technical documentation, runbooks, and tooling",
+            "collaborate with hardware, operations, and R&D organizations to improve performance and scalability"
         ],
         "required_skills": [
             "C++",
@@ -432,7 +446,8 @@
             "Machine Learning Model Deployment",
             "Autonomous Systems",
             "Simulation Tools",
-            "Sensor Calibration",
+            "Sensor Integration & Calibration",
+            "Hardware Bring-up",
             "Embedded Systems",
             "Real-time Systems"
         ],
@@ -444,10 +459,9 @@
             "정답이 정해지지 않은 모호한 문제를 해결하는 과정 자체를 즐기는 능력",
             "기술적 한계에 도전하는 스타트업 환경에 최적화된 마인드셋",
             "분석적으로 문제를 정의하고 해결하는 역량",
-            "문서화 및 조직 간 협업 능력 (기술 문서·런북·툴링 구축, 하드웨어·운영·R&D 조직과의 협업)",
-            "긴밀히 협업하여 모델을 배포하고 시스템 개선을 환원하는 능력"
+            "문서화 및 조직 간 협업 능력 (기술 문서, 런북, 툴링 구축과 유지보수, 하드웨어·운영·R&D 조직과의 협업)"
         ],
-        "employment_type": "정규직 (단, 후보자 처우 협의 결과에 따라 고용형태가 변경될 수 있음)"
+        "employment_type": "정규직"
     },
     "4465267271": {
         "company": "Hyundai Motor Company",
@@ -461,36 +475,42 @@
             "Secure manufacturing cost advantages for emerging business initiatives",
             "Optimize material selection and manufacturing processes based on design targets and cost requirements",
             "Identify and propose opportunities for component integration, commonization, and design innovation",
-            "Develop prototypes of robotics components to evaluate manufacturability and proactively assess component quality",
+            "Develop prototypes of robotics components to evaluate manufacturability",
+            "Proactively assess component quality",
             "Support supplier process improvements and quality enhancement initiatives",
-            "Predict quality issues and evaluate component reliability prior to mass production",
-            "Support design optimization and improve design maturity based on simulation results and manufacturing engineering requirements",
-            "Assess production readiness and support design decisions by considering productivity, quality, and cost implications of selected manufacturing processes",
-            "Identify advanced manufacturing technologies and solutions to enhance competitiveness in manufacturing cost, performance, and precision-critical components",
-            "Analyze market trends and emerging production technologies for robotics and other new business sectors"
+            "Ensure production quality",
+            "Address key development milestones for new business products",
+            "Perform forming and structural analyses during the product development phase",
+            "Predict quality issues",
+            "Evaluate component reliability prior to mass production",
+            "Support design optimization",
+            "Improve design maturity based on simulation results and manufacturing engineering requirements",
+            "Assess production readiness",
+            "Support design decisions by considering productivity, quality, and cost implications of selected manufacturing processes"
         ],
         "required_skills": [
             "Structural Analysis",
             "Forming Analysis",
             "Design for Manufacturability (DFM)",
-            "Prototype Development"
+            "Prototype Development",
+            "Material Selection"
         ],
         "preferred_skills": [
             "CATIA",
             "SolidWorks",
             "CREO",
-            "Manufacturability Assessment",
-            "Quality Improvement",
-            "Reliability Improvement"
+            "Engineering Drawing Creation/Review",
+            "Overseas Assignment Experience",
+            "Global Organization Experience"
         ],
         "experience_requirements": [
             "Bachelor's degree or higher in engineering fields",
-            "3 years of experience in component design and development within the robotics and/or automotive industry"
+            "3+ years of experience in component design and development within the robotics and/or automotive industry"
         ],
         "soft_skills": [
             "fluent in both written and oral business communication",
             "ability to create and review engineering drawings",
-            "ability to perform structural and/or forming analysis"
+            "concurrent engineering"
         ],
         "employment_type": ""
     },
@@ -498,10 +518,12 @@
         "company": "MEDISBY",
         "job_title": "Robotics Engineer in Seoul",
         "responsibilities": [
-            "Develop and maintain ROS2-based medical robot control software",
-            "Build multi-sensor fusion pipelines integrating RGB-D cameras, IMUs, and LiDAR",
-            "Coordinate technically with AI and hardware engineering teams",
-            "Establish test and deployment automation (CI/CD) processes ensuring medical-grade reliability"
+            "ROS2 기반 의료로봇 제어 소프트웨어(Robot Control Software) 개발",
+            "ROS2 기반 의료로봇 제어 소프트웨어 유지보수",
+            "RGB-D Camera, IMU, LiDAR 등 멀티 센서 통합(Multi-sensor Fusion) 및 데이터 처리 파이프라인 구축",
+            "AI 및 HW 엔지니어링 팀과의 기술적 조율 및 협업",
+            "의료기기 수준의 신뢰성을 갖춘 로봇 솔루션의 테스트 자동화",
+            "배포 자동화(CI/CD) 프로세스 구축"
         ],
         "required_skills": [
             "ROS2",
@@ -523,7 +545,7 @@
             "Motion Planning",
             "Medical Robotics",
             "Collaborative Robot",
-            "Real-time Control Loop"
+            "Rehabilitation Robot"
         ],
         "experience_requirements": [
             "5Y+",
@@ -580,67 +602,67 @@
         "job_title": "Research Scientist / Engineer: 3D Vision & Sensor Fusion in Seoul",
         "responsibilities": [
             "Develop calibration, localization, mapping, scene reconstruction, occupancy, tracking, and state-estimation systems",
-            "Create consistent 3D state from cameras, inertial sensors, encoders, force sensors, and robot kinematics",
             "Support safe navigation and precise manipulation",
-            "Develop camera, IMU, encoder, force, and robot-state calibration and synchronization pipelines",
+            "Ensure accuracy, latency, observability, and graceful degradation in system output",
+            "Build camera, IMU, encoder, force, and robot-state calibration and synchronization pipelines",
             "Build real-time localization, SLAM/VIO, object-level tracking, 3D reconstruction, and occupancy representations",
             "Design probabilistic estimators and uncertainty interfaces for downstream planning and control",
             "Create tools and datasets for calibration health, drift detection, replay, benchmarking, and regression testing",
-            "Deploy on FRIDAY",
+            "Deploy systems on FRIDAY",
             "Investigate failures caused by motion blur, occlusion, reflective surfaces, vibration, and sparse observations"
         ],
         "required_skills": [
+            "3D reconstruction",
             "SLAM",
             "VIO",
-            "Calibration",
-            "3D reconstruction",
-            "Tracking",
-            "Multisensor fusion",
+            "calibration",
+            "sensor fusion",
+            "occupancy representation",
+            "state estimation",
+            "localization",
             "C++",
             "Python"
         ],
         "preferred_skills": [
-            "Factor graphs",
-            "Filtering/smoothing",
-            "Differentiable geometry",
-            "Learned state estimation",
+            "factor graphs",
+            "filtering/smoothing",
+            "differentiable geometry",
+            "learned state estimation",
             "ROS/ROS2",
-            "Time synchronization",
+            "time synchronization",
             "PTP",
-            "Camera drivers",
-            "Embedded sensor pipelines",
+            "camera drivers",
+            "embedded sensor pipelines",
             "GPU-accelerated point-cloud processing",
-            "Voxel processing",
-            "Neural-field processing",
-            "Occupancy processing"
+            "voxel processing",
+            "neural-field processing"
         ],
         "experience_requirements": [
             "BS, MS, or Ph.D. in Robotics, Computer Vision, Electrical Engineering, or Computer Science",
-            "Equivalent experience to degree requirements"
+            "Experience implementing at least one of SLAM, VIO, calibration, 3D reconstruction, tracking, or multisensor fusion"
         ],
         "soft_skills": [
-            "Ability to validate estimators using ground truth, residuals, observability analysis, and downstream task metrics",
-            "Collaboration with researchers and engineers across hardware, control, simulation, learning, perception, data, and operations"
+            "collaboration",
+            "curiosity"
         ],
-        "employment_type": "Full-time"
+        "employment_type": "full-time"
     },
     "4475380466": {
         "company": "LionsBot International",
         "job_title": "Lead Navigation & Motion Planning Engineer in Seoul",
         "responsibilities": [
             "Drive development of advanced behavior, planning, and control strategies for autonomous cleaning robots",
-            "Work on planning, real-time decision making, and implement features such as multi-floor navigation and docking control systems",
-            "Develop robust testing pipelines to ensure quality and reliability of robots",
-            "Own independent deliverables",
-            "Collaborate with SLAM and Perception engineers",
-            "Design and implement modular behavior tree architectures for complex and robust robot decision-making",
             "Develop and optimize global planning algorithms (A*, D*, RRT*, PRM, etc.) for dynamic environments",
             "Design and tune local planners and controllers for smooth and safe robot motion (e.g., MPC, TEB, DWA)",
+            "Implement features such as multi-floor navigation and docking control systems",
+            "Develop robust testing pipelines to ensure quality and reliability of robots",
+            "Design and implement modular behavior tree architectures for complex and robust robot decision-making",
             "Optimize planning and control systems to ensure real-time system performance, including timing guarantees for control loops",
-            "Collaborate with SLAM and Perception engineers to align navigation with perception, mapping",
+            "Collaborate with SLAM and Perception engineers to align navigation with perception and mapping",
             "Develop comprehensive test cases for validating algorithms and software in both simulated and real-world environments",
             "Maintain comprehensive documentation of all code implementations and test cases",
-            "Explore advanced planning and control methods for real-world deployment (e.g., reinforcement learning-based planning)"
+            "Explore advanced planning and control methods for real-world deployment (e.g., reinforcement learning-based planning)",
+            "Own independent deliverables"
         ],
         "required_skills": [
             "C++",
@@ -657,7 +679,8 @@
             "TEB",
             "DWA",
             "Kinematics",
-            "Control Theory"
+            "Control Theory",
+            "Robot Dynamics"
         ],
         "preferred_skills": [
             "Reinforcement Learning",
@@ -674,7 +697,8 @@
             "analytical problem-solving",
             "attention to detail",
             "excellent debugging skills",
-            "collaboration"
+            "collaboration",
+            "independent deliverables ownership"
         ],
         "employment_type": ""
     },
@@ -688,9 +712,11 @@
             "Develop perception algorithms",
             "Integrate perception with navigation stacks",
             "Collaborate with hardware, navigation, localization, and mapping teams",
-            "Develop robustness of perception system",
-            "Evaluate cutting-edge sensors",
+            "Develop autonomous software stacks for cleaning robots",
+            "Improve robustness of perception system",
+            "Achieve optimal scene understanding",
             "Research and evaluate state-of-the-art computer vision/machine learning algorithms",
+            "Apply algorithm design and programming skills to improve perception stacks",
             "Develop point-cloud based 3D feature detection and tracking algorithms",
             "Produce robust, well-tested C++ software"
         ],
@@ -708,15 +734,14 @@
             "Bachelor's degree in CS, Robotics, or related field (or PhD with relevant focus)",
             "3+ years of industry experience in developing and deploying behavior, planning and control systems for autonomous robots",
             "Hands-on experience with dynamic object detection & tracking using sensor fusion approach (pointcloud, rgb data)",
-            "Experience working with sensor modalities such as Stereo Cameras, RGBD cameras and 2D/3D Lidars",
-            "Strong understanding of sensor calibration"
+            "Experience working with sensor modalities such as Stereo Cameras, RGBD cameras and 2D/3D Lidars"
         ],
         "soft_skills": [
             "independent deliverables",
             "full ownership",
             "collaborate closely",
-            "passion for driving meaningful operational improvements",
             "analytical problem-solving",
+            "passion for driving meaningful operational improvements",
             "thrive in a dynamic scaleup atmosphere"
         ],
         "employment_type": ""
@@ -732,9 +757,10 @@
             "Maintain and extend operator-facing data in PostgreSQL through versioned migrations",
             "Build and maintain service instrumentation so system behavior stays observable as new features land",
             "Build and maintain the operator web application in TypeScript, React and Next.js from API integration to UI",
-            "Develop interactive tools for operators such as a 3D map editor and live fleet view (WebGL / Babylon.js) and a node-based scenario editor",
+            "Develop interactive tools for operators including a 3D map editor, live fleet view (WebGL / Babylon.js), and a node-based scenario editor",
             "Render high-frequency real-time data (vehicle and perception streams over WebSocket) in the browser while keeping the UI responsive",
-            "Own features end to end from the database schema and API through to the screen operators use and keep frontend and backend contracts in sync",
+            "Own features end to end from the database schema and API through to the screen operators use",
+            "Keep frontend and backend contracts in sync",
             "Write and maintain automated tests (unit, component and end-to-end) to keep the product reliable as it grows"
         ],
         "required_skills": [
@@ -744,31 +770,29 @@
             "TypeScript",
             "React",
             "Next.js",
-            "WebGL",
-            "Babylon.js",
-            "WebSocket",
             "Kafka",
-            "Protocol Buffers"
+            "WebGL",
+            "Babylon.js"
         ],
         "preferred_skills": [
             "Fiber",
             "Gin",
+            "Protocol Buffers",
+            "Prometheus",
+            "Grafana",
             "TanStack Query",
             "Zustand",
             "Mantine",
-            "Prometheus",
-            "Grafana",
             "React Flow",
             "Vitest",
             "Testing Library",
             "Playwright",
             "Storybook",
-            "i18n",
-            "Protocol Buffers"
+            "i18n"
         ],
         "experience_requirements": [
             "Bachelor degree.CS",
-            "5Y+ backend software engineering"
+            "5Y+"
         ],
         "soft_skills": [
             "highly motivated",
@@ -784,23 +808,22 @@
         "job_title": "Senior Robotics Engineer in Seoul",
         "responsibilities": [
             "Lead the mechanical design and development of vacuum robotic systems used in critical semiconductor manufacturing processes",
-            "Own robot architecture from concept through detailed design using first-principles engineering",
+            "Own robot architecture from concept through detailed design using first-principles engineering to ensure performance, reliability, and manufacturability",
             "Conduct structural deflection and stress analysis",
             "Perform fatigue and component lifetime prediction",
-            "Conduct vibration and modal analysis",
+            "Perform vibration and modal analysis",
             "Perform dynamic modeling for motor and drive selection",
-            "Collaborate with controls, software, and applications teams on motion control strategy",
+            "Develop motion control strategy",
             "Perform robot tuning and performance optimization",
-            "Analyze system-level tradeoffs between throughput, accuracy, vibration, and lifetime",
+            "Evaluate system-level tradeoffs between throughput, accuracy, vibration, and lifetime",
             "Provide mechanical leadership to ensure robust integration of hardware, motion, and control systems",
             "Lead failure analysis for development, production, or field issues",
             "Apply structured problem-solving methods such as 5-Why, Fishbone, and 8D to identify root cause and drive corrective action",
             "Champion reliability, robustness, and continuous improvement across designs",
             "Support hands-on build, bring-up, and qualification of new robotic products",
             "Lead technical transition from R&D into manufacturing and volume production",
-            "Drive Design for Manufacturing (DFM) and Design for Cost (DFC)",
-            "Maintain high reliability standards during product introduction",
-            "Collaborate with Product Management, Applications Engineering, Manufacturing, Quality, and Supply Chain",
+            "Drive Design for Manufacturing (DFM) and Design for Cost (DFC) while maintaining high reliability standards",
+            "Work with Product Management, Applications Engineering, Manufacturing, Quality, and Supply Chain",
             "Support customer interactions including requirement definition, design reviews, and technical issue resolution"
         ],
         "required_skills": [
@@ -812,8 +835,10 @@
             "Motion control systems",
             "Servo tuning",
             "Robot performance optimization",
-            "Vacuum robots",
-            "Semiconductor manufacturing equipment",
+            "Semiconductor OEM customer experience",
+            "Vacuum design",
+            "Contamination-sensitive design",
+            "Clean-room design",
             "Mandarin Chinese"
         ],
         "experience_requirements": [
@@ -835,30 +860,27 @@
         "responsibilities": [
             "Design the circuits and PCBs of the functional safety controller board",
             "Build the functions that detect a fault and bring the robot to a safe state",
-            "Run board fabrication",
-            "Bring-up and debugging",
+            "Run board fabrication, bring-up, and debugging",
             "Verify the safety functions",
-            "Take the board into production",
-            "Go through certification"
+            "Take the board into production and through certification"
         ],
         "required_skills": [
             "MCU-based embedded circuits",
             "PCB development",
-            "Digital circuits",
-            "Analog circuits",
-            "Power circuits",
+            "Digital circuit design",
+            "Analog circuit design",
+            "Power circuit design",
             "Component selection",
             "Schematic design",
-            "Debugging",
-            "Hardware verification",
-            "Lab instruments"
+            "Hardware debugging",
+            "Lab instrument usage"
         ],
         "preferred_skills": [
             "Functional safety implementation",
             "Requirements analysis",
-            "Verification against functional safety standards",
+            "Safety standards verification/certification",
             "MCU firmware development",
-            "Robot development",
+            "Robotics development",
             "Motor drive development",
             "Industrial controller development"
         ],
@@ -898,15 +920,16 @@
             "EMI/EMC Reliability Testing",
             "Functional Safety Process",
             "Hardware Architecture Design",
-            "Simulation Tools (Implied via 'Tool' keyword)",
-            "Project Experience in Autonomous Driving Control"
+            "I/F Matching Verification",
+            "Sample Production",
+            "Electrical Engineering",
+            "Control Engineering",
+            "Computer Engineering"
         ],
         "experience_requirements": [
-            "Bachelor's degree or higher in Electrical/Electronic/Control/Computer Engineering",
-            "Completion of relevant coursework",
-            "Experience in circuit and PCB design projects",
-            "Experience with circuit design tools",
-            "Participation in academic or external projects related to the role"
+            "Master's Degree or higher",
+            "Graduation by February 2027",
+            "Bachelor's degree in Electrical/Electronic/Control/Computer Engineering or related fields"
         ],
         "soft_skills": [
             "협업",
@@ -946,7 +969,11 @@
         ],
         "experience_requirements": [
             "Bachelor's or Master's degree in Electronics, Control, Mechanical, Automotive, or Computer Engineering",
-            "Field experience: 3Y+"
+            "1st Class Ordinary Driver's License (Large vehicle license preferred)",
+            "Experience driving passenger and commercial vehicles",
+            "Experience in autonomous driving/parking projects or competitions",
+            "Knowledge of autonomous parking systems (sensors/control)",
+            "Experience with ISO 26262/A-SPICE/SOTIF standards"
         ],
         "soft_skills": [
             "협업",
@@ -960,7 +987,7 @@
         "company": "Hyundai MOBIS",
         "job_title": "[신입-연구직] 시뮬레이션 평가 in Seoul",
         "responsibilities": [
-            "Develop autonomous vehicle performance evaluation technologies",
+            "Develop autonomous vehicle performance evaluation technology",
             "Define perception performance evaluation metrics and design judgment logic",
             "Build automated simulation evaluation pipelines (scenario generation–virtual simulation–result analysis)",
             "Execute batch evaluations based on large-scale scenarios and establish regression evaluation systems",
@@ -982,15 +1009,16 @@
             "3D Gaussian Splatting",
             "Computer Vision",
             "ADAS",
+            "Autonomous Driving",
             "Simulation Platforms",
-            "Synthetic Data Generation"
+            "Generative AI"
         ],
         "experience_requirements": [
-            "Master's degree or higher",
-            "Bachelor's degree in Computer Science, Electronics, Electrical Engineering, Mechanical Engineering, Robotics, or Artificial Intelligence"
+            "Master's Degree or higher",
+            "Bachelor's degree in Computer/Engineering/Electrical/Mechanical/AI fields"
         ],
         "soft_skills": [
-            "영어 면접 능력 (2 차 면접 시 실시됨)",
+            "영어 면접 능력 (2 차 면접 시 실시)",
             "사실과 다른 기재나 문서 증빙 불가 사항에 대한 정직성",
             "영업비밀 침해 방지를 위한 주의심"
         ],
@@ -1025,21 +1053,21 @@
             "Confluence"
         ],
         "experience_requirements": [
-            "Master's degree or higher in Robotics, Computer Science, Electrical/Mechanical Engineering, or a related technical field (or equivalent practical experience)",
-            "2-3 years of experience in software engineering, systems integration in Field Robotics industry",
-            "Experience in field deployment of complex technical systems"
+            "Master's degree or higher in Robotics, Computer Science, Electrical/Mechanical Engineering, or a related technical field",
+            "2-3 years of experience in software engineering, systems integration in Field Robotics industry"
         ],
         "soft_skills": [
             "Self-starter mindset",
             "Thrive in ambiguous and rapidly changing environments",
-            "Troubleshooting",
-            "Debugging",
-            "Communication skills",
+            "Excellent communication skills",
             "Ability to explain technical concepts to non-technical users",
-            "Interpersonal abilities (trusted advisor, partner with customer teams)",
-            "Collaboration across software, hardware, and AI research groups"
+            "Act as a trusted advisor",
+            "Resilience",
+            "Bold thinking",
+            "Creativity",
+            "Interdisciplinary expertise"
         ],
-        "employment_type": "Fulltime"
+        "employment_type": "Hybrid or Remote"
     },
     "4438075104": {
         "company": "(주)앤서레이",
@@ -1050,25 +1078,29 @@
         "required_skills": [
             "STM32",
             "MCU",
-            "Firmware",
-            "PCB Design"
+            "Firmware Development",
+            "PCB Design",
+            "Analog Circuit",
+            "High-Speed PCB"
         ],
         "preferred_skills": [
             "FPGA",
+            "Instrumentation Equipment Development",
             "Raman Spectroscopy",
             "Fluorescence Imaging",
             "Deep UV Spectroscopy",
             "Remote Sensing",
-            "Analog Circuit Design",
-            "High-speed PCB"
+            "Electrical Engineering",
+            "Systems Engineering",
+            "Computer Engineering"
         ],
         "experience_requirements": [
-            "Bachelor degree.CS",
-            "Field experience.0Y+"
+            "Bachelor Degree (4 years)",
+            "Entry-level candidates accepted"
         ],
         "soft_skills": [
             "프로젝트 중심의 수행 능력",
-            "기술 스택 명시 및 문서화 능력"
+            "기술 스택 명시 능력"
         ],
         "employment_type": "정규직, 인턴직"
     },
@@ -1076,21 +1108,18 @@
         "company": "Hyundai MOBIS",
         "job_title": "[신입-관리직] 생산기술_스마트팩토리(물류) in Seoul",
         "responsibilities": [
-            "Establishing the company's automation technology advancement strategy",
+            "Establishing the company's automation technology promotion strategy",
             "Research and developing automation technologies required for factory equipment, logistics, and operations",
             "Proactively preparing innovative and future-oriented technologies",
             "Defining and analyzing current problems to identify improvement points",
             "Applying identified improvements to the field",
-            "Operating based on a pre-emptive technology strategy",
+            "Operating based on a pre-existing generation technology strategy",
             "Developing and operating autonomous logistics technologies such as AMR (Autonomous Mobile Robots) and unmanned vehicles",
             "Developing next-generation robotics solutions",
             "Standardizing PLCs and developing intelligent control technologies",
-            "Performing pre-emptive diagnosis and verification of equipment/control safety",
+            "Performing advanced diagnosis and verification of equipment/control safety",
             "Developing energy solutions for ESG management",
-            "Integrating and operating control, automation, and robotics technologies to realize rapid global factory automation",
-            "Analyzing the operation structure of logistics automation equipment and control systems",
-            "Analyzing logistics data flows and deriving improvement tasks",
-            "Defining data between equipment/robots/systems and structuring/optimizing interfaces"
+            "Integrating, operating, and realizing the rapid development of global factory automation through control + automation + robotics technology"
         ],
         "required_skills": [
             "C#",
@@ -1109,13 +1138,12 @@
             "Field experience.2Y+"
         ],
         "soft_skills": [
-            "문제 정의",
+            "문제 정의 능력",
             "분석 능력",
-            "개선점 도출",
-            "현장 적용",
-            "팀워크 및 시너지 창출"
+            "개선점 도출 능력",
+            "현장 적용 능력"
         ],
-        "employment_type": "fulltime"
+        "employment_type": ""
     },
     "4433929838": {
         "company": "CJ Logistics",
@@ -1137,15 +1165,15 @@
             "MPS",
             "2D CAD",
             "3D CAD",
-            "Middleware",
+            "Middleware Development",
             "Project Management"
         ],
         "preferred_skills": [
             "Solidworks",
             "AutoCAD",
-            "Isaac",
-            "Sim",
-            "English (IML Level 2 or above)"
+            "Isaac Simulation",
+            "Simulation Software",
+            "English (IM2)"
         ],
         "experience_requirements": [
             "Logistics Center Design/Process Development, Modification/Improvement: 4 years+",
@@ -1155,8 +1183,7 @@
             "소통 능력",
             "협업 및 소통 능력",
             "프로젝트 기획 및 관리 경험",
-            "과제 기획, 업체 관리 및 일정 관리 경험",
-            "품질 및 산출물 관리 경험"
+            "과제 기획,업체 관리 및 일정 관리,품질 및 산출물 관리 경험"
         ],
         "employment_type": ""
     },
@@ -1249,17 +1276,19 @@
         "company": "SOCAR(쏘카)",
         "job_title": "[에이펙스모빌리티] Embedded Platform SW Engineer (센서킷 플랫폼) in Seoul",
         "responsibilities": [
-            "Embedded Platform SW 개발",
             "BSP/DriveOS 기반 시스템 이미지 빌드 및 유지 (커널 설정, 패치, 디바이스 트리 수정)",
-            "센서 브링업 및 통합 (GMSL 카메라, 라이다, 레이더, GNSS/IMU)",
+            "센서 (GMSL 카메라, 라이다, 레이더, GNSS/IMU) 브링업 및 통합",
             "하드웨어 연계 이슈 분석 및 디버깅",
-            "시각 동기 체계 구축 및 운영 (GNSS 기준 시각 전 센서에 분배, 하드웨어 트리거 기반 동시노출, PTP 기반 네트워크 센서 동기)",
-            "센서 스트림 실시간 인코딩 및 기록 파이프라인 관리 (코덱 선정, 용량/품질 최적화, 대역폭/스토리지 관리)",
-            "CAN 리버스 엔지니어링 수행 (차량 신호 추적, DBC 작성)",
-            "실시간 상태 추정 구현 (GNSS/RTK, IMU, 휠 오도메트리 퓨전으로 위치 및 자세 정보 생성)",
-            "데이터 품질 검증 지표 정의 및 자동 품질 리포트 파이프라인 구축",
-            "센서 캘리브레이션 도구 및 절차 개발 (intrinsic/extrinsic), 드리프트 모니터링",
-            "OTA 업데이트 및 플릿 원격 관리 (상태 모니터링, 로그 수집)"
+            "GNSS 기준 시각을 전 센서에 분배하는 동기 아키텍처 구축 및 운용",
+            "하드웨어 트리거 기반 카메라 동시노출",
+            "PTP 기반 네트워크 센서 동기 및 전 센서 공통 시간축 유지",
+            "센서 스트림 실시간 인코딩 및 기록 (코덱 선정, 용량·품질 최적화, 대역폭·스토리지 관리)",
+            "CAN 신호 추적 및 DBC 작성",
+            "GNSS/RTK, IMU, 휠 오도메트리 퓨전을 통한 수집 데이터의 위치 및 자세 정보 생성",
+            "동기 오차, 프레임 드롭, 기록 무결성, 타임스탬프 단조성 등 데이터 품질 지표 정의 및 자동 품질 리포트 파이프라인 구축",
+            "센서 캘리브레이션 도구 및 절차 (intrinsic/extrinsic) 개발 및 드리프트 모니터링",
+            "OTA 업데이트 수행 및 플릿 원격 관리 (상태 모니터링, 로그 수집)",
+            "플랫폼 SW 통합"
         ],
         "required_skills": [
             "Embedded Linux",
@@ -1272,7 +1301,8 @@
             "GNSS/RTK",
             "IMU fusion",
             "Wheel odometry fusion",
-            "Sensor calibration"
+            "Sensor calibration",
+            "OTA management"
         ],
         "preferred_skills": [
             "NVIDIA Jetson/DRIVE platform",
@@ -1280,7 +1310,7 @@
             "User-space camera stack",
             "GMSL/FPD-Link SerDes",
             "ROS 2",
-            "EKF (Extended Kalman Filter)"
+            "EKF (Extended Kalman Filter) state estimation"
         ],
         "experience_requirements": [
             "Embedded Linux: 5 years+"
@@ -1303,50 +1333,69 @@
             "turn real-world requirements into product improvements",
             "help customers adopt company technologies for simulation-ready assets",
             "help customers build industrial digital twins",
-            "help customers perform robotics simulation",
+            "help customers develop robotics simulation",
             "help customers create physically accurate virtual environments",
-            "understand, reproduce, debug, and resolve challenges across Omniverse, Isaac Sim, Isaac Lab, OpenUSD, and related simulation workflows",
-            "translate customer needs into clear bugs, prototypes, examples, documentation, tests, and product improvements that global engineering teams can act on",
-            "build and optimize industrial digital twin, robotics, SimReady, OpenUSD, CAD-conversion, asset-validation, rendering, physics, and performance workflows",
-            "develop tools, scripts, extensions, and automation that help customers validate assets, profile workloads, reproduce issues, and integrate Omniverse into engineering pipelines",
-            "collaborate with Omniverse, PhysX, Newton, Isaac, rendering, OpenUSD, and performance teams to improve platform capability, usability, reliability, and scalability",
-            "share best practices with customers, solution architects, DevTech, OVEX, and partners",
-            "capture reusable knowledge in runbooks, examples, training, and agent skills"
+            "understand customer challenges across Omniverse, Isaac Sim, Isaac Lab, OpenUSD, and related simulation workflows",
+            "reproduce customer challenges",
+            "debug customer challenges",
+            "resolve customer challenges",
+            "translate customer needs into clear bugs",
+            "translate customer needs into prototypes",
+            "translate customer needs into examples",
+            "translate customer needs into documentation",
+            "translate customer needs into tests",
+            "translate customer needs into product improvements",
+            "build industrial digital twin workflows",
+            "build robotics simulation workflows",
+            "build SimReady workflows",
+            "build OpenUSD workflows",
+            "build CAD-conversion workflows",
+            "build asset-validation workflows",
+            "build rendering workflows",
+            "build physics workflows",
+            "build performance workflows",
+            "develop tools to help customers validate assets",
+            "develop scripts to help customers profile workloads",
+            "develop extensions to help customers reproduce issues",
+            "develop automation to help customers integrate Omniverse into engineering pipelines",
+            "collaborate with Omniverse teams to improve platform capability, usability, reliability, and scalability",
+            "collaborate with PhysX teams to improve platform capability, usability, reliability, and scalability",
+            "collaborate with Newton teams to improve platform capability, usability, reliability, and scalability",
+            "collaborate with Isaac teams to improve platform capability, usability, reliability, and scalability",
+            "collaborate with rendering teams to improve platform capability, usability, reliability, and scalability",
+            "collaborate with performance teams to improve platform capability, usability, reliability, and scalability",
+            "share best practices with customers",
+            "share best practices with solution architects",
+            "share best practices with DevTech",
+            "share best practices with OVEX",
+            "share best practices with partners",
+            "capture reusable knowledge in runbooks",
+            "capture reusable knowledge in examples",
+            "capture reusable knowledge in training",
+            "capture reusable knowledge in agent skills"
         ],
         "required_skills": [
             "Python",
             "C++"
         ],
         "preferred_skills": [
-            "OpenUSD",
-            "CAD conversion",
-            "instancing",
-            "geometry processing",
-            "materials",
-            "asset validation",
-            "simulation-ready asset preparation",
-            "ROS 2",
+            "Omniverse",
             "Isaac Sim",
             "Isaac Lab",
-            "URDF",
-            "MJCF",
-            "sensors",
-            "controllers",
-            "HIL/SIL",
-            "sim-to-real validation",
-            "AI coding agents",
-            "agent skills",
+            "OpenUSD",
+            "PhysX",
+            "Newton",
+            "Warp",
             "CUDA",
             "RTX",
-            "rigid bodies",
-            "articulations",
-            "contact",
-            "friction",
-            "constraints",
-            "deformables",
-            "FEM",
-            "numerical solvers",
-            "multibody dynamics",
+            "ROS 2",
+            "URDF",
+            "MJCF",
+            "HIL/SIL",
+            "Sim-to-real validation",
+            "Reinforcement learning",
+            "Synthetic data",
+            "Sensor simulation",
             "Ansys",
             "Abaqus",
             "Nastran",
@@ -1357,12 +1406,32 @@
             "MATLAB",
             "Adams",
             "RecurDyn",
-            "reinforcement learning",
-            "synthetic data",
-            "sensor simulation"
+            "CAE tools",
+            "CAD pipelines",
+            "Real-time 3D systems",
+            "Large-scale visualization",
+            "Performance optimization",
+            "GPU workloads",
+            "Rigid bodies",
+            "Articulations",
+            "Contact",
+            "Friction",
+            "Constraints",
+            "Deformables",
+            "FEM",
+            "Numerical solvers",
+            "Multibody dynamics",
+            "Industrial automation",
+            "Digital factories",
+            "Automotive",
+            "Robotics",
+            "Manufacturing",
+            "Shipbuilding",
+            "Aerospace",
+            "Electronics"
         ],
         "experience_requirements": [
-            "B.S.,M.S.,or Ph.D.in Computer Science,Computer Engineering,Mechanical Engineering,Robotics,Applied Math,Physics,Aerospace,or a related field",
+            "B.S.,M.S.,or Ph.D.in Computer Science,Computer Engineering,Mechanical Engineering,Robotics,Applied Math,Physics,Aerospace,or a related field,or equivalent practical experience",
             "7+ years of relevant software or simulation engineering experience"
         ],
         "soft_skills": [
@@ -1373,34 +1442,40 @@
             "clear communication",
             "collaborating with customers, field teams, and engineers across cultures and time zones"
         ],
-        "employment_type": ""
+        "employment_type": "fulltime"
     },
     "4386388310": {
         "company": "Ludo Robotics",
         "job_title": "[Ludo Robotics] AI/ML Research Engineer (Robotics) (2년 이상) in Seoul",
         "responsibilities": [
-            "Develop advanced systems that scale laboratory-level robotics technology to reliable levels in complex real-world environments.",
-            "Lead cutting-edge research in physical AI core areas including SLAM and multi-modal sensor fusion for spatial intelligence, integrating VLA/VLM with control frameworks for precise manipulation, and trajectory optimization based on dynamics for autonomous control.",
+            "Develop advanced systems that scale robotics research from a lab level to reliable performance in complex real-world environments.",
+            "Lead cutting-edge research in physical AI core areas including SLAM, multi-modal sensor fusion for spatial intelligence, VLA/VLM integration with control frameworks, trajectory optimization, and dynamics-based autonomous control.",
             "Implement research ideas into actual robot behaviors.",
-            "Explore new learning architectures and training strategies to address unsatisfied scenarios.",
+            "Explore new learning architectures and training strategies to handle unsatisfied scenarios.",
             "Resolve the gap between theoretical and practical performance through Sim-to-Real transfer.",
             "Continuously verify and benchmark the performance of perception, exploration, and manipulation subsystems.",
-            "Develop tools and metrics for verifying and benchmarking subsystem performance.",
+            "Develop tools and metrics for system verification and benchmarking.",
             "Collaborate with hardware and infrastructure teams to implement end-to-end robot capabilities."
         ],
         "required_skills": [
             "Python",
             "C++",
+            "ML Frameworks",
             "ROS/ROS2",
             "MuJoCo",
             "Isaac Sim"
         ],
-        "preferred_skills": [],
+        "preferred_skills": [
+            "ICRA/IROS/RSS/CoRL/CVPR/ICCV Publications",
+            "Sensor Data Processing Algorithms",
+            "Hardware Bring-up/Debugging",
+            "Model Compression & On-Device Inference Optimization",
+            "Teleoperation Systems",
+            "Large-scale Robot Data Collection"
+        ],
         "experience_requirements": [
             "Master's degree in AI, Computer Science, Robotics, or Mechanical Engineering (or equivalent practical experience)",
-            "Strong foundation in Linear Algebra, Probability Theory, Numerical Optimization, and Rigid-body Dynamics",
-            "Proficiency in Python and C++ with ability to use major ML frameworks",
-            "Experience with robotic platforms and simulation environments"
+            "PhD degree in AI, Computer Science, or Robotics (Preferred)"
         ],
         "soft_skills": [
             "정답이 정해지지 않은 모호한 문제를 해결하는 과정 자체를 즐기는 능력",
@@ -1428,9 +1503,10 @@
         ],
         "required_skills": [
             "C/C++",
-            "goLang",
+            "GoLang",
             "Python",
             "Java",
+            "MQTT",
             "ROS/ROS2",
             "Linux"
         ],
@@ -1444,11 +1520,11 @@
             "3+ years of multi-robot control system or management platform development experience"
         ],
         "soft_skills": [
+            "도전심",
             "열정",
-            "도전 정신",
-            "다양한 시각에서 고민하기",
-            "활발하게 의견 나누기",
-            "새로운 기술과 정보에 귀 기울이고 공유하기",
+            "다양한 시각에서 고민하는 능력",
+            "활발하게 의견을 나누는 능력 (협업)",
+            "새로운 기술과 정보에 귀 기울이고 공유하는 능력",
             "아이디어를 특허로 출원하거나 자격증을 취득하며 성장하는 능력"
         ],
         "employment_type": "fulltime"
@@ -1457,79 +1533,21 @@
         "company": "Pragmatike",
         "job_title": "Embedded Systems & Cloud Engineer in Seoul",
         "responsibilities": [
-            "Design",
-            "develop",
-            "maintain firmware for wearable sensing devices (microcontrollers, sensor integration, real-time data acquisition)",
-            "Build reliable communication and data streaming between devices and cloud services for synchronized vision and tactile data",
-            "Design and operate the AWS stack (EC2, S3, Lambda, IoT Core) handling large-scale collection, storage and processing of multimodal data",
-            "Develop APIs, ingestion services and data pipelines in Python for high-throughput, reliable processing",
-            "Remotely deploy, monitor and maintain the device fleet and capture setups used at real-world collection sites",
-            "Turn field issues into engineering fixes",
-            "Occasional travel to sites",
-            "Troubleshoot issues across the whole chain, from device firmware to cloud deployment",
-            "Work with hardware, ML and data teams to define system requirements",
-            "Contribute to testing, documentation and continuous improvement of the data collection infrastructure"
-        ],
-        "required_skills": [
-            "C/C++",
-            "RTOS",
-            "Microcontrollers",
-            "Real-time systems",
-            "Sensor integration",
-            "Low-level programming",
-            "AWS EC2",
-            "AWS S3",
-            "AWS Lambda",
-            "AWS IoT Core",
-            "Python",
-            "API development",
-            "Data streaming services",
-            "Network security",
-            "Performance optimization",
-            "Monitoring and logging"
-        ],
-        "preferred_skills": [
-            "Robotics",
-            "Tactile or force sensing",
-            "Wearables",
-            "IoT devices",
-            "Sensor fusion",
-            "Time synchronization",
-            "Multi-camera capture",
-            "ML data pipelines",
-            "Robot learning datasets",
-            "Hardware field deployment",
-            "Remote device management"
-        ],
-        "experience_requirements": [
-            "Bachelor's degree or higher in Electrical Engineering, Computer Engineering, Computer Science or a related field",
-            "4+ years of engineering experience across embedded systems and cloud"
-        ],
-        "soft_skills": [
-            "Strong ownership",
-            "Ability to work independently",
-            "Comfort in fast-paced environments",
-            "Collaboration",
-            "Full-stack debugging"
-        ],
-        "employment_type": "Full-Time"
-    },
-    "4472426302": {
-        "company": "Pragmatike",
-        "job_title": "IoT & Cloud Infrastructure Engineer in Seoul",
-        "responsibilities": [
-            "Design",
-            "develop",
-            "maintain firmware for wearable sensing devices (microcontrollers, sensor integration, real-time data acquisition)",
-            "Build reliable communication and data streaming between devices and cloud services for synchronized vision and tactile data",
-            "Design and operate the AWS stack (EC2, S3, Lambda, IoT Core) handling large-scale collection, storage and processing of multimodal data",
-            "Develop APIs, ingestion services and data pipelines in Python for high-throughput, reliable processing",
-            "Remotely deploy, monitor and maintain the device fleet and capture setups used at real-world collection sites",
-            "Turn field issues into engineering fixes",
-            "Occasional travel to sites",
-            "Troubleshoot issues across the whole chain, from device firmware to cloud deployment",
-            "Work with hardware, ML and data teams to define system requirements",
-            "Contribute to testing, documentation and continuous improvement of the data collection infrastructure"
+            "Design, develop and maintain firmware for wearable sensing devices",
+            "Integrate sensors into microcontrollers",
+            "Implement real-time data acquisition systems",
+            "Build reliable communication and data streaming between devices and cloud services",
+            "Ensure synchronized capture of vision and tactile data",
+            "Design and operate AWS infrastructure (EC2, S3, Lambda, IoT Core)",
+            "Handle large-scale collection, storage, and processing of multimodal data",
+            "Develop APIs and ingestion services in Python",
+            "Create high-throughput and reliable data pipelines",
+            "Remotely deploy device fleets",
+            "Monitor and maintain field capture setups",
+            "Convert field issues into engineering fixes",
+            "Perform full-stack debugging across firmware, cloud, and hardware layers",
+            "Collaborate with hardware, ML, and data teams to define system requirements",
+            "Contribute to testing, documentation, and continuous improvement of the data collection infrastructure"
         ],
         "required_skills": [
             "C/C++",
@@ -1561,23 +1579,22 @@
             "Multi-camera capture",
             "ML data pipelines",
             "Robot learning datasets",
-            "Hardware deployment and support",
+            "Hardware field deployment",
             "Remote device management"
         ],
         "experience_requirements": [
-            "Bachelor's degree or higher in Electrical Engineering, Computer Engineering, Computer Science or a related field",
-            "4+ years of engineering experience across embedded systems and cloud"
+            "4+ years engineering experience across embedded systems and cloud",
+            "Bachelor's degree or higher in Electrical Engineering, Computer Engineering, Computer Science or a related field, or equivalent practical experience"
         ],
         "soft_skills": [
             "Strong ownership",
             "Ability to work independently",
-            "Comfort in fast-paced environments",
-            "Collaboration",
-            "Full-stack debugging"
+            "Comfort in fast-paced, experimental environments",
+            "Collaboration"
         ],
         "employment_type": "Full-Time"
     },
-    "4472423321": {
+    "4472426302": {
         "company": "Pragmatike",
         "job_title": "IoT & Cloud Infrastructure Engineer in Seoul",
         "responsibilities": [
@@ -1595,7 +1612,7 @@
             "Convert field issues into engineering fixes",
             "Perform full-stack debugging across firmware, cloud, and hardware layers",
             "Collaborate with hardware, ML, and data teams to define system requirements",
-            "Contribute to testing, documentation, and continuous improvement of the data collection infrastructure"
+            "Contribute to testing and documentation of the data collection infrastructure"
         ],
         "required_skills": [
             "C/C++",
@@ -1611,7 +1628,75 @@
             "Python",
             "API development",
             "Data streaming services",
-            "Network security",
+            "Networking",
+            "Security best practices",
+            "Performance optimization",
+            "Monitoring and logging"
+        ],
+        "preferred_skills": [
+            "Robotics",
+            "Tactile or force sensing",
+            "Wearables or IoT devices",
+            "Real-world data collection systems",
+            "Sensor fusion",
+            "Time synchronization",
+            "Multi-camera capture",
+            "ML data pipelines",
+            "Robot learning datasets",
+            "Hardware field deployment",
+            "Remote device management"
+        ],
+        "experience_requirements": [
+            "Bachelor's degree or higher in Electrical Engineering, Computer Engineering, Computer Science or a related field",
+            "4+ years of engineering experience across embedded systems and cloud"
+        ],
+        "soft_skills": [
+            "Strong ownership",
+            "Ability to work independently",
+            "Comfort in fast-paced, experimental environments",
+            "Collaboration"
+        ],
+        "employment_type": "Full-Time"
+    },
+    "4472423321": {
+        "company": "Pragmatike",
+        "job_title": "IoT & Cloud Infrastructure Engineer in Seoul",
+        "responsibilities": [
+            "Design, develop and maintain firmware for wearable sensing devices",
+            "Integrate sensors into microcontrollers",
+            "Implement real-time data acquisition systems",
+            "Build reliable communication and data streaming between devices and cloud services",
+            "Ensure synchronized capture of vision and tactile data",
+            "Design and operate AWS cloud infrastructure (EC2, S3, Lambda, IoT Core)",
+            "Handle large-scale collection, storage, and processing of multimodal data",
+            "Develop APIs and ingestion services in Python",
+            "Create high-throughput and reliable data pipelines",
+            "Remotely deploy device fleets",
+            "Monitor and maintain deployed hardware",
+            "Capture setups used at real-world collection sites",
+            "Convert field issues into engineering fixes",
+            "Perform full-stack debugging across firmware, cloud, and deployment layers",
+            "Collaborate with hardware teams to define system requirements",
+            "Contribute to testing of data collection infrastructure",
+            "Write documentation for the data collection system",
+            "Continuously improve the data collection infrastructure"
+        ],
+        "required_skills": [
+            "C/C++",
+            "RTOS",
+            "Microcontrollers",
+            "Real-time systems",
+            "Sensor integration",
+            "Low-level programming",
+            "AWS EC2",
+            "AWS S3",
+            "AWS Lambda",
+            "AWS IoT Core",
+            "Python",
+            "API development",
+            "Data streaming services",
+            "Networking",
+            "Security best practices",
             "Performance optimization",
             "Monitoring and logging"
         ],
@@ -1620,12 +1705,13 @@
             "Tactile or force sensing",
             "Wearables",
             "IoT devices",
+            "Real-world data collection systems",
             "Sensor fusion",
             "Time synchronization",
             "Multi-camera capture",
             "ML data pipelines",
-            "Robot learning datasets",
-            "Hardware field deployment",
+            "Datasets for robot learning",
+            "Hardware deployment and support",
             "Remote device management"
         ],
         "experience_requirements": [
@@ -1645,37 +1731,43 @@
         "company": "SpaceVision AI, Inc.",
         "job_title": "Robot Learning Engineer in Seoul",
         "responsibilities": [
-            "Connect on-site measured data collected by camera systems to robot manipulation pipelines",
+            "Connect real-world data collected by camera systems to robot manipulation pipelines",
             "Verify data within simulators and actual robot cells",
-            "Design and lead step-by-step gates from camera measurement design through 3D modeling, grasping simulation, and robot cell construction",
-            "Design the entire pipeline from on-site human behavior (camera measurement) to dataset accumulation, simulation, learning derivation, and actual robot application",
-            "Build a robot learning pipeline based on commercially deployed cameras and AI infrastructure on-site",
-            "Utilize various tools to improve simulation success efficiency across different environments using diverse datasets (NVIDIA, MuJoCo, etc.)",
-            "Apply NVIDIA Isaac Sim, GR00T, Cosmos in simulation or SIM2REAL environments",
+            "Design and lead the process from camera measurement design through 3D modeling, grasping simulation, and robot cell construction based on stage gates",
+            "Manage the full pipeline: camera measurement → dataset accumulation → simulation → learning derivation → actual robot application",
+            "Build a robot learning pipeline based on commercially deployed cameras and AI infrastructure in the field",
+            "Utilize various tools to improve simulation success efficiency across different environments using diverse datasets (e.g., NVIDIA, MuJoCo)",
+            "Apply NVIDIA Isaac Sim, GR00T, Cosmos for simulation or SIM2REAL environments",
             "Develop grasping and object manipulation learning based on Isaac Sim / MuJoCo"
         ],
         "required_skills": [
             "Deep Learning",
             "Imitation Learning",
             "Reinforcement Learning",
-            "Python",
-            "C++",
             "MuJoCo",
-            "Isaac Sim"
+            "Isaac Sim",
+            "Python",
+            "C++"
         ],
         "preferred_skills": [
-            "NVIDIA Isaac Lab",
-            "GR00T",
-            "RFM (Robot Foundation Model)",
+            "Robot Learning Datasets",
+            "Isaac Lab",
             "Blender",
             "Unity",
+            "AI Agent",
             "VLA (Vision-Language-Action)",
-            "Pick-and-place",
-            "3D Software"
+            "RFM (Robot Foundation Model)",
+            "Pick-and-Place",
+            "Startup Leadership"
         ],
         "experience_requirements": [
-            "ML model deployment on actual robot control systems",
-            "Robot industry trends and company knowledge"
+            "Deep understanding of Deep Learning models",
+            "Experience implementing Imitation Learning and Reinforcement Learning algorithms",
+            "Basic understanding of Simulation environments (MuJoCo, Isaac Sim)",
+            "Experience developing and optimizing ML models based on Python and C++",
+            "Experience applying learning models to actual robot control systems",
+            "Experience operating ML learning experiments, designing experiments, and analyzing failures",
+            "Business English proficiency for daily communication with multi-national team members"
         ],
         "soft_skills": [
             "비즈니스 영어 회화 능력",
@@ -1683,7 +1775,7 @@
             "주도적인 역할 수행 경험 (스타트업/소규모 팀)",
             "협업 능력 (AI·개발·사업팀 간)"
         ],
-        "employment_type": "fulltime"
+        "employment_type": "Full-time"
     },
     "4470304578": {
         "company": "Applied Intuition",
@@ -1697,14 +1789,16 @@
             "Define how simulation should be used across the development cycle",
             "Determine where fidelity matters and structure tuning and validation workflows",
             "Close the gap between simulated and real flight behavior",
-            "Collaborate frequently with US-based product and engineering teams to deliver features on shared roadmaps",
-            "Operate as the Korea-based extension of the global product teams",
-            "Contribute to system-level design and architecture ensuring scalability, reliability, and performance",
-            "Run technical deep dives with Korean defense customers on selected features",
+            "Collaborate frequently with US-based product and engineering teams",
+            "Operate as the Korea-based extension of global product teams",
+            "Contribute to system-level design and architecture",
+            "Ensure scalability, reliability, and performance",
+            "Run technical deep dives with Korean defense customers",
             "Probe operational requirements and clarify ambiguous needs",
             "Translate learned information into product specifications and roadmap input",
             "Guide customers on how to get the most out of tools when developing their own multi-agent unmanned systems",
-            "Draw on hands-on experience in mentoring engineers and sharing domain knowledge across the Korea team"
+            "Draw on hands-on experience to mentor engineers",
+            "Share domain knowledge across the Korea team"
         ],
         "required_skills": [
             "Python",
@@ -1717,9 +1811,9 @@
             "drone swarming",
             "path planning",
             "aerospace control systems",
+            "simulation platforms",
             "ML training infrastructure",
-            "robotics developer tooling",
-            "defense simulation platforms"
+            "developer tooling for robotics/autonomy/defense"
         ],
         "experience_requirements": [
             "Bachelor's or Master's degree in Aerospace Engineering, Computer Science, Electrical Engineering, Robotics, or a related field",
@@ -1728,13 +1822,13 @@
         "soft_skills": [
             "problem-solving",
             "collaboration",
-            "mentoring",
-            "leadership",
             "communication",
-            "technical discussion facilitation",
+            "leadership",
+            "mentoring",
+            "technical discussions",
             "customer engagement",
-            "assumption challenging",
-            "design trade-off explanation"
+            "challenging assumptions",
+            "explaining design trade-offs"
         ],
         "employment_type": "full-time"
     },
@@ -1757,7 +1851,8 @@
             "Probe operational requirements and clarify ambiguous needs",
             "Translate learned information into product specifications and roadmap input",
             "Guide customers on how to get the most out of tools when developing their own multi-agent unmanned systems",
-            "Draw on hands-on experience to mentor engineers and share domain knowledge across the Korea team"
+            "Draw on hands-on experience in guiding customers",
+            "Mentor engineers and share domain knowledge across the Korea team"
         ],
         "required_skills": [
             "Python",
@@ -1766,29 +1861,17 @@
         "preferred_skills": [
             "PX4",
             "ArduPilot",
-            "Reinforcement Learning",
-            "Flight control stacks",
-            "Autopilot software",
-            "Ground control systems",
-            "Data link elements",
             "ATR",
-            "Drone swarming",
-            "Path planning",
-            "Aerospace control systems",
-            "Simulation platforms",
+            "drone swarming",
+            "path planning",
+            "aerospace control systems",
             "ML training infrastructure",
-            "Developer tooling",
-            "Robotics applications",
-            "Autonomy applications",
-            "Defense applications",
-            "Closed-network deployment",
-            "Air-gapped deployment"
+            "robotics developer tooling",
+            "defense simulation platforms"
         ],
         "experience_requirements": [
             "Bachelor's or Master's degree in Aerospace Engineering, Computer Science, Electrical Engineering, Robotics, or a related field",
-            "5+ years of professional engineering experience, or equivalent research experience, in a fast-paced, customer-oriented environment",
-            "Hands-on experience in Unmanned aerial systems development (building and flying real unmanned aircraft)",
-            "Hands-on experience in Multi-agent optimization and control (researching or engineering algorithms for mission coordination using ML methods)"
+            "5+ years of professional engineering experience, or equivalent research experience"
         ],
         "soft_skills": [
             "Strong problem-solving skills",
@@ -1808,12 +1891,12 @@
         "company": "Hyundai AutoEver",
         "job_title": "[Tech] AI Engineer - Physical AI Engineer in Seoul",
         "responsibilities": [
-            "Develop autonomous decision-making AI agent systems integrating LLMs, vision models, and reinforcement learning.",
-            "Build multi-modal sensor-based environment perception and autonomous navigation agents.",
-            "Conduct policy learning, agent training, and optimization using simulation environments.",
-            "Design ReACT architecture and develop LLM-based agent frameworks through tool and API integration.",
-            "Implement robot control and agent systems using Python, C++, and TypeScript.",
-            "Utilize robot simulation environments (ROS, Gazebo, PyBullet, IsaacGym) and computer vision technologies."
+            "Develop autonomous decision-making AI agent systems integrating LLMs, vision models, and reinforcement learning",
+            "Build multi-modal sensor-based environment perception and autonomous navigation agents",
+            "Conduct policy learning, agent training, and optimization using simulation environments",
+            "Design ReACT architecture and develop LLM-based agent frameworks through tool and API integration",
+            "Implement robot control and agent systems using Python, C++, and TypeScript",
+            "Utilize robot simulation environments (ROS, Gazebo, PyBullet, IsaacGym) and computer vision technologies"
         ],
         "required_skills": [
             "LLM",
@@ -1823,65 +1906,39 @@
             "C++",
             "TypeScript",
             "ROS",
-            "ROS 2",
+            "ROS2",
             "Computer Vision",
-            "ReACT Architecture",
-            "PyTorch",
-            "TensorFlow",
-            "Hugging Face Transformers",
-            "Vector Databases",
-            "Prompt Engineering",
-            "Git",
-            "Docker",
-            "REST API",
-            "gRPC API"
+            "Simulation"
         ],
         "preferred_skills": [
-            "LLM",
-            "VLA",
-            "AI/ML",
-            "Python",
-            "C++",
-            "TypeScript",
-            "ROS",
-            "ROS 2",
-            "Computer Vision",
-            "ReACT Architecture",
-            "PyTorch",
-            "TensorFlow",
-            "Hugging Face Transformers",
-            "Vector Databases",
-            "Prompt Engineering",
-            "Git",
-            "Docker",
-            "REST API",
-            "gRPC API",
             "GPT",
             "Claude",
             "LLaMA",
             "LangChain",
             "AutoGPT",
             "OpenAI Assistants API",
-            "IsaacGym",
-            "PyBullet",
-            "Gazebo"
+            "PyTorch",
+            "TensorFlow",
+            "Hugging Face Transformers",
+            "Vector Databases",
+            "Prompt Engineering"
         ],
         "experience_requirements": [
-            "Bachelor degree in Computer Engineering, Robotics, or AI/ML",
+            "Bachelor degree in Computer Science, Robotics, or AI/ML",
             "1+ years of experience in AI Agent systems or LLM-based applications",
             "1+ years of practical experience in Robotics and Embodied AI",
-            "3+ years of practical experience in Robotics and Simulation technologies (ROS/ROS 2, sensor processing, computer vision)",
-            "Experience in developing Deep Learning automation frameworks",
+            "3+ years of practical experience in Robotics and Simulation technologies (ROS/ROS2, sensor processing, computer vision)",
+            "Experience developing deep learning automation frameworks",
             "5+ years of Python and C++ programming experience",
-            "Experience in Git, Docker, REST/gRPC API development and deployment"
+            "Experience with Git, Docker, REST/gRPC API development and deployment"
         ],
         "soft_skills": [
             "도전심",
             "열정",
             "다양한 시각에서 고민하는 능력",
-            "활발하게 의견을 나누는 능력",
-            "새로운 기술과 정보에 귀 기울이고 공유하는 능력",
-            "아이디어를 특허로 출원하거나 자격증을 취득하며 성장하는 능력"
+            "활발하게 의견을 나누는 능력 (협업/의사소통)",
+            "새로운 기술과 정보에 귀 기울이고 공유하는 능력 (학습/공유)",
+            "아이디어를 특허로 출원하거나 자격증을 취득하며 성장하는 능력 (성장 마인드)"
         ],
         "employment_type": "fulltime"
     },
@@ -1899,11 +1956,11 @@
         "company": "CJ Logistics",
         "job_title": "[TES물류기술연구소] 로봇 S/W Engineer (Physical AI 개발) 경력사원 모집 in Seoul",
         "responsibilities": [
-            "Develop Physical AI-based logistics work specialized robot foundation models and humanoid robot control systems",
-            "Develop humanoid robot simulator and control S/W",
+            "Develop Physical AI-based logistics task-specific robot foundation models and humanoid robot control systems",
+            "Develop humanoid robot simulators and control software",
             "Develop and apply Physical AI-based robot foundation models (utilizing VLA models, etc.)",
-            "Perform robot autonomous behavior learning in collaboration with research institutions",
-            "Develop operation systems for on-site demonstration and introduction of AI logistics robots based on actual sites"
+            "Perform autonomous behavior learning of robots in collaboration with research institutions",
+            "Develop operational systems for field demonstration and on-site deployment of AI logistics robots based on actual sites"
         ],
         "required_skills": [
             "C",
@@ -1915,7 +1972,7 @@
         ],
         "preferred_skills": [],
         "experience_requirements": [
-            "Master's degree or above (AI, Robotics, Mechanical, Electrical, etc.)",
+            "Master's degree or above (AI, Robotics, Mechanical Engineering, Electrical Engineering, etc.)",
             "2+ years of experience in multi-joint robot system development and control software development"
         ],
         "soft_skills": [
@@ -1945,35 +2002,34 @@
             "Numerical Integration",
             "Stiffness Handling",
             "Model Reduction",
-            "Simulation Validation",
-            "HIL/SIL Workflows",
-            "Controller Co-simulation",
             "ROS 2",
+            "URDF",
+            "OpenUSD",
+            "HIL/SIL Workflows",
             "Simulink",
             "Simscape",
             "CAD Pipelines",
-            "URDF",
-            "MJCF",
-            "OpenUSD",
-            "GPU Accelerated Computing",
+            "MJCF"
+        ],
+        "preferred_skills": [
             "CUDA",
             "Warp",
             "Reinforcement Learning",
             "Sim-to-Real Robotics",
-            "Robotics Simulation at Scale"
-        ],
-        "preferred_skills": [
-            "Publications in ICRA, IROS, RSS, SCA, SIGGRAPH, NeurIPS",
+            "Robotics Simulation at Scale",
             "Omniverse",
             "PhysX",
             "Newton",
             "Isaac Sim",
             "Isaac Lab",
-            "Industrial Digital Twin Platforms"
+            "Industrial Digital Twins"
         ],
         "experience_requirements": [
-            "B.Sc. (or equivalent experience) or M.Sc. or Ph.D.",
-            "8+ years of experience in Computer Science, Computer Engineering, Robotics, Applied Math, Physics, or a related field"
+            "B.Sc. (or equivalent experience)",
+            "M.Sc.",
+            "Ph.D.",
+            "8+ years of experience in Computer Science, Computer Engineering, Robotics, Applied Math, Physics, or a related field",
+            "Track record of building or leading simulation software used in production engineering"
         ],
         "soft_skills": [
             "vision",
@@ -1992,12 +2048,9 @@
             "Flow Matching 기반 행동 모델 연구",
             "대규모 로봇 데이터 사전학습(Physical AI SFT) 방법론 개발",
             "강화학습(RL/GRPO) 기반 후학습 방법론 개발",
-            "Embodied Reasoning VLM(ER VLM) 설계 및 개발",
-            "로봇용 Agent 설계 및 개발",
-            "시각 인식 및 판독 능력 내재화",
-            "온디바이스 서빙 최적화",
-            "LLM/VLM 기반 로봇 Agent 아키텍처 설계 (태스크 플래닝, 도구 호출, 계층적 오케스트레이션)",
-            "로봇(Manipulator/Humanoid) 실증 프로젝트 수행"
+            "Embodied Reasoning VLM(ER VLM) 및 로봇용 Agent 설계 및 개발",
+            "VLM의 시각 인식·판독 능력 내재화 및 온디바이스 서빙 최적화",
+            "LLM/VLM 기반 로봇 Agent 아키텍처(태스크 플래닝, 도구 호출, 계층적 오케스트레이션) 설계 및 적용"
         ],
         "required_skills": [
             "PyTorch",
@@ -2048,16 +2101,16 @@
             "ROS 2",
             "Isaac Sim",
             "MuJoCo",
-            "Force/Torque Sensors",
-            "Tactile Sensors",
-            "Robot Arms",
+            "Force/Torque sensors",
+            "Tactile sensors",
+            "Robot arms",
             "Grippers",
-            "Imitation Learning",
-            "Reinforcement Learning"
+            "Imitation learning",
+            "Reinforcement learning"
         ],
         "experience_requirements": [
-            "Hands-on experience operating real robot hardware (simulation-only does not qualify)",
-            "Experience directly implementing and validating at least one of: robot perception, learning, control, or manipulation"
+            "Hands-on experience operating and experimenting with real robot hardware (simulation-only experience does not qualify)",
+            "Experience directly implementing and validating at least one of robot perception, learning, control, or manipulation"
         ],
         "soft_skills": [
             "English communication skills"
@@ -2068,7 +2121,7 @@
         "company": "H.MedicGear Inc.",
         "job_title": "로봇 기구부 설계 CAD for medical robots in Seoul",
         "responsibilities": [
-            "Design and develop the instrument arm for a laparoscopic surgery assistive robot",
+            "Design and develop the instrument arm for a laparoscopic surgery assistance robot",
             "Upgrade existing prototypes to productize them"
         ],
         "required_skills": [
@@ -2093,10 +2146,10 @@
             "Shape the application architecture internally, with a focus on planning and control",
             "Collaborate closely with architecture and software development teams",
             "Integrate and adapt company solutions in target vehicles",
-            "Ensure that both the planner and controller are adapted and tuned to meet desired vehicle dynamics performance metrics and functionality",
+            "Ensure that both the planner and controller are adapted and tuned to meet the desired vehicle dynamics performance metrics and functionality",
             "Lead bring-up activities",
             "Provide technical support to resolve functional and planning & control related issues",
-            "Perform and leverage in-vehicle and simulation test drives for functional and performance analysis on recorded data",
+            "Perform and leverage in-vehicle and simulation test drives for functional and performance analysis on the recorded data",
             "Work with partners to efficiently integrate hardware and software components",
             "Understand the system architecture",
             "Profile performance",
@@ -2105,7 +2158,7 @@
             "Deploy solutions to customers"
         ],
         "required_skills": [
-            "C/C++",
+            "C++",
             "Python",
             "Deep Learning",
             "Autonomous Driving",
@@ -2116,8 +2169,7 @@
             "Vehicle Dynamics",
             "State Estimation",
             "Trajectory Generation",
-            "Simulation to Hardware",
-            "Planning & Control"
+            "Simulation to Hardware Deployment"
         ],
         "preferred_skills": [
             "Company DRIVE Platform",
@@ -2128,22 +2180,22 @@
             "ISO 26262 FuSa",
             "ISO 21448 SOTIF",
             "ASPICE",
+            "Planning & Control Solutions",
+            "Diverse Vehicle Platforms",
             "Open-source Projects",
             "Mentorship"
         ],
         "experience_requirements": [
-            "5+ years of work related experience in software development related to deep learning and/or autonomous driving technologies",
+            "5+ years work related experience in software development related to deep learning and/or autonomous driving technologies",
             "BS/MS in computer science, robotics, electrical engineering, or related technical field (or equivalent experience)"
         ],
         "soft_skills": [
             "passionate",
             "hands-on",
             "diversity-focused",
-            "deep analytical skills",
-            "innovative solutions",
-            "outstanding attention to details",
-            "adaptability",
-            "mentorship"
+            "analytical",
+            "innovative",
+            "attention to details"
         ],
         "employment_type": ""
     },
@@ -2158,7 +2210,7 @@
             "Develop automated map generation and maintenance algorithms for robot autonomous navigation",
             "Develop real-time path planning and motion control algorithms for mobile robots",
             "Develop real-time swarm navigation algorithms for multi-robot systems",
-            "Implement path planning and collision avoidance in multi-robot systems"
+            "Implement path planning and collision avoidance"
         ],
         "required_skills": [
             "LiDAR",
@@ -2197,7 +2249,7 @@
             "Enable action constraints, halts, retries, and safety recovery for reliable bimanual manipulation",
             "Develop Bimanual Manipulation Technology",
             "Develop Imitation Learning models",
-            "Develop Vision Language Action models",
+            "Develop Vision Language Action (VLA) models",
             "Improve VLA model performance using reinforcement learning",
             "Develop Bimanual Manipulation Safety Assurance Technology",
             "Implement AI model reliability-based safety control",
@@ -2212,10 +2264,9 @@
         ],
         "preferred_skills": [],
         "experience_requirements": [
-            "Bachelor degree.CS",
-            "Bachelor degree.AI",
-            "Bachelor degree.EE",
-            "Field experience.3Y+"
+            "Bachelor degree.Electrical Engineering,Artificial Intelligence,Computer Science or related field",
+            "Professional experience.3Y+",
+            "Experience in robot manipulation using IL, RL, or VLA"
         ],
         "soft_skills": [],
         "employment_type": "fulltime"
@@ -2224,7 +2275,7 @@
         "company": "42dot",
         "job_title": "Computer Vision Engineer (Autonomous Driving) in Seoul",
         "responsibilities": [
-            "Research and develop 3D computer vision and machine learning algorithms for autonomous driving",
+            "Conduct research and develop 3D computer vision and machine learning algorithms for autonomous driving",
             "Develop 3D shape modeling, object pose estimation, and tracking algorithms",
             "Research self-supervised representation learning using large-scale unlabeled scene data",
             "Develop world models and closed-loop simulation technologies for autonomous driving",
@@ -2232,24 +2283,18 @@
             "Design efficient and scalable computer vision systems"
         ],
         "required_skills": [
-            "Computer Vision",
-            "Machine Learning",
             "Python",
             "C++"
         ],
         "preferred_skills": [
-            "Autonomous Driving",
-            "Robotics",
-            "3D Vision",
-            "Sensor Fusion",
+            "CUDA",
+            "OpenCL",
             "SLAM",
             "Depth Estimation",
             "3D Reconstruction",
             "Pose Estimation",
-            "CUDA",
-            "OpenCL",
+            "Sensor Fusion",
             "VR/AR Development",
-            "Academic Publications (CVPR, ICCV, ECCV, TPAMI, IJCV)",
             "Cloud ML Operations"
         ],
         "experience_requirements": [
@@ -2263,11 +2308,11 @@
         "company": "42dot",
         "job_title": "Simulation Engineer (Autonomous Driving) in Seoul",
         "responsibilities": [
-            "Design and develop high-fidelity simulation environments to validate and improve the performance of Autonomous Driving Systems",
+            "Design and develop high-fidelity simulation environments to validate and improve the performance of autonomous driving systems",
             "Implement vehicle models, sensor models, and environmental models within the simulation framework",
-            "Design and execute simulation scenarios to validate and verify the performance of Perception, Planning, and Control algorithms",
+            "Design and execute simulation scenarios to validate and verify the performance of perception, planning, and control algorithms",
             "Collaborate with cross-functional teams (Software Engineers, Robotics Engineers, Data Scientists) to integrate simulation tools into the development pipeline",
-            "Analyze simulation results to derive insights and propose improvements for system performance and reliability"
+            "Analyze simulation results to derive insights and propose improvements for autonomous driving system performance and reliability"
         ],
         "required_skills": [
             "C/C++",
@@ -2287,14 +2332,13 @@
             "Cloud-based Simulation"
         ],
         "experience_requirements": [
-            "M.S.or Ph.D.degree in a relevant engineering discipline",
-            "Project experience related to simulation,autonomous vehicles,or robotics",
-            "Experience working with cloud technologies such as AWS,GCP,or Azure",
-            "Experience developing and integrating middleware such as ROS/ROS2"
+            "Master's degree or Ph.D. in a relevant engineering discipline",
+            "Project experience related to simulation, autonomous vehicles, or robotics"
         ],
         "soft_skills": [
             "Strong communication and collaboration skills",
-            "Collaboration with cross-functional teams"
+            "Collaboration with cross-functional teams (Software Engineers, Robotics Engineers, Data Scientists)",
+            "Ability to work smoothly with various organizations"
         ],
         "employment_type": ""
     },
@@ -2311,58 +2355,51 @@
             "차량-소프트웨어 인터페이스 최적화 및 시스템 성능 안정화"
         ],
         "required_skills": [
-            "Vision-Language-Action (VLA)",
-            "Multimodal AI",
-            "End-to-End autonomous driving",
+            "PyTorch",
             "C++",
             "Python",
-            "Data structures and algorithms",
-            "Linux software development",
-            "FP8 quantization",
-            "INT8 quantization",
-            "Transformer-based multimodal models",
-            "NVIDIA Drive OS",
-            "QNX",
+            "Linux",
             "TensorRT",
             "ONNX",
-            "CUDA"
+            "CUDA",
+            "NVIDIA Drive OS",
+            "QNX"
         ],
         "preferred_skills": [
-            "PyTorch",
-            "Large Language Model (LLM)",
+            "Vision-Language-Action (VLA)",
             "Vision-Language Model (VLM)",
-            "Real-time inference optimization",
-            "Embedded testing",
-            "Vehicle-SW interface optimization",
-            "Simulation environment development"
+            "Large Language Model (LLM)",
+            "FP8 Quantization",
+            "INT8 Quantization",
+            "Transformer-based Multimodal Models",
+            "End-to-End Autonomous Driving"
         ],
         "experience_requirements": [
-            "6 years of related job experience",
-            "4 years of related job experience with a Master's degree",
-            "Expected to graduate in February 2027 or already graduated with a PhD"
+            "Bachelor degree, 6Y+",
+            "Master degree, 4Y+"
         ],
         "soft_skills": [
             "긴밀하게 협업",
-            "이론과 실무를 겸비한 전문가로 성장할 수 있는 능력 (실무 경험)",
+            "이론과 실무를 겸비한 전문가로 성장할 수 있는 역량 (실무 경험)",
             "인성검사 통과"
         ],
-        "employment_type": ""
+        "employment_type": "Fulltime"
     },
     "4459266542": {
         "company": "Hyundai Motor Company",
         "job_title": "[Robotics Lab] Articulated Robot System SW Development in Seoul",
         "responsibilities": [
-            "Integrate and optimize robot systems",
-            "Develop and verify software based on real-time and heterogeneous communication",
-            "Achieve stable robot system operation",
-            "Designing and integrating communication architecture across heterogeneous systems",
-            "Optimizing overall system processing efficiency and performance",
-            "Managing real-time OS tasks and developing related architecture",
-            "Developing front-end applications for robot control",
-            "Building UI-based robot operation environments",
-            "Developing robot behavior/task managers",
-            "Building robot control frameworks based on reinforcement learning and imitation learning",
-            "Building systems for applying state-of-the-art AI learning-based control technologies such as VLA"
+            "integrate and optimize robot systems",
+            "develop and verify software based on real-time and heterogeneous communication",
+            "achieve stable robot system operation",
+            "designing and integrating communication architecture across heterogeneous systems",
+            "optimizing overall system processing efficiency and performance",
+            "managing real-time OS tasks and developing related architecture",
+            "developing front-end applications for robot control",
+            "building UI-based robot operation environments",
+            "developing robot behavior/task managers",
+            "building robot control frameworks based on reinforcement learning and imitation learning",
+            "building systems for applying state-of-the-art AI learning-based control technologies such as VLA"
         ],
         "required_skills": [
             "C/C++",
@@ -2380,10 +2417,7 @@
             "3 years of robot system software experience"
         ],
         "soft_skills": [
-            "fluent written and oral business communication",
-            "ability to integrate and optimize systems",
-            "problem-solving (implied by 'develop and verify', 'optimize', 'designing')",
-            "adaptability (implied by 'recruitment schedule may be adjusted depending on the progress')"
+            "fluent in both written and oral business communication"
         ],
         "employment_type": ""
     },
@@ -2403,11 +2437,10 @@
             "Develop multi-camera calibration pipelines",
             "Apply deep-learning-based perception algorithms (object detection/segmentation)",
             "Evaluate model optimization for perception algorithms",
-            "Design feature-based/direct front ends for VSLAM",
+            "Design and implement initialization/bootstrapping algorithms to create maps from scratch after landing without a prior map",
             "Develop 3D lunar-surface mapping algorithms",
             "Implement loop-closure algorithms",
-            "Design graph-optimization/filter-based back ends for VSLAM",
-            "Correct accumulated drift in localization systems",
+            "Design graph-optimization/filter-based back ends to correct accumulated drift",
             "Develop camera- and IMU-based sensor fusion algorithms for six-degree-of-freedom (6-DoF) pose estimation",
             "Implement camera-IMU time synchronization and extrinsic calibration",
             "Optimize alignment accuracy through sensor-noise and drift compensation",
@@ -2421,7 +2454,6 @@
             "VSLAM",
             "VIO",
             "Perception Algorithms",
-            "Sensor Fusion",
             "Path Planning",
             "Simulator Validation"
         ],
@@ -2454,35 +2486,31 @@
         "responsibilities": [
             "Design and build agentic systems and deep learning applications that deliver ADAS solutions",
             "Develop creative workflows, models, and simulations to productize company driver assistance systems",
-            "Integrate LLM/VLM-powered agents with automated bug diagnosis and triaging flows",
+            "Design and deploy LLM/VLM-powered agents for use cases across the autonomous driving stack, including automated bug diagnosis and triaging flows",
             "Develop and optimize innovative deep learning models for robotics and ADAS systems",
-            "Build workflows, models, and simulations to productize driver assistance capabilities",
-            "Develop agentic workflows for SIL and HIL solutions",
-            "Integrate SIL/HIL solutions with validation and test infrastructure",
-            "Collaborate with solutions architecture, validation, firmware, and customer-facing teams to deliver features from prototype through production readiness"
+            "Build workflows, models, and simulations to productize company driver assistance capabilities",
+            "Develop agentic workflows for SIL and HIL solutions and integrate them with validation and test infrastructure",
+            "Collaborate with solutions architecture, validation, firmware, and customer-facing teams to deliver features from prototype through SIL/HIL toward production readiness"
         ],
         "required_skills": [
             "Python",
             "C/C++",
             "LLM/VLM APIs",
-            "LangChain",
-            "AutoGen",
-            "CrewAI",
+            "Agent Frameworks",
+            "Embedded Systems",
+            "SIL/HIL",
             "Git",
             "Docker",
-            "CI/CD",
-            "SIL/HIL",
-            "AUTOSAR",
-            "Linux-based automotive software"
+            "CI/CD"
         ],
         "preferred_skills": [
             "PhD in Robotics and Deep Learning",
-            "LoRA/QLoRA fine-tuning",
-            "Open-source model fine-tuning (Llama-3, Mistral, Qwen)",
-            "Automated software verification/fuzzing/symbolic execution"
+            "LoRA/QLoRA Fine-tuning",
+            "ROS (implied via robotics context)",
+            "Automated Software Verification/Fuzzing/Symbolic Execution"
         ],
         "experience_requirements": [
-            "BS/MS or higher in Computer Engineering, Computer Science, Electrical Engineering, Robotics, or a related field",
+            "BS/MS or higher in Computer Engineering, Computer Science, Electrical Engineering, Robotics, or related field",
             "2+ years of relevant professional software engineering experience"
         ],
         "soft_skills": [
@@ -2500,12 +2528,12 @@
         "job_title": "Artificial Intelligence Engineer in Seoul",
         "responsibilities": [
             "Develop VLA/VLM-based robot perception, reasoning, and control AI algorithms",
-            "Design Robotics Foundation Models and learning pipelines based on real-world environmental data",
+            "Design Robotics Foundation Model and learning pipelines based on real-world environment data",
             "Plan, design, and develop AI features for next-generation Grill X and new robots",
-            "Develop functions for task understanding and behavior planning using vision, sensor, and robot state data",
-            "Apply on-device/edge inference for AI models and integrate with product software",
+            "Develop work understanding and action planning functions using vision, sensor, and robot state data",
+            "Apply on-device/edge inference of AI models and integrate with product software",
             "Analyze, improve, and troubleshoot SW/AI issues occurring in actual usage environments",
-            "Collaborate with organization, system, control, and product teams to optimize robot system performance"
+            "Collaborate with organization, full-stack, control, and product teams to optimize robot system performance"
         ],
         "required_skills": [
             "Python",
@@ -2549,7 +2577,8 @@
         "job_title": "[EnIT] IT PM - 서비스 Robot PM 및 필드/HW/SW 엔지니어 in Seoul",
         "responsibilities": [
             "로보틱스 SI 프로젝트 기술표준 수립",
-            "RFP 및 제안서 작성",
+            "RFP 작성",
+            "제안서 작성",
             "서비스로봇 미션 기획",
             "관리자/사용자 서비스 구조 및 시나리오 기획",
             "로봇주행시스템 API/SDK 분석, 연동, 테스트",
@@ -2567,24 +2596,20 @@
             "REST API",
             "ROS/ROS2",
             "Linux",
-            "Embedded Systems",
             "PLC",
-            "Robot Hardware",
-            "System Integration"
+            "Embedded Systems"
         ],
         "preferred_skills": [
-            "Robot Hardware Development Engineer",
-            "Robot Software Development Engineer",
-            "Robot Mechanism Development Engineer",
-            "English Communication",
-            "Project Management",
-            "Change Management"
+            "Robot Hardware Development Engineer Certification",
+            "Robot Software Development Engineer Certification",
+            "Robot Mechanism Development Engineer Certification",
+            "English Communication Skills"
         ],
         "experience_requirements": [
-            "Robotics SI Project Experience",
+            "Robotic SI Project Experience",
             "Robot SI Technical Expertise (Robot System Architecture, Programming Languages C/C++, Python, Matlab, REST API, ROS/ROS2)",
             "Linux OS Understanding and Embedded Systems Experience",
-            "PLC, Robot Hardware and Communication, System Integration Experience"
+            "PLC, Robot HW & Communication, System Integration Experience"
         ],
         "soft_skills": [
             "영어 커뮤니케이션 능력",
@@ -2602,7 +2627,7 @@
             "Design and lead development of various features to safely deliver customers' packages using Computer Vision and Machine Learning algorithms",
             "Oversee and apply core Machine Learning algorithms for indoor/outdoor autonomous driving robots (e.g., moving obstacle position/speed estimation, motion prediction, drivable area detection, pedestrian/signal light recognition)",
             "Lead research and early development of next-generation technologies including integrated perception-prediction-planning model learning and Vision-Language-Action (VLA) models",
-            "Collaborate with engineers from various backgrounds (autonomous driving software, embedded systems) to lead successful productization of projects"
+            "Collaborate with engineers from various backgrounds in autonomous driving software and embedded systems to lead successful productization of projects"
         ],
         "required_skills": [
             "Computer Vision",
@@ -2620,7 +2645,7 @@
             "Machine Learning Model Compression",
             "Data Flywheel",
             "Embedded CV/ML Deployment",
-            "Top-tier Conference Paper Publication",
+            "Top-tier Conference Publication",
             "Linear Algebra",
             "3D Geometry",
             "Multi-Camera Fusion",
@@ -2631,17 +2656,17 @@
         ],
         "experience_requirements": [
             "Bachelor degree in Robotics or Computer Engineering or equivalent experience",
-            "10+ years of practical experience in ML fields (e.g., Computer Vision)",
-            "Experience applying CV/ML technologies to actual products and leading projects successfully in autonomous driving or robotics"
+            "10+ years of ML field (Computer Vision) practical experience or equivalent professional capability",
+            "Experience applying CV/ML technologies to actual products and successfully leading projects in autonomous driving or robotics"
         ],
         "soft_skills": [
             "문제 해결 능력",
             "동료들과 원활히 커뮤니케이션하는 능력",
             "품질 좋은 소프트웨어 개발을 위해 지속적으로 노력하는 태도",
-            "시스템 및 문화를 개선하는 데에 적극적인 태도",
-            "새로운 시도와 혁신을 수용하고 선도할 수 있는 능력",
+            "시스템 및 문화 개선을 위한 새로운 시도 수용 및 주도",
+            "AI Agent 활용을 통한 개발 문화 혁신 수용 및 선도",
             "배운 것을 기록하고 동료들과 공유하는 능력",
-            "동료들에게 좋은 자극과 영향을 미치는 능력"
+            "동료들에게 좋은 자극과 긍정적인 영향 미치는 능력"
         ],
         "employment_type": ""
     },
@@ -2683,7 +2708,7 @@
             "동료들과 원활한 커뮤니케이션",
             "코드 리뷰 및 페어 프로그래밍 실천",
             "배운 것을 기록하고 공유하는 능력",
-            "레거시 코드를 비판적으로 수용하고 개선하는 사고력",
+            "레거시 코드를 비판적으로 수용하고 개선하는 능력",
             "시스템 및 문화 개선을 위한 적극적 태도"
         ],
         "employment_type": ""
@@ -2694,10 +2719,10 @@
         "responsibilities": [
             "Build and maintain numerical models that convert tactile sensor signals into force, deformation, and contact-state estimates",
             "Design a numerical solver capable of dealing with nonsmooth events such as frictional contact",
-            "Develop the simulation path by modeling the sensor's compliant surface and its interaction with the scene in a soft-body solver and fitting fast surrogate models",
-            "Write sensor and material characterization procedures for a metrology bench, including designing and running indentation, shear, and slip protocols against a reference instrument",
+            "Develop simulation path including modeling the sensor's compliant surface and its interaction with the scene in a soft-body solver and fitting fast surrogate models",
+            "Write sensor and material characterization procedures for metrology bench involving design and running indentation, shear, and slip protocols against a reference instrument",
             "Quantify the gap between simulation and hardware under controlled protocols and reduce it where physics allows",
-            "Define acceptance criteria and recalibration triggers based on drift, hysteresis, and temperature sensitivity",
+            "Define acceptance criteria and recalibration triggers from drift, hysteresis, and temperature sensitivity",
             "Write clear technical documentation including equations, parameter ranges, and fitting procedures"
         ],
         "required_skills": [
@@ -2709,6 +2734,8 @@
             "finite_element_method",
             "contact_rigid_body_simulation",
             "continuum_mechanics",
+            "stress_strain_analysis",
+            "large_deformation",
             "parameter_identification",
             "least_squares_fitting",
             "bayesian_fitting",
@@ -2728,10 +2755,10 @@
         "experience_requirements": [
             "MS in mechanical engineering, applied physics, applied mathematics, computational mechanics or robotics",
             "PhD preferred",
-            "Strong numerical analysis background: discretization, stability, conditioning, convergence, and error analysis",
-            "Hands-on experience with physics solvers: soft-body, finite element, or contact/rigid-body simulation (implemented or substantially modified a solver)",
-            "Strong continuum and contact mechanics fundamentals: stress, strain, large deformation, compliant contact",
-            "Parameter identification against instrument data: least-squares or Bayesian fitting, error budgets, uncertainty propagation"
+            "Strong numerical analysis background including discretization, stability, conditioning, convergence, and error analysis",
+            "Hands-on experience with physics solvers (soft-body, finite element, or contact/rigid-body simulation)",
+            "Experience implementing or substantially modifying a solver rather than just using one",
+            "Strong continuum and contact mechanics fundamentals"
         ],
         "soft_skills": [
             "comfortable asking questions",
@@ -2745,17 +2772,13 @@
         "company": "Cinetic Motion",
         "job_title": "Robot Engineer in Seoul",
         "responsibilities": [
-            "Develop camera and robot integrated shooting automation solutions",
-            "Develop robot control software used in actual shooting environments",
-            "Integrate equipment and develop shooting scenario execution functions",
-            "Design and develop shooting robot software",
-            "Develop ROS2-based robot control and motion features",
-            "Develop interfaces for integrating various robot platforms",
-            "Develop robot operation and path planning based on shooting scenarios",
+            "Develop robot control software and motion features based on ROS2",
+            "Integrate various robot platforms and develop control interfaces",
+            "Develop robot motion and path planning based on shooting scenarios",
             "Integrate shooting equipment such as cameras, gimbals, and FIZ",
-            "Monitor robot status, handle exceptions, and stabilize the system",
-            "Maintain existing product software and improve features",
-            "Verify functions based on actual robots and achieve productization"
+            "Monitor robot status, handle exceptions, and ensure system stability",
+            "Maintain existing product software and improve functionality",
+            "Verify features using actual robots and achieve productization"
         ],
         "required_skills": [
             "C++",
@@ -2779,9 +2802,9 @@
             "영어 문서 독해",
             "영어 소통",
             "로봇을 실제 제품으로 완성하는 과정에 관심이 있음",
-            "하드웨어와 소프트웨어를 함께 이해하고 문제를 해결할 수 있는 능력",
-            "새로운 로봇 플랫폼과 장비를 빠르게 이해하고 통합할 수 있는 능력",
-            "실제 서비스 및 촬영 현장에서 사용되는 로봇 시스템을 개발하고 싶은 의지"
+            "하드웨어와 소프트웨어를 함께 이해하고 문제를 해결함",
+            "새로운 로봇 플랫폼과 장비를 빠르게 이해하고 통합할 수 있음",
+            "실제 서비스 및 촬영 현장에서 사용되는 로봇 시스템을 개발하고 싶은 것"
         ],
         "employment_type": "정규직 (첫 3 개월 수습기간 후 정규직 전환)"
     },
@@ -2797,14 +2820,15 @@
             "Define how simulation should be used across the development cycle",
             "Determine where fidelity matters and structure tuning and validation workflows",
             "Close the gap between simulated and real flight behavior",
-            "Collaborate with US-based product and engineering teams to deliver features on shared roadmaps",
+            "Collaborate frequently with US-based product and engineering teams",
             "Operate as the Korea-based extension of global product teams",
-            "Contribute to system-level design and architecture ensuring scalability, reliability, and performance",
+            "Contribute to system-level design and architecture",
+            "Ensure scalability, reliability, and performance",
             "Run technical deep dives with Korean defense customers",
             "Probe operational requirements and clarify ambiguous needs",
             "Translate learned information into product specifications and roadmap input",
             "Guide customers on how to get the most out of tools when developing their own multi-agent unmanned systems",
-            "Draw on hands-on experience in customer guidance",
+            "Draw on hands-on experience in guiding customers",
             "Mentor engineers and share domain knowledge across the Korea team"
         ],
         "required_skills": [
@@ -2814,30 +2838,37 @@
         "preferred_skills": [
             "PX4",
             "ArduPilot",
+            "Reinforcement Learning",
+            "Flight control stacks",
+            "Autopilot software",
+            "Ground control systems",
+            "Data link elements",
             "ATR",
-            "drone swarming",
-            "path planning",
-            "aerospace control systems",
-            "simulation platforms",
+            "Drone swarming",
+            "Path planning",
+            "Aerospace control systems",
+            "Simulation platforms",
             "ML training infrastructure",
-            "developer tooling for robotics/autonomy/defense",
-            "closed-network deployment environments",
-            "Korean language"
+            "Developer tooling for robotics",
+            "Developer tooling for autonomy",
+            "Developer tooling for defense applications",
+            "Closed-network deployment",
+            "Air-gapped deployment environments"
         ],
         "experience_requirements": [
             "Bachelor's or Master's degree in Aerospace Engineering, Computer Science, Electrical Engineering, Robotics, or a related field",
-            "5+ years of professional engineering experience, or equivalent research experience"
+            "5+ years of professional engineering experience, or equivalent research experience, in a fast-paced, customer-oriented environment"
         ],
         "soft_skills": [
             "problem-solving",
             "collaboration",
-            "mentoring",
-            "leadership",
             "communication",
-            "technical discussions",
+            "leadership",
+            "mentoring",
             "customer engagement",
-            "challenging assumptions",
-            "explaining design trade-offs"
+            "technical discussion facilitation",
+            "assumption challenging",
+            "design trade-off explanation"
         ],
         "employment_type": "full-time"
     },
@@ -2847,18 +2878,30 @@
         "responsibilities": [
             "Support the development of manufacturing hardware standards in PLC control, HMI, RFID, mobile devices, and MES systems.",
             "Implement latest technology-based PLC programming to facilitate project progress and contribute to productivity improvement.",
-            "Set up and manage robots and Vision systems for new product development projects or production line improvement tasks."
+            "Set up and manage robots and Vision systems for new product development projects or mass production improvements."
         ],
         "required_skills": [
             "PLC Programming",
-            "Network Knowledge",
+            "Mitsubishi PLC",
+            "OMRON PLC",
+            "LS PLC",
+            "Keyence PLC",
             "C++",
-            "Servo Motor"
+            "Network Protocols",
+            "Servo Motor Control"
         ],
-        "preferred_skills": [],
+        "preferred_skills": [
+            "MES Systems",
+            "Robotics Integration",
+            "Vision Systems",
+            "Factory Equipment Manufacturing Experience"
+        ],
         "experience_requirements": [
-            "Bachelor degree.Electrical/Electronic Engineering or Mechatronics/Automation",
-            "Field experience.PLC Engineer.5Y+"
+            "Bachelor's degree in Electrical/Electronic Engineering, Mechatronics, or Automation (or equivalent vocational training)",
+            "5+ years of PLC Engineer experience",
+            "Experience with Mitsubishi, OMRN, LS, and Keyence PLCs",
+            "Network knowledge and MES system experience",
+            "Project management experience"
         ],
         "soft_skills": [
             "Project management",
@@ -2869,14 +2912,14 @@
     "4429800981": {
         "company": "(주)씨네틱모션",
         "responsibilities": [
-            "Developing robot control software and equipment integration for camera and robot-based automated shooting solutions",
-            "Designing and developing shooting robot software",
-            "Developing robot control and motion features based on ROS2",
-            "Developing interfaces for integrating and controlling various robot platforms",
-            "Developing robot motion and path planning based on shooting scenarios",
-            "Integrating camera, gimbal, FIZ, and other shooting equipment",
+            "Developing robot control software and equipment integration for camera and robot-based automated filming solutions",
+            "Designing and developing filming robot software",
+            "Developing ROS2-based robot control and motion functions",
+            "Developing interfaces for integrating various robot platforms",
+            "Developing robot operation and path planning based on filming scenarios",
+            "Integrating filming equipment such as cameras, gimbals, and FIZ",
             "Monitoring robot status, handling exceptions, and stabilizing the system",
-            "Maintaining existing product software and improving features",
+            "Maintaining existing product software and improving its features",
             "Verifying functions based on actual robots and productizing them"
         ],
         "required_skills": [
@@ -2899,11 +2942,9 @@
         ],
         "soft_skills": [
             "영어 문서 독해",
-            "소통 가능",
-            "로봇을 실제 제품으로 완성하는 과정에 관심이 있는 것",
-            "하드웨어와 소프트웨어를 함께 이해하고 문제를 해결하는 것",
-            "새로운 로봇 플랫폼과 장비를 빠르게 이해하고 통합할 수 있는 것",
-            "실제 서비스 및 촬영 현장에서 사용되는 로봇 시스템을 개발하고 싶은 것"
+            "소통 능력",
+            "하드웨어와 소프트웨어를 함께 이해하고 문제를 해결하는 능력",
+            "새로운 로봇 플랫폼과 장비를 빠르게 이해하고 통합하는 능력"
         ],
         "employment_type": "정규직 (첫 3 개월 수습기간 후 정규직 전환)"
     },
@@ -2916,15 +2957,15 @@
             "Control Timing and Synchronization between devices to operate as a single precision inspection system.",
             "Develop an EDI (Engineering Digital Integration) Platform to integrate data from Embedded Systems and Inspection Software.",
             "Implement Digital Twin to verify equipment operation and software without physical hardware.",
-            "Develop Machine Control Software (MCS) to orchestrate the entire equipment operation.",
+            "Develop Machine Control Software (MCS) for orchestrating the entire equipment operation.",
             "Control equipment components including Motion, Robot, Sensor, and Digital & Analog I/O.",
             "Implement Task and Status management.",
-            "Develop Equipment Sequence based on Cycle Time.",
-            "Control synchronization between multiple Hardware and Software systems.",
+            "Design Equipment Sequence based on Cycle Time.",
+            "Control synchronization between multiple Hardware and Software interfaces.",
             "Design precise position control and Motion Control Logic.",
             "Design Control Logic considering stable equipment operation and exception scenarios.",
-            "Develop Optical Module Control Software (OCS) to control the Optical Module and Imaging System.",
-            "Perform Image Acquisition using Camera (Image Sensor) and Grabber (Image Acquisition Device).",
+            "Develop Optical Module Control Software (OCS) for the inspection equipment's optical module and imaging system.",
+            "Perform Image Acquisition using Image Sensors (Camera) and Image Acquisition Devices (Grabber).",
             "Control Optical Devices including Laser, Optical Interferometer, and Lighting.",
             "Control Digital and Analog Projection Systems.",
             "Develop interfaces between Imaging Devices and Control Systems.",
@@ -2946,7 +2987,9 @@
             "Grabber & Vision Interface",
             "Optical Module Control",
             "Laser / Lighting Control",
-            "Projection System & Synchronization Control"
+            "Projection System & Synchronization Control",
+            "Semiconductor Equipment Control",
+            "SMT Equipment Control"
         ],
         "experience_requirements": [
             "3Y+"
@@ -2997,35 +3040,20 @@
             "Software Development",
             "Industrial Applications",
             "Data Science",
-            "Applied AI",
-            "Manufacturing Data Infrastructure",
-            "Computer Vision",
-            "Quality Inspection Systems",
-            "Production Planning",
-            "Machine Integration",
-            "Factory Operations",
-            "Process Engineering",
-            "Cost Analysis",
-            "Cycle-Time Optimization"
+            "Artificial Intelligence"
         ],
-        "preferred_skills": [
-            "Aerospace Industry Experience",
-            "Automotive Industry Experience",
-            "Robotics Experience",
-            "Industrial Automation",
-            "Hardware Systems",
-            "Operations Management"
-        ],
+        "preferred_skills": [],
         "experience_requirements": [],
         "soft_skills": [
-            "takes ownership of outcomes",
-            "learns technical domains quickly",
-            "thinks clearly from first principles",
-            "can work through problems without a detailed playbook",
-            "builds, tests, and iterates quickly",
-            "pays attention to details",
-            "can communicate with engineers, operators, customers, and suppliers",
-            "comfortable moving across software, hardware, data, and operations"
+            "Learns technical domains quickly",
+            "Thinks clearly from first principles",
+            "Takes ownership of outcomes",
+            "Can work through problems without a detailed playbook",
+            "Builds, tests, and iterates quickly",
+            "Pays attention to details",
+            "Can communicate with engineers, operators, customers, and suppliers",
+            "Wants to understand how manufacturing actually works",
+            "Cares whether what you build works in the real world"
         ],
         "employment_type": "Full-time"
     },
@@ -3043,35 +3071,23 @@
         "required_skills": [
             "Mechanical Design",
             "Precision Engineering",
-            "Mechatronics",
-            "Electrical Engineering",
-            "Circuit Design",
+            "Electrical Circuit Design",
             "PCB Design",
             "Control Systems",
             "Instrumentation",
-            "Embedded Systems",
-            "3D CAD"
+            "Embedded Systems"
         ],
         "preferred_skills": [
-            "Vacuum systems",
-            "Temperature control",
+            "Vacuum Technology",
+            "Temperature Control",
             "Sensors",
             "Motors",
-            "Motion control",
-            "Prototype development",
-            "Product engineering",
-            "Software",
-            "Materials science",
-            "Physics"
+            "Motion Control",
+            "3D CAD",
+            "Prototype Development",
+            "Product Engineering"
         ],
-        "experience_requirements": [
-            "Mechanical Engineering / Mechanical Design / Precision Engineering / Mechatronics",
-            "Electrical & Electronics Engineering / Circuit Design / PCB Design",
-            "Control / Instrumentation / Embedded Systems",
-            "Experience with vacuum, temperature control, sensors, motors, or motion control",
-            "Experience with 3D CAD and mechanical design",
-            "Experience with prototype development and product engineering"
-        ],
+        "experience_requirements": [],
         "soft_skills": [
             "Collaboration",
             "Team spirit",
@@ -3083,29 +3099,27 @@
         "company": "Superb AI Inc.",
         "job_title": "Robotics AI Engineer in Seoul",
         "responsibilities": [
-            "Integrate and operate a full-stack robot system combining a humanoid robot (사족로봇) and a 6–7 DoF robotic arm/gripper.",
-            "Build an operation and control system based on ROS2 for the integrated robot system.",
+            "Integrate bipedal robots and 6–7 DoF robotic arms/grippers into an operational control system based on ROS2.",
             "Implement hardware configuration, calibration, sensor/camera setup, and basic control interfaces.",
-            "Define and implement manipulation tasks including door handle opening/closing, button/lever operation, and pick-and-place operations.",
-            "Implement and optimize motion planning including inverse kinematics (IK), collision avoidance, trajectory generation, and potentially reinforcement learning (RL) based policy learning/application.",
+            "Define and implement manipulation tasks including door handle operation, button/lever actuation, and pick-and-place operations.",
+            "Implement and optimize motion planning including inverse kinematics (IK), collision avoidance, trajectory generation, and potentially reinforcement learning (RL) based policy application.",
             "Build and operate a system for collecting object interaction data via teleoperation.",
-            "Build and operate a data quality and coverage evaluation pipeline including success and failure scenarios.",
-            "Build manipulation/alignment or policy fine-tuning pipelines based on collected data using frameworks like PyTorch.",
+            "Establish and operate pipelines for evaluating data quality and coverage (including success and failure scenarios).",
+            "Build pipelines for manipulating or aligning objects, or fine-tuning policies based on collected data using frameworks like PyTorch.",
             "Respond to field issues and prevent recurrence (e.g., sensor malfunctions, actuator overload, calibration drift).",
             "Implement safety control logic including speed/force limits and emergency stop (E-stop) triggers when critical thresholds are exceeded.",
             "Design safety guardrails based on Proof of Concept (PoC) and real-world standards.",
             "Ensure stability for long-duration operation scenarios (e.g., 8+ hours) and manage associated risks.",
-            "Collaborate with Machine Learning, 3D Vision, and Video Analytics teams to integrate and operate robot navigation/perception modules from an execution perspective.",
-            "Utilize existing technologies from other teams (Digital Twin, 3D reconstruction, SLAM) rather than developing them anew to ensure stable real-world robot operation."
+            "Collaborate with Machine Learning, 3D Vision, and Video Analytics teams to integrate robot navigation/perception modules from an execution perspective."
         ],
         "required_skills": [
             "ROS2",
             "Python",
             "C++",
             "Motion Planning",
-            "IK (Inverse Kinematics)",
-            "Trajectory Generation",
+            "IK",
             "Collision Avoidance",
+            "Trajectory Generation",
             "Robot System Integration",
             "Hardware Debugging",
             "Teleoperation"
@@ -3121,16 +3135,16 @@
             "Bachelor degree or equivalent experience in Computer Science, Robotics, or related fields",
             "5+ years of robotics-related practical experience",
             "Experience with 6–7 DoF robotic arms and grippers integration control (including Motion Planning, IK, trajectory generation, collision avoidance)",
-            "Experience in industrial field operations/proof-of-concept (manufacturing/logistics/plant)"
+            "Experience in industrial field robot operation/demonstration (PoC) in logistics/manufacturing/plant environments"
         ],
         "soft_skills": [
             "큰 자율성",
             "문제 정의 능력",
             "시스템 설계 능력",
             "협업 방식 설계 및 실행",
-            "크로스 함수셔널 협업 (Cross-functional Collaboration)",
             "현장 이슈 대응",
-            "리스크 관리"
+            "리스크 관리",
+            "안전 제어 로직 구현"
         ],
         "employment_type": "Full-time"
     },
@@ -3138,18 +3152,19 @@
         "company": "Hyundai Motor Company",
         "job_title": "[Manufacturing Robotics] Humanoid Robot Operations Solution Development in Seoul",
         "responsibilities": [
-            "Design scalable and reusable architectures and capabilities that can be applied regardless of robot type or on-site system configuration",
+            "Design scalable and reusable architectures and capabilities applicable regardless of robot type or on-site system configuration",
             "Conduct proof-of-concept (PoC) validation prior to deployment to accelerate robot commercialization",
-            "Design high-level integration architectures that define data and control flows between robots, on-site equipment, and operational systems",
-            "Define roles, responsibilities, and system boundaries, and establish reusable standard interface architectures for seamless integration of new robots and equipment",
-            "Develop adapter middleware that converts and integrates heterogeneous communication protocols (e.g., HTTP, gRPC, TCP/IP, and Modbus) into a standardized interface framework",
-            "Develop AI agent logic that assesses causes and proposes alternatives when task failures or exceptions occur, such as material shortages or recognition errors",
-            "Build an orchestration layer that autonomously reallocates tasks and adjusts priorities based on robot status, task history, and on-site data",
+            "Design high-level integration architectures defining data and control flows between robots, on-site equipment, and operational systems",
+            "Define roles, responsibilities, and system boundaries",
+            "Establish reusable standard interface architectures for seamless integration of new robots and equipment",
+            "Develop adapter middleware converting and integrating heterogeneous communication protocols (e.g., HTTP, gRPC, TCP/IP, and Modbus) into a standardized interface framework",
+            "Develop AI agent logic that assesses causes and proposes alternatives when task failures or exceptions occur (e.g., material shortages or recognition errors)",
+            "Build an orchestration layer autonomously reallocating tasks and adjusting priorities based on robot status, task history, and on-site data",
             "Develop anomaly analysis, personnel notification, and decision support capabilities using LLMs and generative AI",
             "Implement hazard detection and automatic emergency stop capabilities based on industrial safety standards such as ISO 13849 and IEC 61508",
-            "Develop reliability assurance logic that converts sequencing and assembly work order information into robot task instructions and integrates task results with quality systems",
+            "Develop reliability assurance logic converting sequencing and assembly work order information into robot task instructions and integrating task results with quality systems",
             "Build real-time monitoring and alerting systems based on task status and events",
-            "Conduct integration testing and validation based on real-world scenarios, including exception situations and communication disruptions",
+            "Conduct integration testing and validation based on real-world scenarios including exception situations and communication disruptions",
             "Minimize deployment risks through pre-validation using virtual data with mocks and simulators"
         ],
         "required_skills": [
@@ -3176,13 +3191,15 @@
             "IEC 61508"
         ],
         "experience_requirements": [
-            "Bachelor degree. Engineering-related field",
-            "Work experience.5Y+"
+            "Bachelor's degree in engineering-related field",
+            "5+ years experience in developing middleware or platforms for robotic and automation systems",
+            "Experience in communication protocol standardization"
         ],
         "soft_skills": [
             "fluent written and oral business communication",
-            "proficiency in English",
-            "native proficiency in English"
+            "experience communicating with robot hardware and software engineers",
+            "ability to assess causes and propose alternatives when task failures occur",
+            "autonomous decision-making capabilities"
         ],
         "employment_type": ""
     },
@@ -3222,7 +3239,7 @@
             "3D vision",
             "SLAM",
             "Computer vision",
-            "Edge AI deployment (NPU/GPU/FPGA/ASIC)",
+            "Edge AI deployment (NPU, GPU, FPGA, ASIC)",
             "TensorRT",
             "OpenCV",
             "Open3D",
@@ -3241,7 +3258,9 @@
             "debugging",
             "optimization",
             "design",
-            "development"
+            "development",
+            "testing",
+            "validation"
         ],
         "employment_type": ""
     },
@@ -3251,20 +3270,20 @@
         "responsibilities": [
             "Inference System development",
             "Robot Learning",
-            "Perception & SLAM development",
-            "Framework S/W development",
-            "Robot Application development",
-            "Robot SW development",
+            "Perception system development",
+            "Simultaneous Localization and Mapping (SLAM) development",
+            "Framework software development",
+            "Robot application development",
+            "Robot software development",
             "Robot control",
-            "Safety Controller F/W development",
-            "Hardware design (기구설계)",
-            "System and Hardware engineering (전장·하드웨어)",
-            "HW·FW development",
-            "SW QA",
-            "Mobile app development",
-            "Action recognition & Control model development (동작인식·제어 모델)",
+            "Safety Controller firmware development",
             "Mechanism design",
-            "System and Circuit design (전장·회로 설계)"
+            "Hardware and firmware development",
+            "Hardware and circuit design",
+            "Action recognition model development",
+            "Control model development",
+            "Mobile app development",
+            "Software Quality Assurance (QA)"
         ],
         "required_skills": [
             "AI",
@@ -3317,6 +3336,7 @@
             "SPI",
             "I2C",
             "UART",
+            "CAN",
             "CAN-FD",
             "USB",
             "Ethernet",
@@ -3333,16 +3353,20 @@
             "RTOS",
             "FreeRTOS",
             "FPGA",
+            "MIPI CSI",
+            "GigE Vision",
             "ROS",
             "ROS2",
             "CUDA",
             "OpenCV",
             "GStreamer",
             "SLAM",
-            "VIO"
+            "VIO",
+            "3D vision systems",
+            "Edge AI inference"
         ],
         "experience_requirements": [
-            "Bachelor's degree in Electrical Engineering, Computer Engineering, Computer Science, Robotics, or related field",
+            "Bachelor's degree or higher in Electrical Engineering, Computer Engineering, Computer Science, Robotics, or a related field",
             "Experience developing embedded systems or firmware",
             "Experience with Embedded Linux",
             "Understanding of microcontrollers, processors, memory, peripherals, and digital communication protocols"
@@ -3366,29 +3390,32 @@
             "Productization",
             "Technical review for enterprise customer adoption",
             "Project execution",
-            "Structuring technical solutions for industrial scenarios (e.g., safety monitoring, process analysis, defect inspection)",
-            "Developing scalable end-to-end solutions",
-            "Learning and evaluating foundation models applicable to various industrial requirements via zero-shot methods",
+            "Structuring technical solutions for industrial site scenarios (e.g., safety monitoring, process analysis, defect inspection)",
+            "Developing integrated end-to-end solutions that are continuously expandable",
+            "Learning and evaluating foundation models applicable to various industrial site requirements in a zero-shot manner",
             "Analyzing dataset distribution and model vulnerabilities",
-            "Developing synthetic data generation techniques for effective improvement",
-            "Developing Vision-Language-Action (VLA) models",
-            "Researching efficient robot learning data construction methods",
-            "Ensuring generalization in new environments"
+            "Developing synthetic data generation techniques to effectively improve models",
+            "Developing efficient methods for building robot learning datasets",
+            "Research and development of Vision-Language-Action (VLA) models that generalize stably in new environments",
+            "Writing documentation",
+            "Participating in meetings"
         ],
         "required_skills": [
+            "Machine Learning",
+            "Deep Learning",
             "Python",
             "PyTorch"
         ],
         "preferred_skills": [
             "Vision-Language Model (VLM)",
             "Foundation Model",
-            "Large-scale model training & distributed learning",
-            "Model quantization & real-time inference optimization",
-            "MLOps pipeline construction & operation",
-            "Scalable code development & large codebase contribution"
+            "Large-scale Model Training & Distributed Learning",
+            "Model Quantization & Real-time Inference Optimization",
+            "MLOps Pipeline Construction & Operations",
+            "Scalable Code Development & Large Codebase Contribution"
         ],
         "experience_requirements": [
-            "Solid theoretical knowledge of Machine Learning/Deep Learning with practical implementation experience"
+            "Business-level proficiency in Korean (writing documentation, conducting meetings)"
         ],
         "soft_skills": [
             "비즈니스 수준의 원활한 한국어 소통 및 업무 수행 능력",
@@ -3402,11 +3429,12 @@
         "company": "Beyond Honeycomb",
         "job_title": "Robotics Engineer in Seoul",
         "responsibilities": [
-            "Develop and design robotics mechanisms",
-            "Design actuators for robotic joints",
-            "Develop mechatronics control systems for next-generation products",
-            "Determine specifications, design, and verify robots for mass production (stabilization and optimization)",
-            "Resolve various hardware issues in actual usage environments (troubleshooting)"
+            "Developing and designing next-generation robot mechanisms that operate stably in actual cooking environments",
+            "Developing low-cost, high-performance actuator platforms enabling mass deployment at prices 5 times lower than current robots",
+            "Designing and verifying specifications for robot mass production (stabilization and optimization)",
+            "Resolving various hardware issues arising from actual usage environments (troubleshooting)",
+            "Developing mechatronics control for next-generation development products",
+            "Collaborating with control engineers to jointly optimize mechanical structure and control performance"
         ],
         "required_skills": [
             "SolidWorks",
@@ -3423,7 +3451,9 @@
             "Cost reduction experience",
             "Robot troubleshooting in field environments",
             "Mechatronics control optimization with control engineers",
-            "Embedded programming"
+            "Robot joint structure and actuator design",
+            "Robot programming",
+            "Embedded systems"
         ],
         "experience_requirements": [
             "Bachelor degree or above (4-year university)",
@@ -3432,30 +3462,28 @@
             "Experience independently developing/designing various mechanisms in robotics/automation",
             "Experience with robot joint actuators or small high-torque drive modules",
             "Experience integrating BLDC motors, encoders, reducers, brakes, and torque transmission structures",
-            "Experience in DFM/DFA, tolerance design, durability testing, and cost reduction for mass production",
-            "Robot troubleshooting experience in actual field environments",
-            "Experience optimizing mechanism structure and control performance with control engineers"
+            "Experience in DFM/DFA, tolerance design, durability testing, and cost reduction for mass production products",
+            "Troubleshooting experience with robots/automation equipment operating in actual fields",
+            "Experience optimizing mechanism structure and control performance in collaboration with control engineers"
         ],
         "soft_skills": [
             "문제 해결 역량 (Problem Solving)",
             "전략적 사고 능력 (Strategic Thinking)",
-            "고유한 직관 (Intuition)",
-            "Agile 실행 능력",
-            "문화 적합성 (Culture Fit - 높은 집중도와 빠른 의사결정을 중요시하는 환경)",
-            "과감함 (Boldness)"
+            "Agile한 실행 능력",
+            "직관력 (Intuition)",
+            "고지능 (High Intelligence)",
+            "문화 적합성 (Culture Fit)"
         ],
-        "employment_type": "정규직 (Full-time)"
+        "employment_type": "정규직"
     },
     "4463965484": {
         "company": "Hyundai MOBIS",
         "job_title": "[신입-연구직] 로보틱스 시작개발 in Seoul",
         "responsibilities": [
-            "Design review and improvement proposal generation to enhance design completeness",
-            "Component specification verification for proactive management of system functionality, performance, and quality",
-            "Prototype assembly and delivery",
-            "New technology and new method development",
-            "Problem identification and verification in prototype stages to minimize mass production risks",
-            "Rapid response to customer requirements to enhance product competitiveness"
+            "Develop and produce initial parts for robot hand grippers",
+            "Review and manufacture initial part development methods",
+            "Assemble and deliver initial products",
+            "Develop new technologies and new methods"
         ],
         "required_skills": [
             "Robotics",
@@ -3464,17 +3492,16 @@
         ],
         "preferred_skills": [
             "English Proficiency (TOEIC/TOEIC Speaking/OPIC/TEPS/G-TELP)",
-            "Advanced English Communication Skills"
+            "Robotics Industry Experience"
         ],
         "experience_requirements": [
             "Bachelor's or Master's degree in Mechanical or Electrical Engineering",
-            "Graduation expected by February 2027 or already graduated",
-            "PhD holders should apply through the career selection track (implied no fresh graduate requirement for PhD)"
+            "PhD holders eligible for career-based recruitment"
         ],
         "soft_skills": [
-            "신속한 대응 능력 (고객 요구사항 대응)",
-            "문제 해결 능력 (문제점 개선 및 검증)",
-            "영어 회화 능력"
+            "신속한 대응 능력 (고객 요구사항에 대한 신속한 대응)",
+            "문제 해결 및 개선 능력 (문제점을 개선 및 검증)",
+            "영어 회화 능력 (우대사항)"
         ],
         "employment_type": "fulltime"
     },
@@ -3487,35 +3514,37 @@
             "MCU / RTOS based real-time control SW architecture design",
             "Sensor feedback, communication, diagnosis, and protection logic design",
             "Robots-specific Driver/BSW, Middleware, and Application Logic structure definition",
-            "Common SW modularization and reuse structure design for mass production application of pre-development SW",
-            "SW requirement/design/implementation/verification process establishment",
-            "Unit/Integration/HIL/Function Test and EOL Test support",
+            "Common SW module standardization and reuse structure design for mass production application of pre-development SW",
+            "Establishment of SW requirement/design/implementation/verification process",
+            "Unit/Integration/HIL/Function Test and EOL Test response",
             "SW Release, Version management, and quality assurance"
         ],
         "required_skills": [
             "Real-time control SW architecture",
-            "MCU development",
-            "RTOS",
-            "Embedded SW design",
+            "MCU-based SW development",
+            "Embedded system design",
+            "Sensor feedback integration",
+            "Communication protocol design",
+            "Fault detection and protection logic",
+            "SW release and version management",
             "Unit testing",
             "Integration testing",
-            "HIL testing",
-            "EOL testing",
-            "SW release management",
-            "Version control"
+            "Hardware-in-the-loop (HIL) testing",
+            "End-of-line (EOL) testing"
         ],
         "preferred_skills": [
-            "Matlab Simulink",
-            "Ethernet SW design",
+            "Matlab Simulink simulation",
             "Humanoid robot SW development",
             "Collaborative robot SW development",
             "AMR SW development",
-            "Robotics driver development",
+            "Ethernet SW design",
+            "Robot driver development",
             "Actuator control SW development"
         ],
         "experience_requirements": [
-            "Bachelor's degree or Master's degree in Computer Science or related field",
-            "PhD holders may apply through career selection track"
+            "Bachelor's degree or Master's degree in Computer Science or related field (mandatory for entry)",
+            "PhD holders must apply through the career selection track",
+            "Foreign university graduates from English-speaking countries are exempt from the public English proficiency requirement"
         ],
         "soft_skills": [
             "영어 회화 능력 우수자",
@@ -3527,13 +3556,20 @@
         "company": "Raion Robotics",
         "job_title": "기구설계 엔지니어 in Seoul",
         "responsibilities": [
-            "4족보행 로봇 플랫폼, 다리, 매니퓰레이터 메커니즘 설계 및 개발",
-            "감속기(하모닉드라이브/유성기어 등) 설계·제작·양산 대응",
+            "4족보행 로봇 플랫폼 설계 및 개발",
+            "다리 메커니즘 설계 및 개발",
+            "매니퓰레이터 메커니즘 설계 및 개발",
+            "감속기 (하모닉드라이브, 유성기어 등) 설계",
+            "감속기 제작",
+            "감속기 양산 대응",
             "모터-기어-베어링 기반 구동계 통합 메커니즘 설계",
-            "방수·방진(IP 등급) 구조 설계",
-            "경량화·고강도를 동시에 만족하는 재질 및 형상 최적화",
-            "구조해석(정적/모달) 기반 강도 및 취약부 검증",
-            "낙하·충격 등 주요 외란에 대한 근사적 정량화 및 해석 적용",
+            "방수·방진 (IP 등급) 구조 설계",
+            "재질 및 형상 최적화 (경량화, 고강도)",
+            "구조해석 (정적, 모달) 수행",
+            "강도 검증",
+            "취약부 검증",
+            "낙하·충격 등 주요 외란에 대한 근사적 정량화",
+            "외란 해석 적용",
             "전장부 기구 설계 (하네스 라우팅, 커넥터 배치 등)"
         ],
         "required_skills": [
@@ -3553,14 +3589,12 @@
         ],
         "experience_requirements": [
             "학사 이상",
-            "기계공학·로봇공학·메카트로닉스 관련 전공",
+            "기계공학·로봇공학·메카트로닉스 등 관련 전공",
             "기구설계 실무 경력 3년 이상"
         ],
         "soft_skills": [
             "이론적 기반 탄탄함",
-            "구조해석 결과 판독 능력",
-            "양산 설계 경험",
-            "규격 이해 및 적용 경험"
+            "구조/진동/열 해석 결과 판독 능력"
         ],
         "employment_type": ""
     },
@@ -3589,7 +3623,7 @@
         ],
         "experience_requirements": [
             "Bachelor degree or Master's degree (CS/Engineering related)",
-            "Field experience: Robotics and full-stack product evaluation, verification, data analysis interest"
+            "Field experience: Robotics and electrical equipment evaluation, verification, data analysis"
         ],
         "soft_skills": [
             "공학적 문제 해결 역량",
@@ -3604,13 +3638,12 @@
         "job_title": "[경력-연구직] 로보틱스 시작개발 in Seoul",
         "responsibilities": [
             "Develop and manufacture prototype parts for robot hand grippers",
-            "Review and create manufacturing methods for prototype parts",
+            "Review and create fabrication methods for prototype parts",
             "Assemble and deliver prototypes",
-            "Develop new technologies and new manufacturing methods",
-            "Build prototype production lines",
-            "Design layout for prototype production lines",
-            "Review and manufacture equipment investment for prototype lines",
-            "Install and commission prototype production line equipment"
+            "Develop new technologies and techniques",
+            "Design layout for the prototype production line",
+            "Review and fabricate equipment investment for the prototype line",
+            "Install and commission prototype equipment"
         ],
         "required_skills": [
             "CATIA",
@@ -3629,8 +3662,7 @@
         "soft_skills": [
             "협업 기반 제품 개선 Loop 경험",
             "유관부서 협업 및 프로젝트 리딩 (일정/리스크 관리) 경험",
-            "문제점 개선 및 검증 능력",
-            "고객 요구사항에 신속히 대응하는 능력"
+            "영어 회화 능력 우수"
         ],
         "employment_type": ""
     },
@@ -3704,7 +3736,7 @@
             "communication",
             "technical-documentation",
             "independent work",
-            "collaboration within a multidisciplinary engineering team"
+            "collaboration"
         ],
         "employment_type": ""
     },
@@ -3713,16 +3745,18 @@
         "job_title": "[HL로보틱스] 2026년 경력직 채용 공고 in Seoul",
         "responsibilities": [
             "측위 시스템 개발 및 고도화",
-            "실시간 오도메트리 (LiDAR-IMU 기반 연속 자세 추정, 모션 왜곡 보정, 스캔 매칭 파이프라인 개발)",
-            "센서 융합 (Odometry/IMU-맵 매칭 결과를 결합하는 융합 필터 설계, 측위 신뢰도 기반 가중치 튜닝)",
-            "품질 모니터링 (측위 상태 진단 지표 설계 및 실시간 모니터링 도구 개발)",
-            "주차로봇/물류로봇 플랫폼 제어 SW 개발",
-            "모바일 로봇 구동 모듈 제어 SW 개발",
+            "실시간 오도메트리 구현 (LiDAR-IMU 기반 연속 자세 추정, 모션 왜곡 보정, 스캔 매칭 파이프라인 개발)",
+            "센서 융합 필터 설계 및 측위 신뢰도 기반 가중치 튜닝",
+            "측위 상태 진단 지표 설계 및 실시간 모니터링 도구 개발",
+            "모바일 로봇 플랫폼 제어 SW 개발",
+            "구동 모듈 제어 SW 개발",
+            "모바일 로봇 (AGV/AMR) SW 개발",
             "모바일 로봇 차체 모션 제어 SW 개발",
             "차량 리프팅 메커니즘 제어 SW 개발",
-            "CAN/CANopen 기반 장치 제어·통신 SW 개발",
+            "CAN/CANopen 기반 장치 제어 및 통신 SW 개발",
             "산업용 이더넷 (EtherCAT, Modbus 등) 기반 PLC 통신 인터페이스 SW 개발",
-            "로봇 모션 성능 분석 및 개선 (로봇 모션 정밀도, 응답 분석 및 제어 성능 개선)"
+            "로봇 모션 성능 분석 및 개선 (로봇 모션 정밀도, 응답 분석 및 제어 성능 개선)",
+            "주차로봇/물류로봇 플랫폼 제어 SW 개발"
         ],
         "required_skills": [
             "ROS",
@@ -3731,32 +3765,29 @@
             "C"
         ],
         "preferred_skills": [
-            "Git",
-            "Jira",
             "EKF",
             "UKF",
             "Particle Filter",
+            "Git",
+            "Jira",
             "RTOS",
             "ISO 3691-4",
             "EtherCAT",
             "Modbus",
-            "CANopen",
-            "PLC"
+            "CANopen"
         ],
         "experience_requirements": [
             "Bachelor degree, Engineering field",
-            "Master degree or above, Engineering field",
-            "2 years related experience",
-            "5 years related experience"
+            "Master's degree or above, Engineering field",
+            "2 years experience in related field (for Master's degree holders, entry-level is also acceptable)",
+            "5 years experience in related field or PhD degree"
         ],
         "soft_skills": [
             "협업툴 활용 (Git, Jira)",
             "실차/필드 테스트 기반 개발 경험",
-            "품질 모니터링 및 진단 지표 설계",
-            "실측 데이터로 알고리즘 검증 사이클 돌리기",
-            "제품 개발부터 양산 적용까지 전 과정 참여 경험",
-            "로봇 모션 성능 분석 및 개선",
-            "기능안전 규격 대응 개발"
+            "품질 모니터링 및 진단 도구 개발",
+            "기능안전 규격 대응 개발",
+            "제품 개발부터 양산 적용까지 전 과정 참여 경험"
         ],
         "employment_type": "경력직 (2년 이상), 석사 신입"
     },
@@ -3811,22 +3842,22 @@
             "Situation Awareness",
             "Computer Vision",
             "Target Recognition",
-            "Object Detection and Tracking",
-            "EO/IR Targeting",
-            "Edge AI",
-            "Model Optimization",
+            "Object Detection",
+            "Tracking Algorithms",
+            "EO/IR Sensor Integration",
+            "Edge AI Optimization",
             "Flight Control Laws",
             "Guidance & Navigation",
             "Aerodynamics",
             "Structural Analysis",
-            "Ground Control Station (GCS)",
             "System Engineering",
-            "Interface Integration"
+            "Interface Integration",
+            "Hardware/Software Design"
         ],
         "preferred_skills": [],
         "experience_requirements": [
             "Relevant major or field experience",
-            "Professional expertise in specific domain"
+            "Professional expertise in specific job areas"
         ],
         "soft_skills": [
             "담대한 도전",
@@ -3849,25 +3880,26 @@
             "C++",
             "Python3",
             "Linux",
-            "Docker",
-            "Git"
+            "MoveIt",
+            "cuRobo"
         ],
         "preferred_skills": [
-            "MoveIt",
-            "cuRobo",
             "NVIDIA Isaac",
             "RTOS",
+            "Docker",
+            "GitHub",
             "Robot Kinematics",
             "Robot Dynamics",
             "Hybrid Force/Position Control",
             "Impedance Control",
-            "Multi-sensor Fusion"
-        ],
-        "experience_requirements": [
-            "5Y+",
+            "Motion Planning",
             "Medical Robotics",
             "Collaborative Robot",
             "Rehabilitation Robot"
+        ],
+        "experience_requirements": [
+            "5Y+",
+            "Robot SW Development"
         ],
         "soft_skills": [
             "협업",
@@ -3906,8 +3938,8 @@
             "ROS2"
         ],
         "experience_requirements": [
-            "Bachelor degree.Electrical Engineering/Artificial Intelligence/Computer Science",
-            "Field experience.5Y+",
+            "Electrical Engineering, Artificial Intelligence, Computer Science, or a related field",
+            "5 years of professional experience in Vision AI or a related field",
             "Experience applying AI-based 3D vision algorithms to production systems"
         ],
         "soft_skills": [],
