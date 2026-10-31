@@ -19,7 +19,10 @@ def summary_job_data(job_data: dict, verbose:bool = True, enable_time_log:bool =
         "page_title":str,
         "job_title":str,
         "company":str,
-        "description":str
+        "work_mode":str,
+        "employment_type":str,
+        "description":str,
+        "received_at":str
     }
 
     Returns:

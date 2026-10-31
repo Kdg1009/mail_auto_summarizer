@@ -1,118 +1,182 @@
-import requests
+from pathlib import Path
 from bs4 import BeautifulSoup
-import browser_cookie3
+from playwright.sync_api import (
+    sync_playwright,
+    TimeoutError as PlaywrightTimeoutError,
+    Error as PlaywrightError,
+)
 
-def get_cookie(browser:str):
-    '''
-    From chrome v.155, there is a change in cookie encryption and browser_cookie3
-    cannot decode them, so you need to get cookies manually.
+from mail_auto_summrizor.utils.paths import SECRETS_DIR
 
-    1. Install 'editThisCookie' in chrome.
-    2. Get cookies from linkedin job page in 'Netscape Http Cookie File`
-    3. Copy and paste them at SECRETS_DIR/'linkedin_chrome_cookies.txt'
-    '''
+LINKEDIN_PROFILE_DIR = SECRETS_DIR / "linkedin_playwright_profile"
+
+WORK_MODES = [
+    "대면근무",
+    "재택대면혼합근무",
+    "재택근무",
+]
+EMPLOY_TYPES = [
+    "계약직",
+    "프리랜서/개인사업자",
+    "파트타임",
+    "정규직",
+    "인턴십",
+    "수습",
+    "프리랜서"
+]
+
+def extract_job_types(soup):
+    found_texts = set()
     
-    if browser == 'chromium':
-        return browser_cookie3.chromium(
-            domain_name=".linkedin.com"
-        )
-    elif browser == 'chrome':
-        from http.cookiejar import MozillaCookieJar
-        from mail_auto_summrizor.utils.paths import SECRETS_DIR
+    for link in soup.select('a[href*="/jobs/view/"]'):
+        for span in link.select("span"):
+            text = span.get_text(strip=True)
+            if text:
+                found_texts.add(text)
+                
+    work_mode = next(
+        (mode for mode in WORK_MODES if mode in found_texts),
+        None,
+    )
+    
+    employment_type = next(
+        (em_type for em_type in EMPLOY_TYPES if em_type in found_texts),
+        None,
+    )
+    
+    return {
+        'work_mode':work_mode,
+        'employment_type':employment_type
+    }
 
-        cookies_path = SECRETS_DIR/"linkedin_chrome_cookies.txt"
+def get_job_data_from_url(url:str, headless:bool=True):
+    '''
+    Open recruiting page and extract informations using playwright
 
-        cookies = MozillaCookieJar(str(cookies_path))
-        cookies.load(ignore_discard=True, ignore_expires=True)
+    Returns:
+        recruit_data: Returns dict if success, else None
+    '''
 
-        return cookies
-    else:
-        raise ValueError(
-            f"[ERROR] Unsupported browser: {browser}"
-        )
-
-def get_job_data_from_url(url:str, browser:str='chromium'):
+    LINKEDIN_PROFILE_DIR.mkdir(parents=True, exist_ok=True)
+    
     try:
-        cookies = get_cookie(browser)
-        
-        headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            )
-        }
-
-        with requests.Session() as session:
-            session.cookies.update(cookies)
-
-            response = session.get(
-                url,
-                headers=headers,
-                timeout=15
+        with sync_playwright() as p:
+            context = p.chromium.launch_persistent_context(
+                user_data_dir=str(LINKEDIN_PROFILE_DIR),
+                headless=headless,
+                executable_path="/usr/bin/chromium",
+                viewport={"width":1280, "height": 900}
             )
 
-            response.raise_for_status()
-            response.encoding = 'utf-8'
-            html = response.text
+            try:
+                page = context.new_page()
 
-        return parse_job_html(html)
-        
-    except requests.exceptions.ConnectionError as e:
-        print(f'[ERROR] Network connetion error: {e}')
-    
-    except requests.exceptions.Timeout:
-        print(f'[WARNING] Connection Timeout')
+                response = page.goto(
+                    url,
+                    wait_until="domcontentloaded",
+                    timeout=30000
+                )
 
-    except requests.exceptions.HTTPError as e:
-        print(f"[ERROR] HTTP error: {e}")
+                if response is not None and response.status >= 400:
+                    print(f'[ERROR] HTTP error: {response.status}')
+                    return None
 
-    except FileNotFoundError as e:
-        print(f"[ERROR] Cookie file not found: {e}")
+                current_url = page.url.lower()
 
-    except browser_cookie3.BrowserCookieError as e:
-        print(f"[ERROR] Failed to load browser cookies: {e}")
+                if "/login" in current_url or "/checkpoint" in current_url:
+                    print(f'[WARNING] You need to login to LinkedIn or need additional authentication.')
+
+                    try:
+                        page.wait_for_url(
+                            lambda url: (
+                                "linkedin.com" in str(url).lower()
+                                and "/login" not in str(url).lower()
+                                and "/checkpoint" not in str(url).lower()
+                            ),
+                            timeout=300000
+                        )
+                    except PlaywrightTimeoutError:
+                        print('[ERROR] Login timeout')
+                        return None
+
+                    response = page.goto(
+                        url,
+                        wait_until="domcontentloaded",
+                        timeout=30000,
+                    )
+                    if response is not None and response.status >= 400:
+                        print(f'[ERROR] HTTP error: {response.status}')
+                        return None
+
+                # 1. Wait for job details to be loaded.
+                about = page.locator(
+                    '[id^="JobDetails_AboutTheJob_"]'
+                )
+                about.wait_for(state='visible', timeout=30000)
+                description_box = about.get_by_test_id("expandable-text-box")
+                description_box.wait_for(state='visible', timeout=30000)
+
+                # wait until description page loads
+                page.wait_for_function(
+                    '''
+                    () => {
+                        const container = document.querySelector(
+                            '[id^="JobDetails_AboutTheJob_"]'
+                        );
+
+                        const box = container?.querySelector(
+                            '[data-testid="expandable-text-box"]'
+                        );
+
+                        return box && box.innerText.trim().length > 100;
+                    }
+                    ''',
+                    timeout=30000,
+                )
+                # 2. Unfold whole job description.
+                more_button = description_box.get_by_test_id(
+                    "expandable-text-button"
+                )
+
+                if (more_button.count() > 0 and more_button.first.is_visible()):
+                    more_button.first.click()
+                    page.wait_for_timeout(300)
+
+                job_description = description_box.inner_text().strip()
+
+                # 3. Get final HTML page
+                html = page.content()
+                soup = BeautifulSoup(html, 'html.parser')
+                
+                page_title = (
+                    soup.title.get_text(strip=True)
+                    if soup.title else None
+                )
+
+                company = None
+                job_title = None
+                if page_title:
+                    parts = page_title.split("|")
+                    cleaned_parts = [item.strip() for item in parts]
+                    job_title = cleaned_parts[0]
+                    company = cleaned_parts[1]   
+                    
+                job_types = extract_job_types(soup)
+
+                return {
+                    'page_title':page_title,
+                    'job_title':job_title,
+                    'company':company,
+                    'work_mode': job_types['work_mode'],
+                    'employment_type': job_types['employment_type'],
+                    'description':job_description
+                }
+            finally:
+                context.close()
+    except PlaywrightTimeoutError as e:
+        print(f'[WARNING] Page load timeout: {e}')
+
+    except PlaywrightError as e:
+        print(f'[ERROR] playwright error: {e}')
 
     return None
-
-# ========================================
-# get_job_data_from_url 내부에서 사용되는 함수
-# ========================================
-
-def parse_job_html(html: str):
-    soup = BeautifulSoup(html, "html.parser")
-
-    # 페이지 제목
-    page_title = (
-        soup.title.get_text(strip=True)
-        if soup.title else None
-    )
-
-    # 검색창에 표시되는 공고 제목
-    title_element = soup.select_one(
-        ".search-bar__full-placeholder"
-    )
-    job_title = (
-        title_element.get_text(" ", strip=True)
-        if title_element else None
-    )
-
-    # 회사 이름
-    company_element = soup.select("a.topcard__org-name-link")
-    company = company_element[0].text.strip() if company_element else None
-
-    # 공고 상세 설명
-    description_element = soup.select_one(
-        ".description__text"
-    )
-    description = (
-        description_element.get_text("\n", strip=True)
-        if description_element else None
-    )
-
-    return {
-        "page_title": page_title,
-        "job_title": job_title,
-        "company": company,
-        "description": description,
-    }

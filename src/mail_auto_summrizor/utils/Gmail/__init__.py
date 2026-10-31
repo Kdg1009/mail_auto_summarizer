@@ -50,7 +50,7 @@ from mail_auto_summrizor.utils.Gmail.gmail_message_utils import (
 from mail_auto_summrizor.utils.paths import CACHE_DIR
 import json
 
-def GmailDataHelper(service, max_page_count=15) -> dict[str,dict]:
+def GmailDataHelper(scopes, max_page_count=15) -> dict[str,dict]:
     '''
     This method integrates all needed process for getting job ids from Gmail.
 
@@ -65,6 +65,8 @@ def GmailDataHelper(service, max_page_count=15) -> dict[str,dict]:
             "job_id": { "url" : ${URL} },
         }
     '''
+    creds = get_credential(scopes)
+    service = build('gmail', 'v1', credentials=creds)
 
     # [Format]
     # [ {msg_id : thread_id} ]

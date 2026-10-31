@@ -22,7 +22,7 @@ def LLMDataHelper(model:str, verbose:bool = True, enable_time_log:bool = False):
     }
     '''
     start = time.perf_counter()
-    #warmup_model(model)
+    warmup_model(model)
 
     with open(CACHE_DIR/"jobs_info.cache_.json", 'r', encoding='utf-8') as f:
         jobs_infos = json.load(f)

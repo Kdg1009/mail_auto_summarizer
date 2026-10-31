@@ -1,13 +1,11 @@
 import json
-from time import sleep
-from random import randint
 import requests
 
 from mail_auto_summrizor.utils.cache.cache_utils import save_cache
 from mail_auto_summrizor.utils.LinkedIn.data_mining_utils import get_job_data_from_url
 from mail_auto_summrizor.utils.paths import CACHE_DIR
 
-def LinkedInDataHelper(gmail_response:dict[str,dict], keep_log=False):
+def LinkedInDataHelper(keep_log=False):
     '''
     This method will handle output result of parse_message().
     
@@ -15,12 +13,14 @@ def LinkedInDataHelper(gmail_response:dict[str,dict], keep_log=False):
     It returns `requests.exceptions.HTTPError:
                     429 Client Error: Too Many Requests.` if it thinks requests is made by crawler. 
     
-    [NOTICE]
+    Save retreived data into '  
 
+    [NOTICE]
     keep_log parameter must be synchronize with => 아마 jobs_meta.cache도 job id 한번 가져오고 캐싱하는게 편할 듯(이거랑 싱크 맞추는 걸 지금 생각 중)
     '''
     meta_path = CACHE_DIR / "jobs_meta.cache.json"
     info_path = CACHE_DIR / "jobs_info.cache.json"
+    error_path = CACHE_DIR / "jobs_info_error.logs.txt"
 
     with open(meta_path, 'r', encoding='utf-8') as file:
         job_id_url_mappings = json.load(file)
@@ -31,7 +31,7 @@ def LinkedInDataHelper(gmail_response:dict[str,dict], keep_log=False):
     else:
         job_data_cache = {}
 
-    for job_id in job_id_url_mappings:
+    for job_id,job_metadata in job_id_url_mappings.items():
 
         # Skip cached job alert.
         if job_id in job_data_cache.keys():
@@ -44,8 +44,11 @@ def LinkedInDataHelper(gmail_response:dict[str,dict], keep_log=False):
 
             if not job_data:
                 print(f'[WARNING] {job_id}: Data is empty.')
+                with open(error_path,'a',encoding='utf-8') as f:
+                    f.write(f"{url}\n")
                 continue
 
+            job_data['received_at'] = job_metadata['received_at']
             job_data_cache[job_id] = job_data
             print(f'[INFO] Get {job_id} info successfully.')
 
@@ -67,4 +70,9 @@ def LinkedInDataHelper(gmail_response:dict[str,dict], keep_log=False):
         except requests.exceptions.RequestException as e:
             print(f'[ERROR] Request error ({job_id}): {e}')
 
-        #sleep(randint(1,10))
+if __name__ == '__main__':
+    result = get_job_data_from_url(
+        "https://www.linkedin.com/comm/jobs/view/4476254979",
+        headless=True
+    )
+    print(result)

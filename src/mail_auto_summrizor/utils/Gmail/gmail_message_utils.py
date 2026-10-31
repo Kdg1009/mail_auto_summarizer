@@ -96,6 +96,8 @@ def get_messages_ids(
     return result_messages
 
 from typing import Callable
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 def parse_message(service, message_id:str, parse_func:Callable) -> dict[str, dict]:
     """
     Get message from Gmail and parse its body.
@@ -108,16 +110,23 @@ def parse_message(service, message_id:str, parse_func:Callable) -> dict[str, dic
         format="full"
     ).execute()
 
-    payload = result.get("payload")
+    internal_date = int(result['internalDate'])
+    received_at = datetime.fromtimestamp(internal_date / 1000, tz=timezone.utc).astimezone(ZoneInfo("Asia/Seoul"))
 
-    return parse_func(payload)
+    payload = result.get('payload')
+    
+    parsed_data = parse_func(payload)
+
+    for job_data in parsed_data.values():
+        job_data['received_at'] = received_at.isoformat()
+
+    return parsed_data
 
 # ===============================================
 # Methods for extracting information from message
 # ===============================================
 
 import base64
-
 def get_linkedin_url_from_body(payload, jobs=None) -> dict[str,dict]:
     """
     Output format:
@@ -146,7 +155,6 @@ def get_linkedin_url_from_body(payload, jobs=None) -> dict[str,dict]:
             return jobs
         
         html_data = base64.urlsafe_b64decode(data).decode("utf-8")
-
         jobs.update(extract_jobs(html_data))
 
     return jobs
