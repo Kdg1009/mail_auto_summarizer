@@ -34,7 +34,29 @@ def record_response_time_cost(ollama_url:str, payload:dict, verbose:bool=True) -
         print(f"응답 생성 시간: {data.get('eval_duration', 0) / 1e9:.2f}초")
 
     content = data["message"]["content"]
-    result = json.loads(content)
+    try:
+        result = json.loads(content)
+
+    except json.JSONDecodeError as e:
+        print("\n[JSON PARSE ERROR]")
+        print(f"Error: {e}")
+        print(f"Line: {e.lineno}, Column: {e.colno}")
+        print(f"Position: {e.pos}")
+
+        lines = content.splitlines()
+
+        start = max(0, e.lineno - 4)
+        end = min(len(lines), e.lineno + 3)
+
+        print("\n[RAW RESPONSE AROUND ERROR]")
+
+        for i in range(start, end):
+            print(f"{i + 1}: {lines[i]}")
+
+        print("\n[RAW RESPONSE]")
+        print(repr(content))
+
+        raise
 
     time_log = {
         "Total time": f"{elapsed:.2f}sec",

@@ -47,41 +47,24 @@ def summary_job_data(job_data: dict, verbose:bool = True, enable_time_log:bool =
 
     time_logs = []
 
-    # 1. Manual extraction
-    # Extract company, job title
-    page_title = job_data.get("page_title","")
+    # 1. Extract company, job title
     company = job_data.get("company")
-    job_title = job_data.get("job_title")
+    job_title = job_data["job_title"]
     description = job_data["description"]
 
     # Preprocess description
     for fn in PREPROCESS_PIPELINE:
         description = fn(description, company=company)
 
-    company_missing = (company is None)
-    job_title_missing = (job_title is None)
+    content['company'] = company
 
-    if company_missing or job_title_missing:
-        if company_missing and job_title_missing:
-            schema = schemas.CMP_JT_SCHEMA
-            sys_prompt = payloads.CMP_JT_SYS_CONTENT
-        
-        elif not job_title_missing:
-            schema = schemas.COMPANY_SCHEMA
-            sys_prompt = payloads.COMPANY_SYS_CONTENT
-        
-        else:
-            schema = schemas.JOB_TITLE_SCHEMA
-            sys_prompt = payloads.JOB_TITLE_SYS_CONTENT
+    schema = schemas.JOB_TITLE_SCHEMA
+    sys_prompt = payloads.JOB_TITLE_SYS_CONTENT
 
-        payload = payloads.create_payload(page_title, MODEL, schema, sys_prompt)
-        response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
-        content.update(response)
-        time_logs.append(time_log)
-
-    else:
-        content["company"] = company
-        content["job_title"] = job_title
+    payload = payloads.create_payload(job_title, MODEL, schema, sys_prompt)
+    response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
+    content.update(response)
+    time_logs.append(time_log)
 
     # 2. Extract responsibilities
     schema = schemas.RESPONSIBILITIES_SCHEMA
@@ -92,7 +75,7 @@ def summary_job_data(job_data: dict, verbose:bool = True, enable_time_log:bool =
     content.update(response)
     time_logs.append(time_log)
     
-    # 3. Extract required skills and preferred skills
+    # 3. Extract required skills, preferred skills and experiences 
     schema = schemas.SKILLS_SCHEMA
     sys_prompt = payloads.SKILLS_SYS_CONTENT
 

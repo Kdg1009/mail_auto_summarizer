@@ -5,7 +5,7 @@ from mail_auto_summrizor.utils.paths import CACHE_DIR
 
 from mail_auto_summrizor.utils.LLM.utils.sumary_utils import summary_job_data, warmup_model
 
-def LLMDataHelper(model:str, verbose:bool = True, enable_time_log:bool = False):
+def LLMDataHelper(model:str, verbose:bool = True, enable_time_log:bool = False, flush_interval: int=20):
     '''
     This helper reads caches/jobs_info.cache.json and summary its content into structured json format.
     and write json file into caches/jobs_summary.cache.json
@@ -21,23 +21,49 @@ def LLMDataHelper(model:str, verbose:bool = True, enable_time_log:bool = False):
         employment_type: list
     }
     '''
+    assert flush_interval > 0
+
+    # Warm up model
     start = time.perf_counter()
     warmup_model(model)
 
-    with open(CACHE_DIR/"jobs_info.cache_.json", 'r', encoding='utf-8') as f:
+    input_path = CACHE_DIR/"jobs_info.cache.json"
+    output_path = CACHE_DIR/"jobs_summary.cache.json"
+
+    # Load jobs info json file
+    with open(input_path, 'r', encoding='utf-8') as f:
         jobs_infos = json.load(f)
 
-    results = {}
+    # Initialize results
+    if output_path.exists():
+        with open(output_path,'r',encoding='utf-8') as f:
+            results = json.load(f)
+    else:
+        results = {}
+    processed = len(results)
 
-    for job_id, job_info in jobs_infos.items():
+    def flush():
+        temp_path = output_path.with_suffix('.tmp')
+
+        with open(temp_path, 'w', encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+
+        temp_path.replace(output_path)
+
+    total = len(jobs_infos)
+    for i, (job_id, job_info) in enumerate(jobs_infos.items()):
+        if processed > i:
+            continue
         if verbose:
-            print(f'[INFO] Processing {job_info['company']}({job_id})')
+            print(f'[INFO] [{i}/{total}] Processing {job_info['company']}({job_id})')
 
         result = summary_job_data(job_info, verbose, enable_time_log)
         results[job_id] = result
 
-    with open(CACHE_DIR/"jobs_summary.cache.json", 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=4)
+        if (i+1) % flush_interval == 0:
+            flush()
+
+    flush()
 
     elapsed = time.perf_counter() - start
     print(f'[INFO] Total time: {elapsed:.2f}s')
