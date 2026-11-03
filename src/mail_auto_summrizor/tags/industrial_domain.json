@@ -1,0 +1,263 @@
+{
+  "version": "1.0.0",
+  "taxonomy": "domain",
+  "description": "기업 또는 채용공고가 속한 산업·사업 분야. 기술 분야(예: computer_vision, simulation)는 domain이 아니라 skill 또는 업무 분류로 관리한다.",
+  "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
+  "tags": [
+    {
+      "id": "robotics",
+      "label": "로봇 산업",
+      "description": "산업용·서비스·물류·의료 등 로봇 제품과 시스템을 개발·공급·운영하는 분야.",
+      "aliases": [
+        "로봇",
+        "로보틱스"
+      ],
+      "parent_id": null,
+      "examples": [
+        "로봇 플랫폼 개발",
+        "로봇 제품 개발"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "industrial_automation",
+      "label": "산업 자동화",
+      "description": "공장·설비·생산라인의 자동화 시스템, 제어 및 통합 분야.",
+      "aliases": [
+        "공장 자동화",
+        "FA",
+        "스마트팩토리 자동화"
+      ],
+      "parent_id": null,
+      "examples": [
+        "PLC 자동화",
+        "생산설비 자동화"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "manufacturing",
+      "label": "제조업",
+      "description": "제품 생산, 제조 공정, 생산기술 및 제조 시스템 분야.",
+      "aliases": [
+        "제조",
+        "제조업",
+        "생산기술"
+      ],
+      "parent_id": null,
+      "examples": [
+        "생산 공정 개선",
+        "제조 시스템 개발"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "automotive",
+      "label": "자동차 산업",
+      "description": "자동차 및 차량용 시스템·부품·소프트웨어 산업.",
+      "aliases": [
+        "자동차",
+        "차량",
+        "모빌리티"
+      ],
+      "parent_id": null,
+      "examples": [
+        "차량용 소프트웨어",
+        "자동차 부품 개발"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "autonomous_mobility",
+      "label": "자율주행·자율이동",
+      "description": "자율주행차, 배송로봇, AMR 등 자율 이동 시스템을 개발하는 분야.",
+      "aliases": [
+        "자율주행",
+        "자율이동",
+        "무인 이동체"
+      ],
+      "parent_id": "automotive",
+      "examples": [
+        "자율주행 시스템",
+        "AMR 내비게이션"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "logistics",
+      "label": "물류·유통",
+      "description": "물류센터, 창고, 배송, 운송 및 공급망 운영 분야.",
+      "aliases": [
+        "물류",
+        "창고",
+        "배송",
+        "공급망"
+      ],
+      "parent_id": null,
+      "examples": [
+        "물류센터 자동화",
+        "배송 시스템"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "aerospace",
+      "label": "항공우주",
+      "description": "항공기, 우주 시스템, 항공전자 및 관련 제어·시뮬레이션 분야.",
+      "aliases": [
+        "항공",
+        "우주",
+        "항공우주"
+      ],
+      "parent_id": null,
+      "examples": [
+        "항공 시스템",
+        "비행체 제어"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "defense",
+      "label": "국방·방위산업",
+      "description": "국방용 무인체계, 방산 장비, 군용 로봇 및 관련 시스템 분야.",
+      "aliases": [
+        "국방",
+        "방산",
+        "군수"
+      ],
+      "parent_id": null,
+      "examples": [
+        "군용 무인기",
+        "방산 로봇"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "healthcare",
+      "label": "의료·헬스케어",
+      "description": "의료기기, 수술·재활 로봇 및 의료 관련 기술 분야.",
+      "aliases": [
+        "의료",
+        "헬스케어",
+        "의료기기"
+      ],
+      "parent_id": null,
+      "examples": [
+        "의료로봇",
+        "수술 로봇"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "semiconductor_electronics",
+      "label": "반도체·전자",
+      "description": "반도체, 전자부품, 전자제어 및 관련 제조·설계 분야.",
+      "aliases": [
+        "반도체",
+        "전자",
+        "전자부품"
+      ],
+      "parent_id": null,
+      "examples": [
+        "SoC",
+        "전자 제어 시스템"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "information_technology",
+      "label": "정보기술·소프트웨어",
+      "description": "범용 소프트웨어, IT 플랫폼, 클라우드 및 기업용 시스템 분야.",
+      "aliases": [
+        "IT",
+        "소프트웨어",
+        "정보기술"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기업용 소프트웨어",
+        "클라우드 플랫폼"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "energy_environment",
+      "label": "에너지·환경",
+      "description": "에너지 관리, 전력, 친환경·환경 기술 및 관련 자동화 분야.",
+      "aliases": [
+        "에너지",
+        "환경",
+        "전력"
+      ],
+      "parent_id": null,
+      "examples": [
+        "에너지 최적화",
+        "환경 설비"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "construction_infrastructure",
+      "label": "건설·인프라",
+      "description": "건설, 플랜트, 인프라 시설 및 디지털 인프라 분야.",
+      "aliases": [
+        "건설",
+        "플랜트",
+        "인프라"
+      ],
+      "parent_id": null,
+      "examples": [
+        "인프라 자동화",
+        "건설 장비"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "research_development",
+      "label": "연구개발 서비스",
+      "description": "특정 산업 제품보다 연구기관·기술연구소의 R&D 활동 자체가 중심인 경우.",
+      "aliases": [
+        "R&D",
+        "연구소",
+        "기술 연구"
+      ],
+      "parent_id": null,
+      "examples": [
+        "선행기술 연구",
+        "기초·응용 연구"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "general_industry",
+      "label": "기타·복합 산업",
+      "description": "공고 내용만으로 특정 산업을 분류하기 어렵거나 여러 산업이 동등하게 결합된 경우.",
+      "aliases": [
+        "기타 산업",
+        "복합 산업"
+      ],
+      "parent_id": null,
+      "examples": [
+        "다분야 기술 컨설팅"
+      ],
+      "excluded_examples": [
+        "산업을 알 수 없다는 이유만으로 무조건 선택하지 말 것"
+      ],
+      "active": true
+    }
+  ]
+}

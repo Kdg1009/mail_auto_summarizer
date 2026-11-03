@@ -1,0 +1,128 @@
+{
+  "version": "1.0.0",
+  "taxonomy": "seniority",
+  "description": "직무의 경력·책임 수준. 공고에 근거가 없으면 unspecified를 사용하고 경력 연수만으로 기계적으로 단정하지 않는다.",
+  "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
+  "tags": [
+    {
+      "id": "entry_level",
+      "label": "신입",
+      "description": "실무 경력을 요구하지 않거나 신입 지원을 명시한 수준.",
+      "aliases": [
+        "신입",
+        "Entry Level",
+        "Graduate"
+      ],
+      "parent_id": null,
+      "examples": [
+        "신입 지원 가능"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "junior",
+      "label": "주니어",
+      "description": "초기 경력 단계로 통상 1~3년 수준이나 공고 표현을 우선한다.",
+      "aliases": [
+        "주니어",
+        "Junior"
+      ],
+      "parent_id": null,
+      "examples": [
+        "주니어 엔지니어"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "mid",
+      "label": "중급",
+      "description": "독립적으로 업무를 수행하는 중간 경력 수준.",
+      "aliases": [
+        "중급",
+        "Mid-level"
+      ],
+      "parent_id": null,
+      "examples": [
+        "경력 3~5년"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "senior",
+      "label": "시니어",
+      "description": "높은 전문성과 독립적 문제 해결을 요구하는 고경력 수준.",
+      "aliases": [
+        "시니어",
+        "Senior"
+      ],
+      "parent_id": null,
+      "examples": [
+        "Senior Engineer"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "lead",
+      "label": "리드·책임자",
+      "description": "기술 방향 설정 또는 팀·프로젝트 리딩을 맡는 수준.",
+      "aliases": [
+        "리드",
+        "Lead",
+        "Tech Lead"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기술 리더"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "manager",
+      "label": "관리자",
+      "description": "인력·조직·프로젝트 운영 관리가 주된 역할인 수준.",
+      "aliases": [
+        "매니저",
+        "Manager"
+      ],
+      "parent_id": null,
+      "examples": [
+        "Engineering Manager"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "executive",
+      "label": "임원",
+      "description": "임원급 조직·사업·기술 총괄 역할.",
+      "aliases": [
+        "임원",
+        "Executive"
+      ],
+      "parent_id": null,
+      "examples": [
+        "CTO"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "unspecified",
+      "label": "미지정",
+      "description": "공고에서 경력 수준을 명확히 판단할 근거가 없는 경우.",
+      "aliases": [
+        "미정",
+        "명시 없음"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true
+    }
+  ]
+}

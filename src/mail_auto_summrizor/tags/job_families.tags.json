@@ -1,0 +1,230 @@
+{
+  "version": "1.0.0",
+  "taxonomy": "job_family",
+  "description": "채용 직무의 주된 역할을 나타내는 대분류. 한 공고에는 가장 중심적인 직무군 하나를 우선 부여한다.",
+  "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
+  "tags": [
+    {
+      "id": "robotics_engineering",
+      "label": "로봇 엔지니어링",
+      "description": "로봇 시스템·플랫폼·제어·통합 개발 직무",
+      "aliases": [
+        "robot engineer",
+        "로보틱스 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "로봇 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "ai_ml_engineering",
+      "label": "AI·머신러닝 엔지니어링",
+      "description": "머신러닝·딥러닝·인지·학습 모델을 개발하고 제품에 적용하는 직무",
+      "aliases": [
+        "AI 엔지니어",
+        "ML 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "AI·머신러닝 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "software_engineering",
+      "label": "소프트웨어 엔지니어링",
+      "description": "응용·플랫폼·백엔드·프론트엔드 등 일반 소프트웨어 개발 직무",
+      "aliases": [
+        "소프트웨어 개발자",
+        "SW 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "소프트웨어 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "embedded_software_engineering",
+      "label": "임베디드 소프트웨어 엔지니어링",
+      "description": "펌웨어, BSP, 드라이버, RTOS 및 장치 제어 소프트웨어 직무",
+      "aliases": [
+        "임베디드 개발자",
+        "펌웨어 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "임베디드 소프트웨어 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "hardware_engineering",
+      "label": "하드웨어 엔지니어링",
+      "description": "전자회로, PCB, 전장, 보드 및 하드웨어 설계·개발 직무",
+      "aliases": [
+        "하드웨어 개발자",
+        "회로 설계 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "하드웨어 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "mechanical_engineering",
+      "label": "기계·기구 엔지니어링",
+      "description": "기구·메커니즘·구동계·제품 구조 설계 직무",
+      "aliases": [
+        "기계 설계자",
+        "기구 설계 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기계·기구 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "simulation_engineering",
+      "label": "시뮬레이션 엔지니어링",
+      "description": "물리·로봇·공정 시뮬레이션 및 디지털 트윈 환경 개발 직무",
+      "aliases": [
+        "시뮬레이션 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시뮬레이션 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "manufacturing_engineering",
+      "label": "제조·생산기술 엔지니어링",
+      "description": "제조 공정, 생산기술, 설비 및 제조 시스템 개선 직무",
+      "aliases": [
+        "생산기술 엔지니어",
+        "공정 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "제조·생산기술 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "systems_engineering",
+      "label": "시스템 엔지니어링",
+      "description": "복수 하위 시스템의 아키텍처, 인터페이스 및 시스템 수준 설계 직무",
+      "aliases": [
+        "시스템 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시스템 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "research_engineering",
+      "label": "연구 엔지니어링",
+      "description": "선행 연구, 알고리즘 연구, 실험 및 기술 검증 중심 직무",
+      "aliases": [
+        "연구원",
+        "Research Engineer"
+      ],
+      "parent_id": null,
+      "examples": [
+        "연구 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "test_validation_engineering",
+      "label": "시험·검증 엔지니어링",
+      "description": "제품·시스템·소프트웨어의 테스트, 검증, 품질 평가 직무",
+      "aliases": [
+        "검증 엔지니어",
+        "테스트 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시험·검증 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "field_application_engineering",
+      "label": "필드·애플리케이션 엔지니어링",
+      "description": "고객 현장 기술지원, 솔루션 적용, 문제 재현·해결 및 기술 컨설팅 직무",
+      "aliases": [
+        "FAE",
+        "필드 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "필드·애플리케이션 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "project_management",
+      "label": "프로젝트·프로그램 관리",
+      "description": "기술 프로젝트의 일정·자원·위험·협력사·조직 운영 직무",
+      "aliases": [
+        "프로젝트 매니저",
+        "PM"
+      ],
+      "parent_id": null,
+      "examples": [
+        "프로젝트·프로그램 관리 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "technical_management",
+      "label": "기술 조직 관리",
+      "description": "엔지니어링 팀·기술 조직의 리딩, 인력·기술 전략 및 성과 관리 직무",
+      "aliases": [
+        "Engineering Manager",
+        "기술 관리자"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기술 조직 관리 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "other_engineering",
+      "label": "기타 엔지니어링",
+      "description": "공고 정보가 충분하지만 위 직무군에 명확히 해당하지 않는 엔지니어링 직무",
+      "aliases": [
+        "기타 엔지니어"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기타 엔지니어링 관련 업무"
+      ],
+      "excluded_examples": [],
+      "active": true
+    }
+  ]
+}

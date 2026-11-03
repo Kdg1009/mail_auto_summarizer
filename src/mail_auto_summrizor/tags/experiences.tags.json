@@ -1,13 +1,188 @@
 {
-    "requirement_type":[
-        "work_experience",
-        "degree",
-        "project_experience"
-    ],
-    "field":[
-        "software_development",
-        "robotics",
-        "autonomous_development",
-        "system_integration"
-    ]
+  "version": "1.0.0",
+  "taxonomy": "experience_type",
+  "description": "경력·경험 요구사항의 종류. 학위 수준은 별도 taxonomy를 만들지 않으며 degree 관련 값은 요청에 따라 제외했다.",
+  "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
+  "tags": [
+    {
+      "id": "work_experience",
+      "label": "실무 경력",
+      "description": "특정 직무·기술·산업에서의 유급 실무 경력",
+      "aliases": [
+        "관련 분야 경력",
+        "실무 경력"
+      ],
+      "parent_id": null,
+      "examples": [
+        "실무 경력 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "project_experience",
+      "label": "프로젝트 수행 경험",
+      "description": "프로젝트 참여·수행·완료 경험",
+      "aliases": [
+        "프로젝트 경험",
+        "프로젝트 참여"
+      ],
+      "parent_id": null,
+      "examples": [
+        "프로젝트 수행 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "research_experience",
+      "label": "연구 경험",
+      "description": "연구 과제, 논문, 선행 연구 및 실험 경험",
+      "aliases": [
+        "연구 경험",
+        "R&D 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "연구 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "product_development_experience",
+      "label": "제품 개발 경험",
+      "description": "제품·시제품·양산품의 설계 및 개발 경험",
+      "aliases": [
+        "제품 개발",
+        "제품화 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "제품 개발 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "deployment_experience",
+      "label": "현장 구축·배포 경험",
+      "description": "실제 현장 설치, 배포, 시운전 및 운영 전개 경험",
+      "aliases": [
+        "현장 구축",
+        "배포 경험",
+        "시운전"
+      ],
+      "parent_id": null,
+      "examples": [
+        "현장 구축·배포 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "system_integration_experience",
+      "label": "시스템 통합 경험",
+      "description": "하드웨어·소프트웨어·센서·장비를 통합한 경험",
+      "aliases": [
+        "시스템 통합 경험",
+        "장비 연동 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시스템 통합 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "production_experience",
+      "label": "양산·제조 경험",
+      "description": "양산 이관, 제조 공정, 생산기술 및 제조 운영 경험",
+      "aliases": [
+        "양산 경험",
+        "제조 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "양산·제조 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "leadership_experience",
+      "label": "리더십·관리 경험",
+      "description": "팀 리딩, 조직 관리, 프로젝트 또는 기술 리딩 경험",
+      "aliases": [
+        "팀 리딩 경험",
+        "관리 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "리더십·관리 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "customer_experience",
+      "label": "고객 대응 경험",
+      "description": "고객 기술지원, 고객사 협업 및 기술 컨설팅 경험",
+      "aliases": [
+        "고객 대응",
+        "고객사 협업"
+      ],
+      "parent_id": null,
+      "examples": [
+        "고객 대응 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "domain_experience",
+      "label": "산업·도메인 경험",
+      "description": "특정 산업 또는 업무 도메인에 대한 실무 경험",
+      "aliases": [
+        "산업 경험",
+        "도메인 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "산업·도메인 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "technical_experience",
+      "label": "특정 기술 활용 경험",
+      "description": "특정 기술·장비·플랫폼을 실제로 사용한 경험",
+      "aliases": [
+        "활용 경험",
+        "사용 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "특정 기술 활용 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "other_experience",
+      "label": "기타 경험",
+      "description": "위 분류에 명확히 속하지 않는 경험 요구사항",
+      "aliases": [
+        "기타 경험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기타 경험 보유"
+      ],
+      "excluded_examples": [],
+      "active": true
+    }
+  ]
 }

@@ -1,18 +1,1029 @@
 {
-    "category":[
-        "programming_language",
-        "simulation_tool",
-        "operating_system",
-        "robotics_middleware",
-        "development_tool"
-    ],
-    "name":[
-        "Python",
-        "C++",
+  "version": "1.0.0",
+  "taxonomy": "skill",
+  "description": "공고에 직접 언급된 기술·도구·프레임워크·표준의 표준 사전. 일반적인 업무 개념이나 추상적 역량은 기술 tag로 만들지 않는다.",
+  "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
+  "tags": [
+    {
+      "id": "c",
+      "label": "C",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "C language"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "cpp",
+      "label": "C++",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "C plus plus"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "파이썬",
+        "Python3"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "nodejs",
+      "label": "Node.js",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "golang",
+      "label": "Go",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "bash_shell",
+      "label": "Bash / Shell",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "matlab",
+      "label": "MATLAB",
+      "description": "programming_language 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "MATLAB"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "programming_language"
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "description": "operating_system 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "operating_system"
+    },
+    {
+      "id": "embedded_linux",
+      "label": "Embedded Linux",
+      "description": "operating_system 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "operating_system"
+    },
+    {
+      "id": "rtos",
+      "label": "RTOS",
+      "description": "operating_system 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Real-Time Operating System"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "operating_system"
+    },
+    {
+      "id": "free_rtos",
+      "label": "FreeRTOS",
+      "description": "operating_system 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "operating_system"
+    },
+    {
+      "id": "ros",
+      "label": "ROS",
+      "description": "robotics_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Robot Operating System",
+        "ROS 1"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_framework"
+    },
+    {
+      "id": "ros2",
+      "label": "ROS 2",
+      "description": "robotics_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
         "ROS2",
-        "IsaacSim",
-        "Docker",
-        "Linux",
-        "Git"
-    ]
+        "ROS 2"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_framework"
+    },
+    {
+      "id": "moveit",
+      "label": "MoveIt",
+      "description": "robotics_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_framework"
+    },
+    {
+      "id": "urdf",
+      "label": "URDF",
+      "description": "robotics_description 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_description"
+    },
+    {
+      "id": "mjcf",
+      "label": "MJCF",
+      "description": "robotics_description 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_description"
+    },
+    {
+      "id": "isaac_sim",
+      "label": "NVIDIA Isaac Sim",
+      "description": "robotics_simulator 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Isaac Sim",
+        "NVIDIA Isaac Sim"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_simulator"
+    },
+    {
+      "id": "isaac_lab",
+      "label": "NVIDIA Isaac Lab",
+      "description": "robotics_simulator 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Isaac Lab",
+        "NVIDIA Isaac Lab"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_simulator"
+    },
+    {
+      "id": "isaac_gym",
+      "label": "Isaac Gym",
+      "description": "robotics_simulator 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_simulator"
+    },
+    {
+      "id": "gazebo",
+      "label": "Gazebo",
+      "description": "robotics_simulator 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_simulator"
+    },
+    {
+      "id": "mujoco",
+      "label": "MuJoCo",
+      "description": "robotics_simulator 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_simulator"
+    },
+    {
+      "id": "pybullet",
+      "label": "PyBullet",
+      "description": "robotics_simulator 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_simulator"
+    },
+    {
+      "id": "omniverse",
+      "label": "NVIDIA Omniverse",
+      "description": "simulation_platform 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "simulation_platform"
+    },
+    {
+      "id": "unity",
+      "label": "Unity",
+      "description": "simulation_platform 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "simulation_platform"
+    },
+    {
+      "id": "physx",
+      "label": "PhysX",
+      "description": "simulation_platform 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "simulation_platform"
+    },
+    {
+      "id": "ansys",
+      "label": "Ansys",
+      "description": "simulation_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "simulation_tool"
+    },
+    {
+      "id": "recurdyn",
+      "label": "RecurDyn",
+      "description": "simulation_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "simulation_tool"
+    },
+    {
+      "id": "simulink",
+      "label": "Simulink",
+      "description": "simulation_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "simulation_tool"
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "description": "ml_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "PyTorch"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ml_framework"
+    },
+    {
+      "id": "tensorflow",
+      "label": "TensorFlow",
+      "description": "ml_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ml_framework"
+    },
+    {
+      "id": "huggingface_transformers",
+      "label": "Hugging Face Transformers",
+      "description": "ml_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ml_framework"
+    },
+    {
+      "id": "scikit_learn",
+      "label": "scikit-learn",
+      "description": "ml_framework 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ml_framework"
+    },
+    {
+      "id": "machine_learning",
+      "label": "Machine Learning",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "deep_learning",
+      "label": "Deep Learning",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "reinforcement_learning",
+      "label": "Reinforcement Learning",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "imitation_learning",
+      "label": "Imitation Learning",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "computer_vision",
+      "label": "Computer Vision",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "multimodal_ai",
+      "label": "Multimodal AI",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "llm",
+      "label": "Large Language Models (LLM)",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Large Language Model"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "vla",
+      "label": "Vision-Language-Action (VLA)",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Vision Language Action"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "vlm",
+      "label": "Vision-Language Model (VLM)",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Vision Language Model"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "neural_rendering",
+      "label": "Neural Rendering",
+      "description": "ai_method 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ai_method"
+    },
+    {
+      "id": "slam",
+      "label": "SLAM",
+      "description": "robotics_algorithm 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_algorithm"
+    },
+    {
+      "id": "visual_slam",
+      "label": "Visual SLAM",
+      "description": "robotics_algorithm 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_algorithm"
+    },
+    {
+      "id": "sensor_fusion",
+      "label": "Sensor Fusion",
+      "description": "robotics_algorithm 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "robotics_algorithm"
+    },
+    {
+      "id": "camera",
+      "label": "Camera",
+      "description": "sensor 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "sensor"
+    },
+    {
+      "id": "lidar",
+      "label": "LiDAR",
+      "description": "sensor 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "LiDAR",
+        "라이다"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "sensor"
+    },
+    {
+      "id": "imu",
+      "label": "IMU",
+      "description": "sensor 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "관성측정장치"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "sensor"
+    },
+    {
+      "id": "gnss",
+      "label": "GNSS",
+      "description": "sensor 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "GPS/GNSS"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "sensor"
+    },
+    {
+      "id": "opencv",
+      "label": "OpenCV",
+      "description": "vision_pointcloud 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Open CV"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "vision_pointcloud"
+    },
+    {
+      "id": "open3d",
+      "label": "Open3D",
+      "description": "vision_pointcloud 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "vision_pointcloud"
+    },
+    {
+      "id": "pcl",
+      "label": "Point Cloud Library (PCL)",
+      "description": "vision_pointcloud 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "vision_pointcloud"
+    },
+    {
+      "id": "point_cloud",
+      "label": "Point Cloud",
+      "description": "vision_pointcloud 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "vision_pointcloud"
+    },
+    {
+      "id": "cuda",
+      "label": "CUDA",
+      "description": "gpu_acceleration 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "gpu_acceleration"
+    },
+    {
+      "id": "tensorrt",
+      "label": "TensorRT",
+      "description": "gpu_acceleration 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "gpu_acceleration"
+    },
+    {
+      "id": "onnx",
+      "label": "ONNX",
+      "description": "ml_deployment 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ml_deployment"
+    },
+    {
+      "id": "openvino",
+      "label": "OpenVINO",
+      "description": "ml_deployment 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "ml_deployment"
+    },
+    {
+      "id": "bsp",
+      "label": "Board Support Package (BSP)",
+      "description": "embedded_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "embedded_technology"
+    },
+    {
+      "id": "device_driver",
+      "label": "Device Driver",
+      "description": "embedded_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "embedded_technology"
+    },
+    {
+      "id": "mcu",
+      "label": "Microcontroller (MCU)",
+      "description": "embedded_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "MCU",
+        "마이크로컨트롤러"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "embedded_technology"
+    },
+    {
+      "id": "embedded_linux",
+      "label": "Embedded Linux",
+      "description": "embedded_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "embedded_technology"
+    },
+    {
+      "id": "yocto",
+      "label": "Yocto Project",
+      "description": "embedded_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "embedded_technology"
+    },
+    {
+      "id": "buildroot",
+      "label": "Buildroot",
+      "description": "embedded_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "embedded_technology"
+    },
+    {
+      "id": "plc",
+      "label": "PLC",
+      "description": "industrial_automation 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Programmable Logic Controller"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "industrial_automation"
+    },
+    {
+      "id": "ethercat",
+      "label": "EtherCAT",
+      "description": "industrial_automation 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "EtherCAT"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "industrial_automation"
+    },
+    {
+      "id": "grpc",
+      "label": "gRPC",
+      "description": "network_protocol 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "network_protocol"
+    },
+    {
+      "id": "mqtt",
+      "label": "MQTT",
+      "description": "network_protocol 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "network_protocol"
+    },
+    {
+      "id": "rtsp",
+      "label": "RTSP",
+      "description": "network_protocol 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "network_protocol"
+    },
+    {
+      "id": "tsn",
+      "label": "Time-Sensitive Networking (TSN)",
+      "description": "network_protocol 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "network_protocol"
+    },
+    {
+      "id": "git",
+      "label": "Git",
+      "description": "development_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "development_tool"
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "description": "development_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "development_tool"
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "description": "development_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "development_tool"
+    },
+    {
+      "id": "ci_cd",
+      "label": "CI/CD",
+      "description": "devops_ci 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "CI/CD pipeline"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "devops_ci"
+    },
+    {
+      "id": "jenkins",
+      "label": "Jenkins",
+      "description": "devops_ci 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "devops_ci"
+    },
+    {
+      "id": "cad",
+      "label": "CAD",
+      "description": "design_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "Computer-Aided Design"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "design_tool"
+    },
+    {
+      "id": "solidworks",
+      "label": "SOLIDWORKS",
+      "description": "design_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [
+        "SolidWorks"
+      ],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "design_tool"
+    },
+    {
+      "id": "numpy",
+      "label": "NumPy",
+      "description": "data_science 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "data_science"
+    },
+    {
+      "id": "pandas",
+      "label": "pandas",
+      "description": "data_science 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "data_science"
+    },
+    {
+      "id": "rest_api",
+      "label": "REST API",
+      "description": "software_interface 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "software_interface"
+    },
+    {
+      "id": "ardupilot",
+      "label": "ArduPilot",
+      "description": "uav_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "uav_technology"
+    },
+    {
+      "id": "px4",
+      "label": "PX4",
+      "description": "uav_technology 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "uav_technology"
+    },
+    {
+      "id": "openusd",
+      "label": "OpenUSD",
+      "description": "3d_data_format 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "3d_data_format"
+    },
+    {
+      "id": "cmake",
+      "label": "CMake",
+      "description": "build_tool 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "build_tool"
+    },
+    {
+      "id": "gstreamer",
+      "label": "GStreamer",
+      "description": "multimedia 유형에 속하는 기술·도구·표준. 공고에서 해당 기술을 직접 요구하거나 사용 경험을 명시한 경우에만 부여한다.",
+      "aliases": [],
+      "parent_id": null,
+      "examples": [],
+      "excluded_examples": [],
+      "active": true,
+      "category": "multimedia"
+    }
+  ]
 }

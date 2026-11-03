@@ -1,0 +1,281 @@
+{
+  "version": "1.0.0",
+  "taxonomy": "task_area",
+  "description": "채용공고에 명시된 업무의 큰 유형. 세부 업무 내용은 tag로 만들지 않고 task_summary 자유 텍스트로 저장한다.",
+  "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
+  "tags": [
+    {
+      "id": "software_development",
+      "label": "소프트웨어 개발",
+      "description": "응용·플랫폼·시스템·펌웨어 소프트웨어를 설계하고 구현하는 업무",
+      "aliases": [
+        "SW 개발",
+        "프로그램 개발"
+      ],
+      "parent_id": null,
+      "examples": [
+        "소프트웨어 개발 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "algorithm_development",
+      "label": "알고리즘 개발",
+      "description": "인지·추정·계획·제어 등 알고리즘을 설계·구현하는 업무",
+      "aliases": [
+        "알고리즘 설계",
+        "알고리즘 구현"
+      ],
+      "parent_id": null,
+      "examples": [
+        "알고리즘 개발 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "ai_model_development",
+      "label": "AI 모델 개발",
+      "description": "머신러닝·딥러닝 모델의 설계, 학습, 평가 및 개선 업무",
+      "aliases": [
+        "AI 모델 개발",
+        "모델 학습"
+      ],
+      "parent_id": null,
+      "examples": [
+        "AI 모델 개발 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "research",
+      "label": "연구·선행기술 개발",
+      "description": "새로운 기술·방법·아키텍처를 조사·실험·연구하는 업무",
+      "aliases": [
+        "연구",
+        "선행 개발"
+      ],
+      "parent_id": null,
+      "examples": [
+        "연구·선행기술 개발 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "system_design",
+      "label": "시스템·아키텍처 설계",
+      "description": "시스템 구조, 구성요소, 인터페이스 및 요구사항을 설계하는 업무",
+      "aliases": [
+        "시스템 설계",
+        "아키텍처 설계"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시스템·아키텍처 설계 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "system_integration",
+      "label": "시스템 통합",
+      "description": "하드웨어·소프트웨어·센서·외부 시스템을 연결하고 통합하는 업무",
+      "aliases": [
+        "시스템 통합",
+        "장비 연동"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시스템 통합 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "testing_validation",
+      "label": "시험·테스트·검증",
+      "description": "기능·성능·안전·신뢰성 시험 및 검증 업무",
+      "aliases": [
+        "테스트",
+        "검증",
+        "시험"
+      ],
+      "parent_id": null,
+      "examples": [
+        "시험·테스트·검증 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "deployment_operations",
+      "label": "배포·구축·운영",
+      "description": "제품·시스템의 현장 배포, 설치, 구축 및 운영 업무",
+      "aliases": [
+        "배포",
+        "현장 구축",
+        "운영"
+      ],
+      "parent_id": null,
+      "examples": [
+        "배포·구축·운영 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "maintenance_support",
+      "label": "유지보수·기술지원",
+      "description": "장애 대응, 디버깅, 유지보수 및 고객 기술지원 업무",
+      "aliases": [
+        "유지보수",
+        "기술지원",
+        "트러블슈팅"
+      ],
+      "parent_id": null,
+      "examples": [
+        "유지보수·기술지원 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "performance_optimization",
+      "label": "성능·공정 최적화",
+      "description": "소프트웨어·시스템·공정의 성능, 비용, 자원 효율 개선 업무",
+      "aliases": [
+        "성능 최적화",
+        "공정 최적화"
+      ],
+      "parent_id": null,
+      "examples": [
+        "성능·공정 최적화 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "data_engineering",
+      "label": "데이터 수집·처리",
+      "description": "데이터 수집, 전처리, 파이프라인, 저장 및 분석 기반 구축 업무",
+      "aliases": [
+        "데이터 파이프라인",
+        "데이터 처리"
+      ],
+      "parent_id": null,
+      "examples": [
+        "데이터 수집·처리 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "mechanical_design",
+      "label": "기계·기구 설계",
+      "description": "기구, 메커니즘, 구동계 및 기계 구조 설계 업무",
+      "aliases": [
+        "기구 설계",
+        "메커니즘 설계"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기계·기구 설계 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "hardware_design",
+      "label": "하드웨어·회로 설계",
+      "description": "회로, PCB, 전장, 제어기 및 전자 하드웨어 설계 업무",
+      "aliases": [
+        "회로 설계",
+        "PCB 설계"
+      ],
+      "parent_id": null,
+      "examples": [
+        "하드웨어·회로 설계 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "manufacturing_process",
+      "label": "제조·생산 공정",
+      "description": "생산 공정 설계, 생산기술, 제조성 개선 및 공정 관리 업무",
+      "aliases": [
+        "생산기술",
+        "공정 설계"
+      ],
+      "parent_id": null,
+      "examples": [
+        "제조·생산 공정 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "project_management",
+      "label": "프로젝트 관리",
+      "description": "일정, 예산, 리스크, 산출물, 협력사 및 프로젝트 수행 관리 업무",
+      "aliases": [
+        "프로젝트 관리",
+        "일정 관리"
+      ],
+      "parent_id": null,
+      "examples": [
+        "프로젝트 관리 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "technical_documentation",
+      "label": "기술 문서화",
+      "description": "설계 문서, 매뉴얼, 보고서, 가이드 및 기술 산출물 작성 업무",
+      "aliases": [
+        "기술 문서 작성",
+        "문서화"
+      ],
+      "parent_id": null,
+      "examples": [
+        "기술 문서화 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "customer_collaboration",
+      "label": "고객·유관부서 협업",
+      "description": "고객 요구 분석, 기술 협의, 부서 간 협업 및 커뮤니케이션 업무",
+      "aliases": [
+        "고객 협의",
+        "유관부서 협업"
+      ],
+      "parent_id": null,
+      "examples": [
+        "고객·유관부서 협업 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    },
+    {
+      "id": "team_leadership",
+      "label": "팀 리딩·인력 관리",
+      "description": "팀 운영, 멘토링, 업무 배분 및 기술 조직 리딩 업무",
+      "aliases": [
+        "팀 리딩",
+        "멘토링"
+      ],
+      "parent_id": null,
+      "examples": [
+        "팀 리딩·인력 관리 수행"
+      ],
+      "excluded_examples": [],
+      "active": true
+    }
+  ]
+}

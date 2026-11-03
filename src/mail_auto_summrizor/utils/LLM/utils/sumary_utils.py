@@ -6,7 +6,7 @@ from mail_auto_summrizor.utils.LLM.data_interface_manage import schemas
 from mail_auto_summrizor.utils.LLM.utils.preprocess_utils import PREPROCESS_PIPELINE
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL = "qwen3.5:4b-q4_K_M"
+MODEL = "gemma2:9b-instruct-q8_0"
 
 JOB_INFO_CACHE = CACHE_DIR / "jobs_info.cache.json"
 
@@ -78,15 +78,6 @@ def summary_job_data(job_data: dict, verbose:bool = True, enable_time_log:bool =
     # 3. Extract required skills, preferred skills and experiences 
     schema = schemas.SKILLS_SCHEMA
     sys_prompt = payloads.SKILLS_SYS_CONTENT
-
-    payload = payloads.create_payload(description, MODEL, schema, sys_prompt)
-    response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
-    content.update(response)
-    time_logs.append(time_log)
-
-    # 4. Extract soft skills
-    schema = schemas.SOFT_SKILLS_SCHEMA
-    sys_prompt = payloads.SOFT_SKILLS_SYS_CONTENT
 
     payload = payloads.create_payload(description, MODEL, schema, sys_prompt)
     response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
