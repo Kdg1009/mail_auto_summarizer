@@ -30,6 +30,10 @@
 ![image](/data/images/ui_blueprint.png)
 <br><br>
 
+**제공하는 정보**
+1. 월 별 채용공고 정보 및 상세 정보
+2. 월 별 채용 형태(
+
 # 실행 방법
 
 **server side**

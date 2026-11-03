@@ -1,0 +1,18 @@
+{
+    "category":[
+        "programming_language",
+        "simulation_tool",
+        "operating_system",
+        "robotics_middleware",
+        "development_tool"
+    ],
+    "name":[
+        "Python",
+        "C++",
+        "ROS2",
+        "IsaacSim",
+        "Docker",
+        "Linux",
+        "Git"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "requirement_type":[
+        "work_experience",
+        "degree",
+        "project_experience"
+    ],
+    "field":[
+        "software_development",
+        "robotics",
+        "autonomous_development",
+        "system_integration"
+    ]
+}
