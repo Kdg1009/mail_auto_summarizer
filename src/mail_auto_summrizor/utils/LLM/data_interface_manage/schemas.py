@@ -9,7 +9,7 @@ Schema is data format that llm follows when response.
 JOB_TITLE_SCHEMA = {
     "type":"object",
     "properties":{
-        "domain_tags": {
+        "industrial_domain_tags": {
             "type": "array",
             "items": {"type":"string"},
         },
@@ -18,7 +18,7 @@ JOB_TITLE_SCHEMA = {
         "evidence":{"type":"string"}
     },
     "required":[
-        "domain_tags",
+        "industrial_domain_tags",
         "job_family_tag",
         "seniority_tag",
         "evidence"
@@ -32,13 +32,13 @@ JOB_TITLE_SCHEMA = {
 TASK_SCHEMA = {
     "type":"object",
     "properties": {
-        "category_tag": {"type":"string"},
-        "task_tag": {"type":"string"},
+        "task_areas_tag": {"type":"string"},
+        "task_summary": {"type":"string"},
         "evidence":{"type":"string"}
     },
     "required":[
-        "category_tag",
-        "task_tag",
+        "task_areas_tag",
+        "task_summary",
         "evidence"
     ],
     "additionalProperties":False
@@ -60,6 +60,9 @@ RESPONSIBILITIES_SCHEMA = {
 
 # ============================
 # Skills schema
+# skills.tags.json has 2 tag types
+#   - label
+#   - category
 # ============================
 SKILL_SCHEMA = {
     "type":"object",
@@ -79,8 +82,8 @@ SKILL_SCHEMA = {
 EXPERIENCE_SCHEMA = {
     "type": "object",
     "properties": {
-        "category_tag": {"type": "string"},
-        "field_tag": {"type":"string"},
+        "experience_category_tag": {"type": "string"},
+        "industrial_domain_tag": {"type":"string"},
         "requirement": {
             "type": "string",
             "enum": [
@@ -110,8 +113,8 @@ EXPERIENCE_SCHEMA = {
         "evidence": {"type": "string"}
     },
     "required": [
-        "category_tag",
-        "field_tag",
+        "experience_category_tag",
+        "industrial_domain_tag",
         "requirement",
         "min_years",
         "max_years",
