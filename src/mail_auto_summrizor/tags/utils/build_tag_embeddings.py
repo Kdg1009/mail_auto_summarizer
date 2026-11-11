@@ -71,7 +71,7 @@ def get_taxonomy_hash(taxonomy: dict) -> str:
     ).hexdigest()
 
 def build_embedding_dict(filename:str, force:bool=False):
-    base_dir = Path(__file__).parent
+    base_dir = Path(__file__).parent.parent
     taxonomy_path = base_dir / filename
 
     if not taxonomy_path.exists():
@@ -143,4 +143,4 @@ def build_embedding_dict(filename:str, force:bool=False):
     return embedding_path
 
 if __name__ == "__main__":
-    build_embedding_dict("skills.tags.json")
+    build_embedding_dict("task_areas.tags.json")

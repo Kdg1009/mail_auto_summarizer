@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "taxonomy": "domain",
+  "taxonomy": "industrial_domain",
   "description": "기업 또는 채용공고가 속한 산업·사업 분야. 기술 분야(예: computer_vision, simulation)는 domain이 아니라 skill 또는 업무 분류로 관리한다.",
   "source_scope": "jobs_info.cache.json 및 jobs_summary.cache.json의 채용공고 108건을 검토해 구성한 초기 taxonomy",
   "tags": [

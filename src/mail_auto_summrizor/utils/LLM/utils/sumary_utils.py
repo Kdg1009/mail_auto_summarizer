@@ -1,16 +1,14 @@
-import json
-from mail_auto_summrizor.utils.paths import CACHE_DIR, TEST_DIR
-from mail_auto_summrizor.utils.LLM.utils.response_styles import record_response_time_cost
+from mail_auto_summrizor.utils.paths import CACHE_DIR
 from mail_auto_summrizor.utils.LLM.data_interface_manage import payloads
 from mail_auto_summrizor.utils.LLM.data_interface_manage import schemas
-from mail_auto_summrizor.utils.LLM.utils.preprocess_utils import PREPROCESS_PIPELINE
+from mail_auto_summrizor.tags.utils.search_utils import TagEmbeddingSearch
+from mail_auto_summrizor.utils.LLM.utils.response_styles import request_LLM_to_make_tag
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
 MODEL = "gemma2:9b-instruct-q8_0"
 
 JOB_INFO_CACHE = CACHE_DIR / "jobs_info.cache.json"
 
-def summary_job_data(job_data: dict, verbose:bool = True, enable_time_log:bool = True):
+def summary_job_data(job_data: dict, tag_searcher: TagEmbeddingSearch, verbose:bool = True, enable_time_log:bool = True):
     '''
     Analyze a job posting using local Ollama and return a dict.
     
@@ -42,45 +40,52 @@ def summary_job_data(job_data: dict, verbose:bool = True, enable_time_log:bool =
     '''
 
     content = {}
-    schema = None
-    sys_prompt = None
-
     time_logs = []
 
     # 1. Extract company, job title
     company = job_data.get("company")
     job_title = job_data["job_title"]
     description = job_data["description"]
-
-    # Preprocess description
-    for fn in PREPROCESS_PIPELINE:
-        description = fn(description, company=company)
-
     content['company'] = company
 
-    schema = schemas.JOB_TITLE_SCHEMA
-    sys_prompt = payloads.JOB_TITLE_SYS_CONTENT
-
-    payload = payloads.create_payload(job_title, MODEL, schema, sys_prompt)
-    response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
+    response, time_log = request_LLM_to_make_tag(
+        MODEL,
+        job_title,
+        payloads.JOB_TITLE_EVIDENCE_EXTRACTION_RULE_SCRIPT,
+        payloads.JOB_TITLE_TAG_SCRIPT,
+        schemas.JOB_TITLE_SCHEMA,
+        tag_searcher,
+        ["industrial_domain","job_family","seniority"],
+        verbose
+    )
     content.update(response)
     time_logs.append(time_log)
 
     # 2. Extract responsibilities
-    schema = schemas.RESPONSIBILITIES_SCHEMA
-    sys_prompt = payloads.RESPONSIBILITIES_SYS_CONTENT
-
-    payload = payloads.create_payload(description, MODEL, schema, sys_prompt)
-    response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
+    response, time_log = request_LLM_to_make_tag(
+        MODEL,
+        description,
+        payloads.RESPONSIBILITIES_EVIDENCE_EXTRACTION_RULE_SCRIPT,
+        payloads.RESPONSIBILITIES_TAG_SCRIPT,
+        schemas.RESPONSIBILITIES_SCHEMA,
+        tag_searcher,
+        ["task_area"],
+        verbose
+    )
     content.update(response)
     time_logs.append(time_log)
     
     # 3. Extract required skills, preferred skills and experiences 
-    schema = schemas.SKILLS_SCHEMA
-    sys_prompt = payloads.SKILLS_SYS_CONTENT
-
-    payload = payloads.create_payload(description, MODEL, schema, sys_prompt)
-    response, time_log = record_response_time_cost(OLLAMA_URL, payload, verbose)
+    response, time_log = request_LLM_to_make_tag(
+        MODEL,
+        description,
+        payloads.SKILLS_EVIDENCE_EXTRACTION_RULE_SCRIPT,
+        payloads.SKILLS_TAG_SCRIPT,
+        schemas.SKILLS_SCHEMA,
+        tag_searcher,
+        ["skill","industrial_domain","experience_type"],
+        verbose
+    )
     content.update(response)
     time_logs.append(time_log)
 
@@ -107,19 +112,3 @@ def warmup_model(model) -> None:
         },
         timeout=180,
     ).raise_for_status()
-
-if __name__ == "__main__":
-    with open(JOB_INFO_CACHE, "r", encoding="utf-8") as f:
-        job_data = json.load(f)
-
-    job = job_data.get("4457489696")
-    description = job["description"]
-    length = len(description)
-
-    #job["description"] = description[:length//2]
-
-    warmup_model(MODEL)
-    result = summary_job_data(job)
-
-    with open(TEST_DIR / f"{MODEL.split(":")[0]}.3.1.json", 'w', encoding='utf-8') as f:
-        json.dump(result, f, ensure_ascii=False, indent=4)

@@ -1,4 +1,3 @@
-
 from sentence_transformers import SentenceTransformer
 from pathlib import Path
 import json
@@ -109,17 +108,17 @@ class TagEmbeddingSearch:
         context: str,
         threshold: float = 0.7,
         top_k: int | None = None,
-        subject: str | None = None,
-    ) -> list[dict]:
+        subject: list[str] | None = None,
+    ) -> dict[str,list[dict]]:
 
         if not context.strip():
-            return []
+            return {}
 
         if not -1.0 <= threshold <= 1.0:
             raise ValueError("Threshold must be between -1 and 1.")
 
         if top_k is not None and top_k <= 0:
-            return []
+            return {}
 
         # Encode query
         context_emb = self.model.encode(
@@ -129,45 +128,54 @@ class TagEmbeddingSearch:
             show_progress_bar=False,
         ).astype(np.float32, copy=False)
 
-        # Calculate cosine similarity
+        # Calculate cosine similarity (all taxonomies)
         similarities = self.tag_embeddings @ context_emb
 
         # Optional taxonomy filtering
-        if subject is not None:
+        if subject:
+            subject_set = set(subject)
+
             mask = np.asarray(
-                [s == subject for s in self.tag_subjects]
+                [s in subject_set for s in self.tag_subjects],
+                dtype=bool,
             )
         else:
             mask = np.ones(len(self.tag_ids), dtype=bool)
 
         # Apply threshold
-        indices = np.flatnonzero(
+        valid_indices = np.flatnonzero(
             (similarities >= threshold) & mask
         )
 
-        if len(indices) == 0:
-            return []
+        if len(valid_indices) == 0:
+            return {}
 
-        # Top-K optimization
-        if top_k is not None and len(indices) > top_k:
-            selected = np.argpartition(
-                similarities[indices],
-                -top_k,
-            )[-top_k:]
+        # Group candidates by taxonomy
+        grouped_results = {}
 
-            indices = indices[selected]
+        for index in valid_indices:
+            taxonomy = self.tag_subjects[index]
 
-        # Sort selected candidates
-        indices = indices[
-            np.argsort(similarities[indices])[::-1]
-        ]
+            grouped_results.setdefault(taxonomy, []).append(
+                {
+                    "id": self.tag_ids[index],
+                    "taxonomy": taxonomy,
+                    "similarity": float(similarities[index]),
+                }
+            )
 
-        return [
-            {
-                "id": self.tag_ids[i],
-                "taxonomy": self.tag_subjects[i],
-                "similarity": float(similarities[i]),
-            }
-            for i in indices
-        ]
+        # ================================================
+        # 5. Sort and apply top_k per taxonomy
+        # ================================================
 
+        for taxonomy, candidates in grouped_results.items():
+
+            candidates.sort(
+                key=lambda x: x["similarity"],
+                reverse=True,
+            )
+
+            if top_k is not None:
+                grouped_results[taxonomy] = candidates[:top_k]
+
+        return grouped_results

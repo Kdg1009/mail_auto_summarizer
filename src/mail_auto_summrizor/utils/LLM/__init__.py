@@ -2,10 +2,10 @@ import json
 import time
 
 from mail_auto_summrizor.utils.paths import CACHE_DIR
-
 from mail_auto_summrizor.utils.LLM.utils.sumary_utils import summary_job_data, warmup_model
+from mail_auto_summrizor.tags.utils.search_utils import TagEmbeddingSearch
 
-def LLMDataHelper(model:str, verbose:bool = True, enable_time_log:bool = False, flush_interval: int=20):
+def LLMDataHelper(model:str, tag_searcher: TagEmbeddingSearch, verbose:bool = True, enable_time_log:bool = False, flush_interval: int=20):
     '''
     This helper reads caches/jobs_info.cache.json and summary its content into structured json format.
     and write json file into caches/jobs_summary.cache.json
@@ -57,7 +57,7 @@ def LLMDataHelper(model:str, verbose:bool = True, enable_time_log:bool = False, 
         if verbose:
             print(f'[INFO] [{i}/{total}] Processing {job_info['company']}({job_id})')
 
-        result = summary_job_data(job_info, verbose, enable_time_log)
+        result = summary_job_data(job_info, tag_searcher, verbose, enable_time_log)
         results[job_id] = result
 
         if (i+1) % flush_interval == 0:
