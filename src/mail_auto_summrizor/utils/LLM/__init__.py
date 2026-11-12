@@ -17,7 +17,6 @@ def LLMDataHelper(model:str, tag_searcher: TagEmbeddingSearch, verbose:bool = Tr
         experience_requirements: list
         required_skills: list
         preferred_skills: list
-        soft_skills: list
         employment_type: list
     }
     '''
