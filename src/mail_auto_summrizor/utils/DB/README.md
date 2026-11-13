@@ -69,4 +69,16 @@ Posting - Skill table<br>
 |PK|FK|FK|TEXT|
 
 Posting - Experience table<br>
-| Id | 
+| Id | Experience Type Id | degree level label | Industrial domain Id | Max yaer | Min year | Requirement label | Posting Id |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| PK | FK | TEXT | FK | INTEGERNULL | INTEGERNULL | TEXT | FK |
+
+Skill name - Skill category table<br>
+| Id | Skill label name label | Skill category Id |
+| --- | --- | --- |
+| PK | TEXT | FK |
+
+Job title - Industrial domain table<br>
+| Id | Job title Id | Industrial domain Id |
+| --- | --- | --- |
+| PK | FK | FK |
