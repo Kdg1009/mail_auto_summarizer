@@ -4,39 +4,69 @@
 1. Table/graph when does job posting email sended.
 2. Monthly recruiting type rank (job title, full time/part time/intern. etc., required experiences)
 3. Monthly required technical skills rank (required skills/preferred skills)
-4, Responsibilities per job titles
+4. Responsibilities per job titles
 
-### What condition de i have to consider?
-1. Make seperate tables for all tags
+### What condition do i have to consider?
+1. Make seperate tables for all taxonomy tags
+2. Distinct skills, responsibilities and experience saved as postings row.
+3. Use junction table to represent relationship of postings and tags
+4. Seperate taxonomy tag and job posting analyze.
 
 ### Table structure
-1. Posting summary table
-| Posting id | Company label | Date label | Job title id | Responsibility ids | Skill ids | Experience ids | Employment type ids |
+There will be 3 types of tables
+- Posting table: Represent individual job posting. This table works as root table that binds all properties of individual posting.
+- Tag table: Stores taxonomy tags.
+- Junction table: Work as mapper of posting data and tags.
 
-2. Job title table
-| Job title id | Job title label | Industrial domain ids | Job family id | Seniority id |
+[Tree structure of tables]
+```txt
+├── Posting table
+│
+├── Tag table
+│   ├── Company Tag table
+│   ├── Industrial domain Tag table
+│   ├── Seniority Tag table
+│   ├── Job family Tag table
+│   ├── Task area Tag table
+│   ├── Skill name Tag table
+│   ├── Skill category Tag table
+│   └── Experience type Tag table
+│
+└── Junction table
+    ├── Posting - Job title table
+    ├── Posting - Responsibility table
+    ├── Posting - Skill table
+    ├── Posting - Experience table
+    ├── Skill name - Skill category table
+    └── Job title - Industrial domain table
+```
 
-3. Industrial domain table
-| Industrial domain id | Industrial domain label |
+**Posting table**<br>
+| Id | Company id | Job title id | Date | Source url | Employment type label |
+| --- | --- | --- | --- | --- | --- |
+| PK | FK | FK | DATETIME | TEXT | TEXT |
 
-4. Job family table
-| Job family id | Job family label |
+**Tag tables**<br>
+All tag table has singular form.<br>
+| Id | Label |
+| --- | --- |
+| PK | TEXT |
 
-5. Seniority table
-| Seniority id | Seniority label |
+**Junction tables**<br>
+Posting - Job title table<br>
+| Id | Job title label | Job family Id | Seniority Id |
+| --- | --- | --- | --- |
+| PK | TEXT | FK | FK |
 
-6. Responsibility table
-| Responsibility Id | Responsibility label | Task area id |
-- Responsibility label is summary of the task.
+Posting - Responsibility table<br>
+| Id | Summary | Task area Id | Posting id |
+| --- | --- | --- | --- |
+| PK | TEXT | FK | FK |
 
-7. Task area table
-| Task area id | Task area label |
+Posting - Skill table<br>
+| Id | Posting id | Skill id | Requirement type label |
+| - | - | - | - |
+|PK|FK|FK|TEXT|
 
-8. Skill table
-| Skill id | Skill label | Skill category id |
-
-9. Skill category table
-| Skill category id | Skill category label |
-
-10. Experience table
-| Experience id | Experience type id | Industrial domain id | Requirement id | Min yaer label | Max year label | Degree level   label |
+Posting - Experience table<br>
+| Id | 
